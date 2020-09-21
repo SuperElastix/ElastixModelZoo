@@ -1,6 +1,4 @@
 
-[Source](http://elastix.bigr.nl/wiki/index.php/Default0 "Permalink to Default0 - elastix")
-
 # Default0 - elastix
 
 This parameter file database entry contains "default" parameter files. These are intended for starting `elastix` users, and should give reasonable results in many applications. The `elastix` example (version 4.3 or higher), which can be downloaded from the [website][1] contains the same parameter files, together with a test pair of images and an example script that calls `elastix`.
