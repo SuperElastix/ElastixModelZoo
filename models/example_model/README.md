@@ -22,7 +22,7 @@ NB: the parameter files are designed to work well both for 2D and 3D image regis
 
 
 NB2: the files are saved in DOS text format. In order to use them on a Linux-based system, use the `dos2unix` tool to convert them to unix text format.
-
+Tags: 3D
 ###
 
 See the elastix manual ([link][2]) for an extensive introduction to `elastix` and explanation of many parameters. If you have any questions, please subscribe to the `elastix` mailing list and post your question there. We (the authors of `elastix`) are happy to answer any questions. Please do read the [FAQ][3] though ;)
