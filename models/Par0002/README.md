@@ -66,3 +66,5 @@ See the elastix manual ([link][3]) for hints on how to subsequently apply the tr
 [1]: http://elastix.bigr.nl/wiki/images/thumb/5/5c/Par0002screenshot1.png/387px-Par0002screenshot1.png
 [2]: http://elastix.bigr.nl/wiki/images/thumb/2/2d/Par0002screenshot2.png/333px-Par0002screenshot2.png
 [3]: http://elastix.isi.uu.nl
+
+Tags: 3D, PET, Brain
