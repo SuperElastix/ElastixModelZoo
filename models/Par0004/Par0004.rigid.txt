@@ -1,0 +1,56 @@
+//ImageTypes
+(FixedImagePixelType "short")
+(FixedImageDimension 3)
+(MovingImagePixelType "short")
+(MovingImageDimension 3)
+
+//Components
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "BSplineInterpolator")
+(Metric "MattesMutualInformation")
+(Optimizer "StandardGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "EulerTransform")
+
+// Total number of resolutions
+(NumberOfResolutions 3)
+
+(Scaler 500000.0)
+//(CenterOfRotation 128 128 ??) center by default
+
+// Maximum number of iterations in each resolution level:
+(MaximumNumberOfIterations 600 600 600)
+
+//Number of grey level bins in each resolution level:
+(NumberOfHistogramBins 32 32 32)
+
+(NewSamplesEveryIteration "true" "true" "true")
+(WriteTransformParametersEachIteration "false" "false" "false")
+(WriteTransformParametersEachResolution "false" "false" "false")
+(ShowExactMetricValue "false" "false" "false")
+(ErodeMask "true" "true" "true")
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(NumberOfSpatialSamples 5000 5000 5000)
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue -1000)
+
+//SP: Param_a in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_a 3000.0 2000.0 1000.0)
+
+//SP: Param_alpha in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_alpha 0.602 0.602 0.602)
+
+//SP: Param_A in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_A 100.0 100.0 100.0)
+

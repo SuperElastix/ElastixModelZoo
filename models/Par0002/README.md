@@ -1,6 +1,3 @@
-
-[Source](http://elastix.bigr.nl/wiki/index.php/Par0002 "Permalink to Par0002 - elastix")
-
 # Par0002 - elastix
 
 ###  Image data
