@@ -1,0 +1,63 @@
+// *********************
+// * ImageTypes
+// *********************
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 2)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 2)
+
+// *********************
+// * Components
+// *********************
+(Registration "MultiResolutionRegistration" )
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(Interpolator "BSplineInterpolator")
+(BSplineInterpolationOrder 1)
+(Metric "AdvancedMeanSquares")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(ResampleInterpolator "FinalLinearInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+// *********************
+// * Optimizer settings
+// *********************
+(NumberOfResolutions 2)
+(FinalGridSpacingInPhysicalUnits 4.0 4.0)
+(GridSpacingSchedule 2.0 2.0 1.0 1.0)
+(SP_A 20.0)
+(SigmoidInitialTime 1.0)
+(MaximumNumberOfIterations 2000)
+(AutomaticParameterEstimation "true")
+
+// *********************
+// * Transform settings
+// *********************
+(HowToCombineTransforms "Compose" )
+
+// *********************
+// * Pyramid settings
+// *********************
+(ImagePyramidSchedule 2 2 0 0)
+
+// *********************
+// * Sampler parameters
+// *********************
+(ImageSampler "Random")
+(NumberOfSpatialSamples 500)
+(CheckNumberOfSamples "false")
+(MaximumNumberOfSamplingAttempts 10)
+(NewSamplesEveryIteration "true")
+(FinalBSplineInterpolationOrder 1)
+
+// *********************
+// * Output settings
+// *********************
+(WriteTransformParametersEachIteration "false")
+(WriteResultImage "true")
+(CompressResultImage "false")
+(WriteResultImageAfterEachResolution "false")
+(ShowExactMetricValue "false")
+(DefaultPixelValue 0)
+

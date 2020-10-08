@@ -33,6 +33,8 @@ Command line call:
 
 with:  = one of {rigid, affine, bspline64, bspline32, bspline16, bspline08, bspline04}
 
+For parameter files, see below.
+
 ###  Published in
 
 These registration are described in the publication:

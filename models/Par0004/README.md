@@ -30,7 +30,7 @@ For evaluation of the rigidity of the tumors, precise manual segmentations of th
 
 `elastix` version: 3.513
 
-see below
+For parameter files, see below.
 
 `elastix` version: 3.703
 
@@ -94,4 +94,4 @@ Starting with `elastix 4.4` the old implementation was removed.
 
 [1]: http://elastix.bigr.nl/wiki/images/thumb/6/6a/Par0004screenshot1.png/393px-Par0004screenshot1.png
 
-Tags: 3D, Chest, CT
+Tags: 3D, Lung, CT

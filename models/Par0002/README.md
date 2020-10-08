@@ -37,6 +37,7 @@ Command line call:
 
     elastix -f PET.mhd -m MR_T1.mhd -p par0002..txt -out outputdir
 
+For parameter files, see below.
 
 ###  Published in
 

@@ -30,7 +30,7 @@ One hundred corresponding points in each baseline and follow-up scan were establ
 
 `elastix` version: 3.9
 
-see below
+For parameter files, see below.
 
 Here, `R` refers to the number of resolutions that was used, `fg` uses a fixed B-spline grid (no upsampling) and `ug` additionally performs multi-resolution on the B-spline transform.
 
@@ -62,4 +62,4 @@ See the elastix manual ([link][2]) for hints on how to subsequently apply the tr
 [1]: http://elastix.bigr.nl/wiki/images/thumb/f/f3/Par0003screenshot1.png/404px-Par0003screenshot1.png
 [2]: http://elastix.isi.uu.nl
 
-Tags: 3D, Chest, CT
+Tags: 3D, Lung, CT
