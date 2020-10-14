@@ -1,0 +1,120 @@
+// The internal pixel type, used for internal computations
+// Leave to float in general. 
+// NB: this is not the type of the input images! The pixel 
+// type of the input images is automatically read from the 
+// images themselves.
+// This setting can be changed to "short" to save some memory
+// in case of very large 3D images.
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+
+// Specify whether you want to take into account the so-called
+// direction cosines of the images. Recommended: true.
+// In some cases, the direction cosines of the image are corrupt,
+// due to image format conversions for example. In that case, you 
+// may want to set this option to "false".
+(UseDirectionCosines "true")
+
+// **************** Main Components **************************
+
+// The following components should usually be left as they are:
+(Registration "MultiMetricMultiResolutionRegistration")
+
+// Metric0 = SSTVD
+// Metric1 = Bending Energy Regularization
+
+(Interpolator "BSplineInterpolator" "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+// These may be changed to Fixed/MovingSmoothingImagePyramid.
+// See the manual.
+(FixedImagePyramid "FixedSmoothingImagePyramid" "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid" "MovingSmoothingImagePyramid")
+
+// The following components are most important:
+// The optimizer AdaptiveStochasticGradientDescent (ASGD) works
+// quite ok in general. The Transform and Metric are important
+// and need to be chosen careful for each application. See manual.
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "BSplineTransform")
+(Metric "SumSquaredTissueVolumeDifference" "TransformBendingEnergyPenalty")
+(Metric0Weight 1.0 1.0 1.0 1.0 )
+(Metric1Weight 1.0 1.0 1.0 1.0 )
+
+// ***************** Transformation **************************
+
+// The control point spacing of the bspline transformation in 
+// the finest resolution level. Can be specified for each 
+// dimension differently. Unit: mm.
+(FinalGridSpacingInPhysicalUnits 8)	
+
+(GridSpacingSchedule 8.0 4.0 2.0 1.0 )
+
+// Whether transforms are combined by composition or by addition.
+// In generally, Compose is the best option in most cases.
+// It does not influence the results very much.
+(HowToCombineTransforms "Compose")
+
+// ******************* Similarity measure *********************
+
+(ErodeMask "true")
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 4)
+
+// Make sure that the number of elements equals the number
+// of resolutions times the image dimension.
+(ImagePyramidSchedule  1 1 1  1 1 1  1 1 1  1 1 1 )
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 100 100 100 100 )
+
+(AutomaticParameterEstimation "true")
+(UseAdaptiveStepSizes "true")
+//(SP_a 0.5 0.7 1.2 5.5 10 )
+//(SP_A 220.0 20.0 20.0 20.0 20.0 )
+//(SP_alpha 1.0 1.0 1.0 1.0 1.0 )
+//(SigmoidMax 1.0 1.0 1.0 1.0 1.0 )
+//(SigmoidMin -0.5 -0.5 -0.5 -0.5 -0.5 )
+//(SigmoidScale 500 250 150 25 25 )
+
+// **************** Image sampling **********************
+
+// Number of spatial samples used to compute the mutual
+// information (and its derivative) in each iteration.
+// With an AdaptiveStochasticGradientDescent optimizer,
+// in combination with the two options below, around 2000
+// samples may already suffice.
+(NumberOfSpatialSamples 10000 10000 10000 10000 )
+
+// Refresh these spatial samples in every iteration, and select
+// them randomly. See the manual for information on other sampling
+// strategies.
+(NewSamplesEveryIteration "true")
+(ImageSampler "RandomCoordinate" "RandomCoordinate")
+
+// ************* Interpolation and Resampling ****************
+
+// Order of B-Spline interpolation used during registration/optimisation.
+(BSplineInterpolationOrder 1)
+
+// Order of B-Spline interpolation used for applying the final
+// deformation.
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue -1000)
+
+// Choose whether to generate the deformed moving image.
+// You can save some time by setting this to false, if you are
+// not interested in the final deformed moving image, but only
+// want to analyze the deformation field for example.
+(WriteResultImage "true")
+(WriteResultImageAfterEachResolution "true")
+
+// The pixel type and format of the resulting deformed moving image
+(ResultImagePixelType "short")
+(ResultImageFormat "mhd")

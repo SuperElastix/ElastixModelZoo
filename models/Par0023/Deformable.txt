@@ -1,0 +1,66 @@
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+(UseDirectionCosines "true")
+
+// **************** Main Components **************************
+
+(Registration "MultiMetricMultiResolutionRegistration")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "BSplineTransform")
+(Metric "AdvancedMattesMutualInformation" "TransformBendingEnergyPenalty")
+(Metric0Weight 1)
+(Metric1Weight 50) // OPTIMIZED BY QUANTITATIVE MEASURES
+
+// ***************** Transformation **************************
+
+(GridSpacingSchedule 4 2 1)
+(FinalGridSpacingInPhysicalUnits 15)
+(HowToCombineTransforms "Compose")
+
+// ******************* Similarity measure *********************
+
+(NumberOfHistogramBins 60) // OPTIMIZED BY QUANTITATIVE MEASURES
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 3)
+(ImagePyramidSchedule 8 8 2  4 4 1  1 1 0.5) // ACCOUNTING FOR ANISOTROPIC RESOLUTION
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 5000) // COULD PROBABLY BE LOWERED, ESPECIALLY FOR THE FIRST LEVELS OF THE IMAGE PYRAMID
+
+// **************** Image sampling **********************
+
+(NumberOfSpatialSamples 10000) // COULD PROBABLY BE LOWERED, ESPECIALLY FOR THE FIRST LEVELS OF THE IMAGE PYRAMID
+(NewSamplesEveryIteration "true")
+(ImageSampler "MultiInputRandomCoordinate")
+(SampleRegionSize 40)  // OPTIMIZED BY QUANTITATIVE MEASURES
+(UseRandomSampleRegion "true")
+(MaximumNumberOfSamplingAttempts 5)
+(RequiredRatioOfValidSamples 0.05)
+
+// ************* Interpolation and Resampling ****************
+
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 3)
+
+(ShowExactMetricValue "false") 
+(WriteTransformParametersEachResolution "true")
+//(WriteResultImageAfterEachResolution "true")
+//(WritePyramidImagesAfterEachResolution "true")
+
+(DefaultPixelValue 0)
+(WriteResultImage "true")
+(ResultImagePixelType "short")
+(ResultImageFormat "nii.gz")
+

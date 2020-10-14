@@ -1,0 +1,76 @@
+// Parameter file created by ElastixParameterFile module
+
+// Registration parameters
+(Registration "MultiResolutionRegistration")
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(UseDirectionCosines "true")
+(NumberOfResolutions 1)
+(ErodeFixedMask "false" "false" "false")
+(ErodeMovingMask "false" "false" "false")
+
+// Transform parameters
+(Transform "BSplineTransform")
+(FinalGridSpacingInPhysicalUnits 60 60 40)
+(GridSpacingSchedule 1 1 1)
+(HowToCombineTransforms "Compose")
+(AutomaticScalesEstimation "true" "true" "true")
+(AutomaticTransformInitialization "true")
+
+// Metric parameters
+(Metric "NormalizedMutualInformation")
+(ShowExactMetricValues "false" "false" "false")
+(CheckNumberOfSamples "false" "false" "false")
+(RequiredRatioOfValidSamples 0.25)
+(NumberOfHistogramBins 64)
+(NumberOfFixedHistogramBins 64)
+
+(NumberOfMovingHistogramBins 64)
+(MovingKernelBSplineOrder 3 3 3)
+
+
+// Optimizer parameters
+(Optimizer "AdaptiveStochasticGradientDescent")
+(NewSamplesEveryIteration "true")
+(MaximumNumberOfIterations 2000)
+(MaximumNumberOfSamplingAttempts 0)
+(AutomaticParameterEstimation "true")
+(SigmoidInitialTime 0 0 0)
+(UseAdaptiveStepSizes "true")
+(NumberOfSamplesForExactGradient 100000)
+
+// Interpolator parameters
+(Interpolator "BSplineInterpolator")
+(BSplineInterpolationOrder 1 1 1)
+
+// ResampleInterpolator parameters
+(ResampleInterpolator "FinalBSplineInterpolator")
+(FinalBSplineInterpolationOrder 3)
+
+
+// ImageSampler parameters
+(ImageSampler "RandomCoordinate")
+(NumberOfSpatialSamples 10000)
+(UseRandomSampleRegion "false")
+(FixedImageBSplineInterpolationOrder 1 1 1)
+
+// FixedImagePyramid parameters
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(FixedImagePyramidSchedule 1 1 1)
+
+// MovingImagePyramid parameters
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(MovingImagePyramidSchedule 1 1 1)
+
+(WritePyramidImagesAfterEachResolution "false")
+
+// Resampler parameters
+(Resampler "DefaultResampler")
+(WriteResultImage "true")
+(CompressResultImage "false")
+(ResultImageFormat "nii")
+(ResultImagePixelType "short")
+(WriteResultImageAfterEachResolution "false")
+

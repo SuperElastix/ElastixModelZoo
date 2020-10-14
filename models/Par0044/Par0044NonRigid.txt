@@ -1,0 +1,134 @@
+// B-Spline transformation
+
+//ImageTypes
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 3)
+
+//Components
+(Registration "MultiMetricMultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid")
+(Transform "BSplineTransform")
+(Interpolator "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Metric "AdvancedMattesMutualInformation" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares" "AdvancedMeanSquares")
+
+(Metric0Weight 1.0)
+(Metric1Weight 1.0)
+(Metric2Weight 1.0)
+(Metric3Weight 1.0)
+(Metric4Weight 1.0)
+(Metric5Weight 1.0)
+(Metric6Weight 1.0)
+(Metric7Weight 1.0)
+(Metric8Weight 1.0)
+(Metric9Weight 1.0)
+(Metric10Weight 1.0)
+(Metric11Weight 1.0)
+
+// ::::::::::::::::::::::::::::: Parameters to tune :::::::::::::::::::::::::::::::::::::::
+
+// :::: Pyramid
+(NumberOfResolutions 3)
+(ImagePyramidSchedule 4 4 4 2 2 2 1 1 1)
+
+
+// :::: Optimizer - StandardGradientDescent ::::
+
+// Maximum number of iterations
+(MaximumNumberOfIterations 2048)
+
+//SP: Param_a in each resolution level. a_k = a/(A+k+1)^alpha
+// MI around 1000.0
+(SP_a 10000.0 )
+
+
+// :::: ImageSampler :::: 
+
+// Number of sample (2000 - 5000)
+(NumberOfSpatialSamples 2048 )
+
+// If UseRandomSampleRegion is set to "false", the sampler draws samples from the entire image domain.
+// When set to "true", the sampler randomly selects one voxel, and then selects the remaining
+// samples in a square neighbourhood (in mm) around that voxel (localized similarity measure).
+(UseRandomSampleRegion "true")
+(SampleRegionSize 50.0 50.0 50.0)
+
+
+// :::: Transform ::::
+// Grid of control points
+// This grid is defined by the spacing between the grid nodes, in voxel size
+// For each resolution level you can define a different grid spacing. This is what we call multi-grid.
+// The GridSpacingSchedule defines the multiplication factors for all resolution levels.
+(FinalGridSpacingInPhysicalUnits 12.0 12.0 12.0)
+(GridSpacingSchedule 4.0 4.0 4.0 2.0 2.0 2.0 1.0 1.0 1.0)
+
+
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// :::: Transform ::::
+// Whether transforms are combined by composition or by addition.
+// In generally, Compose is the best option in most cases.
+// It does not influence the results very much.
+(HowToCombineTransforms "Compose")
+
+
+// :::: Several ::::
+(ErodeMask "false" )
+(WriteTransformParametersEachIteration "false")
+(WriteResultImage "true")
+(CompressResultImage "true")
+(WriteResultImageAfterEachResolution "false") 
+(ShowExactMetricValue "false")
+
+
+// :::: Metric ::::
+//Number of grey level bins in each resolution level:
+(NumberOfHistogramBins 32 )
+(FixedLimitRangeRatio 0.0)
+(MovingLimitRangeRatio 0.0)
+(FixedKernelBSplineOrder 3)
+(MovingKernelBSplineOrder 3)
+(UseFastAndLowMemoryVersion "true")
+
+
+// :::: ImageSampler :::: 
+(ImageSampler "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate" "RandomCoordinate")
+(FixedImageBSplineInterpolationOrder 1 )
+(NewSamplesEveryIteration "true")
+(CheckNumberOfSamples "false")
+(MaximumNumberOfSamplingAttempts 10)
+
+
+// :::: Optimizer - StandardGradientDescent ::::
+//SP: Param_A in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_A 100.0 )
+//SP: Param_alpha in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_alpha 0.6 ) 
+
+
+// :::: Interpolator and Resampler ::::
+//Order of B-Spline interpolation used in each resolution level:
+// It may improve accuracy if you set this to 3. Never use 0.
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final
+// deformation.
+// 3 gives good accuracy.
+// 1 gives worse accuracy (linear interpolation)
+// 0 gives worst accuracy, but may be appropriate for 
+// binary images; this would be equivalent to nearest neighbor
+// interpolation.
+(FinalBSplineInterpolationOrder 0)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0.000000)
+
+(MaximumStepLength 0.7)
+
+(UseDirectionCosines "true")

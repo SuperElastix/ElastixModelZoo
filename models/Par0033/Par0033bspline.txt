@@ -1,0 +1,92 @@
+// BSplinePar
+
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+
+(UseDirectionCosines "true")
+
+
+// **************** Main Components **************************
+
+//(Registration "MultiResolutionRegistration")
+(Registration "MultiMetricMultiResolutionRegistration")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+//(FixedImagePyramid "FixedRecursiveImagePyramid")
+//(MovingImagePyramid "MovingRecursiveImagePyramid")
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "BSplineTransform")
+(Metric "AdvancedMattesMutualInformation" "TransformBendingEnergyPenalty")
+
+
+// ***************** Transformation **************************
+
+//(FinalGridSpacingInPhysicalUnits 4)
+
+(FinalGridSpacingInVoxels 5 5 5)
+(GridSpacingSchedule 8 4 2 1)
+
+//(GridSpacingSchedule 2 2 1 1)
+//(GridSpacingSchedule 6.0 4.0 2.5 1.0)
+
+(HowToCombineTransforms "Compose")
+
+// ******************* Similarity measure *********************
+
+(NumberOfHistogramBins 32)
+
+// If you use a mask, this option is important. 
+// If the mask serves as region of interest, set it to false.
+// If the mask indicates which pixels are valid, then set it to true.
+// If you do not use a mask, the option doesn't matter.
+(ErodeMask "false")
+(Metric0Weight 1.0)
+(Metric1Weight 0.2)
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 4)
+
+//(ImagePyramidSchedule 0 0 0  0 0 0  0 0 0  0 0 0)
+(FixedImagePyramidSchedule 0 0 0  0 0 0  0 0 0  0 0 0)
+(MovingImagePyramidSchedule 1 1 1  1 1 1  0 0 0  0 0 0)
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 1000)
+
+
+(MaximumStepLength 0.015)
+// the voxel size one -> 0.07
+// **************** Image sampling **********************
+
+(NumberOfSpatialSamples 2048)
+
+(NewSamplesEveryIteration "true")
+(ImageSampler "RandomCoordinate")
+
+
+// ************* Interpolation and Resampling ****************
+
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 3)
+
+(DefaultPixelValue 0)
+
+// Choose whether to generate the deformed moving image.
+// You can save some time by setting this to false, if you are
+// not interested in the final deformed moving image, but only
+// want to analyze the deformation field for example.
+(WriteResultImage "true")
+
+// The pixel type and format of the resulting deformed moving image
+(ResultImagePixelType "float")
+(ResultImageFormat "mhd")
