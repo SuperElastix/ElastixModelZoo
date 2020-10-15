@@ -38,10 +38,10 @@ see below
 
 Note the following:
 
-* `NRU' refers to unconstrained nonrigid registration (no penalty terms),
-* `NRP' refers to nonrigid registration with a rigidity penalty term,
+* `NRU` refers to unconstrained nonrigid registration (no penalty terms),
+* `NRP` refers to nonrigid registration with a rigidity penalty term,
 * when only one of the conditions in Eq. (8) of the paper is used, the method is referred to as AC, OC, or PC
-* the NRP parameter files are `base' files. The specific coefficient image needs to be added to these files for each registration separately. So you need to fill in:
+* the NRP parameter files are `base` files. The specific coefficient image needs to be added to these files for each registration separately. So you need to fill in:
 
 
     (MovingRigidityImageName "/data/patient_t_c.mhd")
@@ -93,5 +93,3 @@ Starting with `elastix 4.4` the old implementation was removed.
 ###  References
 
 [1]: http://elastix.bigr.nl/wiki/images/thumb/6/6a/Par0004screenshot1.png/393px-Par0004screenshot1.png
-
-Tags: 3D, Lung, CT

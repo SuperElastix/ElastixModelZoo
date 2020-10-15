@@ -50,5 +50,3 @@ Image data and manual segmentations have been made available via  ! See  for ins
 [1] S. Klein, U.A. van der Heide, I.M. Lips, M. van Vulpen, M. Staring and J.P.W. Pluim, "Automatic Segmentation of the Prostate in 3D MR Images by Atlas Matching using Localised Mutual Information," Medical Physics, vol. 35, no. 4, pp. 1407 - 1417, April 2008.
 
 [1]: http://elastix.bigr.nl/wiki/images/e/eb/Par0001screenshot1.jpg
-
-Tags: MRI, 3D, Prostate

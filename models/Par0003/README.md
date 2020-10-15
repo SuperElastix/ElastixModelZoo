@@ -61,5 +61,3 @@ See the elastix manual ([link][2]) for hints on how to subsequently apply the tr
 
 [1]: http://elastix.bigr.nl/wiki/images/thumb/f/f3/Par0003screenshot1.png/404px-Par0003screenshot1.png
 [2]: http://elastix.isi.uu.nl
-
-Tags: 3D, Lung, CT

@@ -105,5 +105,3 @@ The method and experiments are published in:
 [4]: http://elastix.bigr.nl/wiki/images/thumb/6/65/Lungsmr.jpg/500px-Lungsmr.jpg
 [5]: http://elastix.bigr.nl/wiki/images/0/0e/Combine.zip "Combine.zip"
 [6]: http://dx.doi.org/10.1016/j.media.2010.10.003
-
-Tags: 4D, 3D, Cardiac, Carotid, Pediatric Lung, CT, MRI, Ultrasound

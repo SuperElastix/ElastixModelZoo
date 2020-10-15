@@ -55,5 +55,3 @@ Marius Staring, Stefan Klein, Johan H.C. Reiber, Wiro J. Niessen and Berend C. S
 [2]: http://elastix.bigr.nl/wiki/images/thumb/a/a4/Par0011screenshot2.jpg/753px-Par0011screenshot2.jpg
 [3]: http://empire10.isi.uu.nl/index.php
 [4]: http://empire10.isi.uu.nl/mainResults.php
-
-Tags: 3D, Lung, CT

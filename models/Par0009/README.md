@@ -21,5 +21,3 @@ Artaechevarria X, Munoz-Barrutia A, Ortiz-de-Solorzano C., "Combination strategi
 ###  References
 
 [1] Artaechevarria X, Munoz-Barrutia A, Ortiz-de-Solorzano C., "Combination strategies in multi-atlas image segmentation: application to brain MR data," IEEE Trans Med Imaging. 2009 Aug;28(8):1266-77.
-
-Tags: 3D, MRI, Brain
