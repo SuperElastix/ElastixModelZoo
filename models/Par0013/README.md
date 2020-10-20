@@ -15,11 +15,11 @@
 
 Example data:
 
-[Media:ExampleData.zip][1]
+See Github link below.
 
 Screen shot:
 
-![Screenshot x-ray.jpg][2]![Screenshot x-ray lat.jpg][3]
+![alt-text](Screenshot_x-ray.jpg)![alt-text](Screenshot_x-ray_lat.jpg)
 
 ###  Application
 

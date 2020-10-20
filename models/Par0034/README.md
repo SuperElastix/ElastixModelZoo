@@ -7,12 +7,10 @@
 * Voxel size 0.296291 x 0.3
 * Acquired with a Bruker Biospin (Ettlingen, Germany) 7T scanner
 * Stored in MHD format
-* [1]
-
 
 Screen shot:
 
-![386 × 485px][1]
+![alt-text](Bink_elastix_wiki_IN_VIVO_CBF_screenshot.png)
 
 An example of the co-registered mouse brain data: on the right you see the used template image.
 
@@ -44,5 +42,3 @@ with:  = one of {rigid, affine, bspline}
 ###  Published in
 
 [1] [D.I. Bink _et al.,_ "," _in preparation_ 2016]
-
-[1]: http://elastix.bigr.nl/wiki/images/2/25/Bink_elastix_wiki_IN_VIVO_CBF_screenshot.png

@@ -17,19 +17,19 @@ Motion estimation from dynamical medical imaging data.
 
 4D chest CT: before registration (left), and after registration (right)
 
-![Lungs.jpg][1]
+![alt-text](Lungs.jpg)
 
 4D cardiac CT
 
-![Heart.jpg][2]
+![alt-text](Heart.jpg)
 
 3D carotid US
 
-![Carotid.jpg][3]
+![alt-text](Carotid.jpg)
 
 3D pediatric lung MR
 
-![Lungsmr.jpg][4]
+![alt-text](Lungsmr.jpg)
 
 ###  Registration settings
 
@@ -37,7 +37,7 @@ Motion estimation from dynamical medical imaging data.
 
 Parameter files, see github repo.
 
-This zip file contains all the parameter files used in [1]. The directory naming should be self-explanatory.
+The zip file contains all the parameter files used in [1]. The directory naming should be self-explanatory.
 
 ###  Command line calls
 
@@ -85,10 +85,6 @@ Note that  contains the x, y, z coordinates of the point to transform and the t 
     transformix -tp Combined.1.txt -in  -out
 
 
-####  Download script
-
-[Media:combine.zip][5]
-
 ###  Known issues
 
 The code for the 4D registration might not work correctly when the axes of the data are not equal to the coordinate system axes (direction cosines).
@@ -97,11 +93,6 @@ The code for the 4D registration might not work correctly when the axes of the d
 
 The method and experiments are published in:
 
-[1] [Nonrigid registration of dynamic medical imaging data using nD+t B-splines and a groupwise optimization approach, C.T. Metz, S. Klein, M. Schaap, T. van Walsum and W.J. Niessen, Medical Image Analysis, in press][6]
+[1] [Nonrigid registration of dynamic medical imaging data using nD+t B-splines and a groupwise optimization approach, C.T. Metz, S. Klein, M. Schaap, T. van Walsum and W.J. Niessen, Medical Image Analysis, in press][1]
 
-[1]: http://elastix.bigr.nl/wiki/images/thumb/5/59/Lungs.jpg/500px-Lungs.jpg
-[2]: http://elastix.bigr.nl/wiki/images/thumb/7/74/Heart.jpg/500px-Heart.jpg
-[3]: http://elastix.bigr.nl/wiki/images/thumb/b/b2/Carotid.jpg/500px-Carotid.jpg
-[4]: http://elastix.bigr.nl/wiki/images/thumb/6/65/Lungsmr.jpg/500px-Lungsmr.jpg
-[5]: http://elastix.bigr.nl/wiki/images/0/0e/Combine.zip "Combine.zip"
-[6]: http://dx.doi.org/10.1016/j.media.2010.10.003
+[1]: http://dx.doi.org/10.1016/j.media.2010.10.003

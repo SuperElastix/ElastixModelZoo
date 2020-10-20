@@ -11,7 +11,7 @@
 
 Screen shot:
 
-![Rigidity comparison target and template.jpg][1]
+![alt-text](Rigidity_comparison_target_and_template.jpg)
 
 Comments: The left figure is the target image which is before radiation therapy and the right one is the template image which is after radiation therapy. Red arrows indicate the tumor regions.
 
@@ -40,5 +40,3 @@ The authors would like to thank Ms. Keelin Murphy and Dr. Bram van Ginneken for 
 [1] M. Staring, S. Klein, and J. P. W. Pluim et al., "A rigidity penalty term for nonrigid registration," in Medical Physics, vol. 34, no. 11, pp. 4098 – 4108, 2007.
 
 [2] K. Murphy, B. van Ginneken, J. P. W. Pluim, S. Klein, and M. Staring, "Semi-automatic reference standard construction for quantitative evaluation of lung CT registration," in MICCAI, ser. Lecture Notes in Computer Science, vol. 5242, 2008, pp. 1006 – 1013.
-
-[1]: http://elastix.bigr.nl/wiki/images/f/f5/Rigidity_comparison_target_and_template.jpg

@@ -16,7 +16,7 @@ MR images of the carotid artery were obtained on a 1.5T scanner using a dedicate
 
 Acquired pixel size was 0.39x0.39 mm2 and slice thickness was 3.0 mm. All images were reconstructed to a pixel size of 0.20x0.20 mm2 in-plane.
 
-![Par0018.jpg][1]
+![alt-text](Par0018.jpg)
 
 Figure: Example of image before (top row) and after registration by the optimal 3D B-spline transformation (bottom row). The fixed image is shown in the first column. The lumen contour of the fixed image (white) is overlaid on all images.
 
@@ -51,5 +51,3 @@ Automatic Registration of Multispectral MR Vessel Wall Images of the Carotid Art
 Full journal publication:
 
 Automated registration of multispectral MR vessel wall images of the carotid artery R. van 't Klooster, M. Staring, S. Klein, R. M. Kwee, M. E. Kooi, J. H. C. Reiber, B. P. F. Lelieveldt and R. J. van der Geest Medical Physics, 40, 121904 (2013)
-
-[1]: http://elastix.bigr.nl/wiki/images/0/0a/Par0018.jpg

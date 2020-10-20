@@ -11,7 +11,7 @@
 
 Screen shot:
 
-![Keelin Par0008.jpg][1]
+![alt-text](Keelin_Par0008.jpg)
 
 Comments: A sample of two temporal inspiration scans from the same patient.
 
@@ -34,5 +34,3 @@ K. Murphy, B. van Ginneken, J.P.W. Pluim, S. Klein, and M. Staring, Semi-Automat
 ###  References
 
 [1] K. Murphy, B. van Ginneken, J. P. W. Pluim, S. Klein, and M. Staring, "Semi-automatic reference standard construction for quantitative evaluation of lung CT registration," in MICCAI, ser. Lecture Notes in Computer Science, vol. 5242, 2008, pp. 1006 – 1013.
-
-[1]: http://elastix.bigr.nl/wiki/images/3/36/Keelin_Par0008.jpg

@@ -8,7 +8,7 @@
 
 ###  Application
 
-![ChestCT uncertaintyMap.png][1]
+![alt-text](ChestCT_uncertaintyMap.png)
 
 * The method [1] used multiple registrations to predict the registration error in a quantitative manner, which can be used in any registration paradigm and can already be used for pairwise registration as well as group-wise registration
 * Example data from the SPREAD dataset. The left column (a,c) shows the fixed image with the ground truth registration error overlaid in color. The square boxes around each landmark are given the same error as the error at the landmark. The right column (b,d) shows the moving image after registration with the registration error predicted by the proposed method [1] overlaid in color. (c) and (d) are zoomed in versions of (a) and (b)
@@ -31,5 +31,3 @@ Description:
 ###  Reference
 
 [1] Sokooti, H., Saygili, G., Glocker, B., Lelieveldt, B.P. and Staring, M., 2016, October. Accuracy Estimation for Medical Image Registration Using Regression Forests. In International Conference on Medical Image Computing and Computer-Assisted Intervention (pp. 107-115). Springer International Publishing.
-
-[1]: http://elastix.bigr.nl/wiki/images/5/53/ChestCT_uncertaintyMap.png

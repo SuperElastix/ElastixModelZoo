@@ -2,7 +2,7 @@
 
 ###  Image data
 
-![6-point-Dixon-elastix-wiki.jpg][1]
+![alt-text](6-point-Dixon-elastix-wiki.jpg)
 
 * 3D 6-point Dixon MR volumes; pre- and post-cooling
 * Stored in meta-image format
@@ -32,5 +32,3 @@ Command line call:
 ###  Submitted manuscript
 
 [1] G. Abreu-Vieira*, J. Burakiewicz*, L.G.M. Janssen, K.J. Nahon, M.R. Boon, O. Dzyubachyk, A.G. Webb, H.E. Kan, P.C.N. Rensen. "Human brown adipose tissue lipid mapping by MRI and its heterogenic changes in volume, mass and energy content after cold exposure"
-
-[1]: http://elastix.bigr.nl/wiki/images/5/59/6-point-Dixon-elastix-wiki.jpg

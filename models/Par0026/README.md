@@ -13,7 +13,7 @@
 
 Screen shot:
 
-![386 × 485px][1]
+![alt-text](Screenshot_OLD_RAT_Brain_Study_Wiki_Parameters.png)
 
 An example of the co-registered rat brain data: two time-points for subject S1 are shown. On the left we see time-point 14m and on the right time-point 16m.
 
@@ -45,5 +45,3 @@ with:  = one of {rigid, affine, bspline}
 ###  Published in
 
 [1] L. Hammelrath, A. Khmelinskii, C. Po, E. Pracht, H. Endepols, H. Backes, C. Schäfer, M. Staring, B.P.F. Lelieveldt and M. Hoehn, "," _in preparation_, 2016
-
-[1]: http://elastix.bigr.nl/wiki/images/5/56/Screenshot_OLD_RAT_Brain_Study_Wiki_Parameters.PNG

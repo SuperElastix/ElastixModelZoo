@@ -14,7 +14,7 @@
 
 Screen shot:
 
-![Par0003screenshot1.png][1]
+![alt-text](404px-Par0003screenshot1.png)
 
 ###  Application
 
@@ -51,7 +51,7 @@ S. Klein, M. Staring, K. Murphy, M.A. Viergever, J.P.W. Pluim, "`elastix`: a too
 
 ###
 
-See the elastix manual ([link][2]) for hints on how to subsequently apply the transformation to the annotated points using `transformix`.
+See the elastix manual ([link][1]) for hints on how to subsequently apply the transformation to the annotated points using `transformix`.
 
 ###  References
 
@@ -59,5 +59,4 @@ See the elastix manual ([link][2]) for hints on how to subsequently apply the tr
 
 [2] K. Murphy, B. van Ginneken, J. P. W. Pluim, S. Klein, and M. Staring, "Semi-automatic reference standard construction for quantitative evaluation of lung CT registration," in MICCAI, ser. Lecture Notes in Computer Science, vol. 5242, 2008, pp. 1006 – 1013.
 
-[1]: http://elastix.bigr.nl/wiki/images/thumb/f/f3/Par0003screenshot1.png/404px-Par0003screenshot1.png
-[2]: http://elastix.isi.uu.nl
+[1]: http://elastix.isi.uu.nl

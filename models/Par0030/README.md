@@ -13,9 +13,6 @@ Secondly, to compare pre- and post-contrast images of the wrist, they must be re
 
 ###  Screenshots:
 
-![Pre11.png][1] ![Post11.png][2]
+![alt-text](Pre11.png) ![alt-text](Post11.png)
 
 ###  Parameter files:
-
-[1]: http://elastix.bigr.nl/wiki/images/3/3a/Pre11.png
-[2]: http://elastix.bigr.nl/wiki/images/1/1f/Post11.png

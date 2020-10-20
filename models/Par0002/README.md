@@ -17,7 +17,7 @@
 
 Screen shots:
 
-![Par0002screenshot1.png][1]   ![Par0002screenshot2.png][2]
+![alt-text](387px-Par0002screenshot1.png)   ![alt-text](333px-Par0002screenshot2.png)
 
 ###  Application
 
@@ -47,7 +47,7 @@ S. Klein, M. Staring, K. Murphy, M.A. Viergever, J.P.W. Pluim, "`elastix`: a too
 
 ###
 
-See the elastix manual ([link][3]) for hints on how to subsequently apply the transformation to the annotated points using `transformix`.
+See the elastix manual ([link][1]) for hints on how to subsequently apply the transformation to the annotated points using `transformix`.
 
 ###  References
 
@@ -61,6 +61,4 @@ See the elastix manual ([link][3]) for hints on how to subsequently apply the tr
 
 [5] P. Thevenaz, M. Bierlaire and M. Unser, "Halton Sampling for Image Registration Based on Mutual Information", Sampling Theory in Signal and Image Processing, vol. 7, no. 2, pp. 141 - 171, 2008.
 
-[1]: http://elastix.bigr.nl/wiki/images/thumb/5/5c/Par0002screenshot1.png/387px-Par0002screenshot1.png
-[2]: http://elastix.bigr.nl/wiki/images/thumb/2/2d/Par0002screenshot2.png/333px-Par0002screenshot2.png
-[3]: http://elastix.isi.uu.nl
+[1]: http://elastix.isi.uu.nl

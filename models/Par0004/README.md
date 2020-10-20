@@ -14,7 +14,7 @@
 
 Screen shot:
 
-![Par0004screenshot1.png][1]
+![alt-text](393px-Par0004screenshot1.png)
 
 ###  Application
 
@@ -91,5 +91,3 @@ The other parameters remain unchanged.
 Starting with `elastix 4.4` the old implementation was removed.
 
 ###  References
-
-[1]: http://elastix.bigr.nl/wiki/images/thumb/6/6a/Par0004screenshot1.png/393px-Par0004screenshot1.png

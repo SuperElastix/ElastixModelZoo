@@ -31,7 +31,7 @@ See Github link below
 
 ###  Screenshots
 
-![Fusion.jpg][3]
+![alt-text](Fusion.jpg)
 
 Fusion of CT (grey) and MR (orange) images after rigid registration (A) and after deformable registration (B).
 
@@ -42,5 +42,3 @@ The deformable registration strategy was not optimized for calculation time. For
 ###  Published in
 
 S. Leibfarth , D. Mönnich, S. Welz, C. Siegel, N. Schwenzer, H. Schmidt, D. Zips, D. Thorwarth, A strategy for multimodal deformable image registration to integrate PET/MR into radiotherapy treatment planning, Acta Oncologica 52, 1353-1359 (2013)
-
-[3]: http://elastix.bigr.nl/wiki/images/e/e0/Fusion.jpg

@@ -34,13 +34,13 @@ Oxford data:
 
 Screen shot:
 
-![Par0021screenshot.jpg][1]
+![alt-text](500px-Par0021screenshot.jpg)
 
 ###  Application
 
 Registration parameters for the registration of subject-FA images to the FMRIB-58 FA template were optimized using an evaluation framework based on the cross-subject similarity of probabilistic tractography tract-maps. The following parameters were optimized: warp field resolution; similarity metric; multiresolution strategy; regularization weight; optimizer; localization of similarity metric. Parameters were varied in an exhaustive fashion, resulting in 576 different parameter settings per datasource.
 
-All experiments and results are described in the accompanying paper. Optimal registration parameters for both datasets are available for download here, as well as a zip archive containing all 576 parameter files, as well as all parameter files used in the optimization of [FNIRT][2].
+All experiments and results are described in the accompanying paper. Optimal registration parameters for both datasets are available for download here, as well as a zip archive containing all 576 parameter files, as well as all parameter files used in the optimization of [FNIRT][1].
 
 ###  Registration settings
 
@@ -64,7 +64,7 @@ M. de Groot, M.W. Vernooij, M.A. Ikram, F Vos, S.M. Smith, W.J. Niessen and J. A
 
 ###
 
-* The protocols and scripts used for the tractography are available as a [plugin for FSL][3].
+* The protocols and scripts used for the tractography are available as a [plugin for FSL][2].
 * Feel free to contact the corresponding author in case you have questions regarding the use of these parameter files.
 
 ###  References
@@ -73,6 +73,5 @@ M. de Groot, M.W. Vernooij, M.A. Ikram, F Vos, S.M. Smith, W.J. Niessen and J. A
 
 [2] Jbabdi, S., Behrens, T.E.J., Smith, S.M., 2010. Crossing fibres in tract-based spatial statistics. NeuroImage 49, 249–256.
 
-[1]: http://elastix.bigr.nl/wiki/images/thumb/3/37/Par0021screenshot.jpg/500px-Par0021screenshot.jpg
-[2]: http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FNIRT
-[3]: http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/AutoPtx
+[1]: http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FNIRT
+[2]: http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/AutoPtx

@@ -11,7 +11,7 @@
 
 Screen shot:
 
-![0035RIREdata.png][1]
+![alt-text](0035RIREdata.png)
 
 An example of the fixed CT image and moving MR T1 image.
 
@@ -48,7 +48,7 @@ with:  = one of {ASGD, ASGDPrime, FAGSD}  = 1:10
 
 Screen shot:
 
-![0035SPREADLungCT.png][2]
+![alt-text](0035SPREADLungCT.png)
 
 An example of the baseline CT scan and follow up CT scan.
 
@@ -91,7 +91,7 @@ with:  = one of {ASGD, ASGDPrime, FAGSD}
 
 Screen shot:
 
-![HammersBrain.png][3]
+![alt-text](HammersBrain.png)
 
 An example of the Hammers brain data.
 
@@ -152,7 +152,3 @@ Command line call:
 ###  Published in
 
 [1] Y. Qiao, B. van Lew, B.P.F. Lelieveldt and M. Staring, "Fast Automatic Step Size Estimation for Gradient Descent Optimization of Image Registration," IEEE Transactions on Medical Imaging, in press.
-
-[1]: http://elastix.bigr.nl/wiki/images/thumb/c/cd/0035RIREdata.png/600px-0035RIREdata.png
-[2]: http://elastix.bigr.nl/wiki/images/thumb/b/bb/0035SPREADLungCT.png/600px-0035SPREADLungCT.png
-[3]: http://elastix.bigr.nl/wiki/images/thumb/9/93/HammersBrain.png/600px-HammersBrain.png

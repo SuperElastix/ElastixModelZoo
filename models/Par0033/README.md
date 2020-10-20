@@ -14,7 +14,7 @@
 
 Screen shot:
 
-![386 × 485px][1]
+![alt-text](Bink_elastix_wiki_EX_VIVO_screenshot.png)
 
 An example of the co-registered mouse brain data: on the left you see the used template.
 
@@ -48,5 +48,3 @@ with:  = one of {rigid, similarity, bspline}
 [1] [D.I. Bink, K. Ritz, C. Mackaaij, A. Khmelinskii, O.J. de Boer, L.M. Gierman, J.C. Sluimer, L. van der Weerd, M.J.A.P. Daemen, "Neuropathology in mouse models for atherosclerosis," _Submitted_ 2016]
 
 [2] [B. Kogelman _et al.,_ "," _in preparation_ 2016]
-
-[1]: http://elastix.bigr.nl/wiki/images/d/dd/Bink_elastix_wiki_EX_VIVO_screenshot.png

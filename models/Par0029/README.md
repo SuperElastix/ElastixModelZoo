@@ -13,7 +13,7 @@
 
 Screen shot:
 
-![Par0029screenshot.jpg][1]
+![alt-text](Par0029screenshot.jpg)
 
 ###  Application
 
@@ -46,5 +46,3 @@ J.-M. Guyader, L. Bernardin, N. H. M. Douglas, D. H. J. Poot, W. J. Niessen, S. 
 ###  References
 
 [1] J. C. Waterton, L. Pylkkanen, Qualification of imaging biomarkers for oncology drug development, European Journal of Cancer, 2012
-
-[1]: http://elastix.bigr.nl/wiki/images/thumb/7/7c/Par0029screenshot.jpg/800px-Par0029screenshot.jpg

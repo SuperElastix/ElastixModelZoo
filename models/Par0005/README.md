@@ -14,7 +14,7 @@
 
 Screen shot:
 
-![Par0005screenshot1.jpg][1]
+![alt-text](Par0005screenshot1.jpg)
 
 ###  Application
 
@@ -47,7 +47,7 @@ with: P the number of features
 
 These registrations are described in the publication:
 
-M. Staring, U.A. van der Heide, S. Klein, M.A. Viergever and J.P.W. Pluim, Registration of Cervical MRI Using Multifeature Mutual Information, IEEE Transactions on Medical Imaging, vol. 28, no. 9, pp. 1412 - 1421, September 2009. [link][2]
+M. Staring, U.A. van der Heide, S. Klein, M.A. Viergever and J.P.W. Pluim, Registration of Cervical MRI Using Multifeature Mutual Information, IEEE Transactions on Medical Imaging, vol. 28, no. 9, pp. 1412 - 1421, September 2009. [link][1]
 
 ###
 
@@ -61,5 +61,4 @@ notably the tool `pxgaussianimagefilter`. The PCA analysis was performed using `
 
 ###  References
 
-[1]: http://elastix.bigr.nl/wiki/images/thumb/1/18/Par0005screenshot1.jpg/400px-Par0005screenshot1.jpg
-[2]: http://elastix.isi.uu.nl/marius/publications/2009_j_TMI_b.html
+[1]: http://elastix.isi.uu.nl/marius/publications/2009_j_TMI_b.html

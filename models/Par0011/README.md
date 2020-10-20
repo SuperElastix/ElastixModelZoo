@@ -11,17 +11,17 @@
 
 Screen shots:
 
-![Par0011screenshot1.jpg][1]
+![alt-text](Par0011screenshot1.jpg)
 
-![Par0011screenshot2.jpg][2]
+![alt-text](Par0011screenshot2.jpg)
 
 ###  Application
 
 Registration of intra-patient pulmonary CT scans for the EMPIRE10 challenge at MICCAI. Sometimes sheep lungs.
 
-For more information visit the [EMPIRE10 website][3].
+For more information visit the [EMPIRE10 website][1].
 
-The results of the challenge can be found [here][4].
+The results of the challenge can be found [here][2].
 
 ###  Registration settings
 
@@ -51,7 +51,5 @@ Marius Staring, Stefan Klein, Johan H.C. Reiber, Wiro J. Niessen and Berend C. S
 
 ###  References
 
-[1]: http://elastix.bigr.nl/wiki/images/thumb/d/d5/Par0011screenshot1.jpg/890px-Par0011screenshot1.jpg
-[2]: http://elastix.bigr.nl/wiki/images/thumb/a/a4/Par0011screenshot2.jpg/753px-Par0011screenshot2.jpg
-[3]: http://empire10.isi.uu.nl/index.php
-[4]: http://empire10.isi.uu.nl/mainResults.php
+[1]: http://empire10.isi.uu.nl/index.php
+[2]: http://empire10.isi.uu.nl/mainResults.php

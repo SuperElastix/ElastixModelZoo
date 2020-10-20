@@ -13,7 +13,7 @@
 
 Screen shot:
 
-![386 × 485px][1]
+![alt-text](Mengler_elastix_wiki_screenshot.png)
 
 An example of the co-registered rat brain data: on the top row two time-points for subject S1 are shown and compared to the bottom row where the same time-points for subject S2 are presented
 
@@ -53,10 +53,9 @@ with:  = one of {rigid, affine, bspline64, bspline32, bspline16, bspline08, bspl
 
 ###  Published in
 
-[1] [A. Khmelinskii, L. Mengler, P. Kitslaar, M. Staring, M. Hoehn and B.P.F. Lelieveldt, "A visualization platform for high-throughput, follow-up, co-registered multi-contrast MRI rat brain data," SPIE Medical Imaging: Biomedical Applications in Molecular, Structural, and Functional Imaging, Proceedings of SPIE, vol. 8672, pp. 86721W–86721W-7, February 2013][2]
+[1] [A. Khmelinskii, L. Mengler, P. Kitslaar, M. Staring, M. Hoehn and B.P.F. Lelieveldt, "A visualization platform for high-throughput, follow-up, co-registered multi-contrast MRI rat brain data," SPIE Medical Imaging: Biomedical Applications in Molecular, Structural, and Functional Imaging, Proceedings of SPIE, vol. 8672, pp. 86721W–86721W-7, February 2013][1]
 
-[2] [L. Mengler, A. Khmelinskii, M. Diedenhofen, C. Po, M. Staring, B.P.F. Lelieveldt and M. Hoehn, "Brain maturation of the adolescent rat cortex and striatum: changes in volume and myelination," NeuroImage, vol. 84, pp. 35–44, January 2014][3]
+[2] [L. Mengler, A. Khmelinskii, M. Diedenhofen, C. Po, M. Staring, B.P.F. Lelieveldt and M. Hoehn, "Brain maturation of the adolescent rat cortex and striatum: changes in volume and myelination," NeuroImage, vol. 84, pp. 35–44, January 2014][2]
 
-[1]: http://elastix.bigr.nl/wiki/images/9/95/Mengler_elastix_wiki_screenshot.png
-[2]: http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1674633
-[3]: http://www.sciencedirect.com/science/article/pii/S1053811913008963
+[1]: http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1674633
+[2]: http://www.sciencedirect.com/science/article/pii/S1053811913008963

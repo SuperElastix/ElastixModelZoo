@@ -40,11 +40,7 @@ To supply this metric with a triangulated surface mesh (.vtk file) use the comma
     elastix.exe [...] -fMask applicatorMask.ext -fmeshA1 applicatorMeshA.vtk -fmeshB1 applicatorMeshB.vtk -fmeshC1 applicatorMeshC.vtk [...]
 
 
-Parameter files:
-
-See Github link below
-
-Example data files:
+Parameter files and example data files:
 
 See Github link below
 
@@ -52,13 +48,9 @@ See Github link below
 
 As an example a registration is set up with synthetic images that greatly simplifies a cervical brachy therapy image registration problem.
 
-![ScreenshotMSP.png][4]
+![alt-text](ScreenshotMSP.png)
 
-The files of the setup:
-
-See Github link below
-
-A movies visualizes the registration process of the setup:
+The files of the setup and a movie that visualizes the registration process of the setup:
 
 See Github link below
 
@@ -77,6 +69,3 @@ The registration procedure is driven by the image data and the applicator mesh(e
 The method and experiments are published in:
 
 [1] F.F. Berendsen et al., Registration of structurally dissimilar images in MRI-based brachytherapy, Phys. Med. Biol. 59 (2014) 4033-4045.
-
-[3]: http://elastix.bigr.nl/wiki/images/0/05/Applicator.png
-[4]: http://elastix.bigr.nl/wiki/images/9/9b/ScreenshotMSP.png

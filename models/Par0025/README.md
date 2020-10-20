@@ -9,11 +9,10 @@
 * Dimension: 128 x 128 x 22
 * Acquired with a Bruker Biospin (Ettlingen, Germany) 9.4T scanner
 * Stored in MHD format
-* [1]
 
 Screen shot:
 
-![386 × 485px][1]
+![alt-text](Screenshot_Mouse_Study_Wiki_Parameters.png)
 
 An example of a mouse brain dataset co-registered to the template: on the left you see the used template.
 
@@ -44,7 +43,6 @@ with:  = one of {rigid, affine, bspline}
 
 ###  Published in
 
-[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015][2]
+[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015][1]
 
-[1]: http://elastix.bigr.nl/wiki/images/d/df/Screenshot_Mouse_Study_Wiki_Parameters.PNG
-[2]: http://www.sciencedirect.com/science/article/pii/S1053811915009039
+[1]: http://www.sciencedirect.com/science/article/pii/S1053811915009039

@@ -9,7 +9,7 @@
 
 * The registration was used for bringing all the acquired stations into the same intensity space
 
-![2D-hist-elastix-wiki.png][1]
+![alt-text](2D-hist-elastix-wiki.png)
 
 * Columns: different stations of the same whole-body MR volume. The reference station is highlighted in red
 * First row: one slice from the T1-weighted channel
@@ -37,7 +37,6 @@ Command line call:
 
 ###  Published in
 
-[1] [O. Dzyubachyk, M. Staring, M. Reijnierse, B.P.F. Lelieveldt, and R.J. van der Geest. "Inter-Station Intensity Standardization for Whole-Body MR Data", Magnetic Resonance in Medicine 2017;77(1):422–433.][2]
+[1] [O. Dzyubachyk, M. Staring, M. Reijnierse, B.P.F. Lelieveldt, and R.J. van der Geest. "Inter-Station Intensity Standardization for Whole-Body MR Data", Magnetic Resonance in Medicine 2017;77(1):422–433.][1]
 
-[1]: http://elastix.bigr.nl/wiki/images/a/a5/2D-hist-elastix-wiki.png
-[2]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full
+[1]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full

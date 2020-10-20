@@ -35,8 +35,6 @@ The work is published in:
 
 M. J. A. Jansen, H. J. Kuijf, W. B. Veldhuis, F. J. Wessels, M. van Leeuwen, and J. P. W. Pluim, " Evaluation of motion correction for clinical dynamic contrast enhanced MRI of the liver," Phys. Med. Biol., 62(19), pp. 7556–7568, 2017.
 
-DOI: [10.1088/1361-6560/aa8848][3]
+DOI: [10.1088/1361-6560/aa8848][1]
 
-[1]: http://elastix.bigr.nl/wiki/images/9/9f/Par0047Pairwise.txt "Par0047Pairwise.txt"
-[2]: http://elastix.bigr.nl/wiki/images/7/73/Par0047Groupwise.txt "Par0047Groupwise.txt"
-[3]: https://iopscience.iop.org/article/10.1088/1361-6560/aa8848
+[1]: https://iopscience.iop.org/article/10.1088/1361-6560/aa8848

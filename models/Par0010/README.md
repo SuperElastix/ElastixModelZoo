@@ -14,7 +14,7 @@
 
 Screen shot:
 
-![Par0010screenshot.jpg][1]
+![alt-text](Par0010screenshot.jpg)
 
 ###  Application
 
@@ -45,5 +45,3 @@ A control point spacing of 15 mm was used for the B-spline transformation (in th
 [1] J.G. Sled, A.P. Zijdenbos, and A.C. Evans. Nonparametric method for automatic correction of intensity nonuniformity in MRI data. IEEE Trans. Med. Imaging, vol. 17, no. 1, pp. 87–97, 1998
 
 [2] A. Hofman, M.M.B. Breteler, C.M. van Duijn, G.P. Krestin, H.A. Pols, B.H.C. Stricker, H. Tiemeier, A.G. Uitterlinden, J.R. Vingerling, and J.C.M. Witteman. The rotterdam study: objectives and design update. Eur J Epidemiol, vol. 22, no. 11, pp. 819–829, 2007.
-
-[1]: http://elastix.bigr.nl/wiki/images/thumb/8/8a/Par0010screenshot.jpg/394px-Par0010screenshot.jpg

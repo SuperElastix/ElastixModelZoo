@@ -20,7 +20,7 @@
 * For further details, see the parameter files
 * The results are published in Baiker et al. 2011 [2]
 
-![MIP source.jpg][1]![MIP target.jpg][2]![MIP NCC arrows.jpg][3]![MIP NCC EDM.jpg][4]
+![alt-text](MIP_source.jpg)![alt-text](MIP_target.jpg)![alt-text](MIP_NCC_arrows.jpg)![alt-text](MIP_NCC_EDM.jpg)
 
 Shown are (left to right) 1) Moving image 2) Fixed image 3) Registration with NCC only and 4) Registration with NCC and EDM. The arrows indicate where the registration with the NCC only fails.
 
@@ -54,8 +54,3 @@ Command line call:
 [1] Baiker, M.; Milles, J.; Dijkstra, J.; Henning, T.; Weber, A.; Que, I.; Kaijzel, E.; Löwik, C.; Reiber, J. & Lelieveldt, B.: Atlas-based whole-body segmentation of mice from low-contrast Micro-CT data. Medical Image Analysis, 2010, 14, 723-737
 
 [2] Baiker, M.; Staring, M.; Löwik, C. W. G. M.; Reiber, J. H. C. & Lelieveldt, B. P. F.: Automated Registration of Whole-Body Follow-Up MicroCT Data of Mice. Medical Image Computing and Computer-Assisted Intervention--MICCAI 2011, Springer, 2011
-
-[1]: http://elastix.bigr.nl/wiki/images/thumb/8/8f/MIP_source.jpg/139px-MIP_source.jpg
-[2]: http://elastix.bigr.nl/wiki/images/thumb/b/b6/MIP_target.jpg/139px-MIP_target.jpg
-[3]: http://elastix.bigr.nl/wiki/images/thumb/e/e6/MIP_NCC_arrows.jpg/139px-MIP_NCC_arrows.jpg
-[4]: http://elastix.bigr.nl/wiki/images/thumb/d/d9/MIP_NCC_EDM.jpg/139px-MIP_NCC_EDM.jpg
