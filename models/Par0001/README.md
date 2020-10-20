@@ -13,7 +13,7 @@
 
 Screen shot:
 
-![alt text](Par0001screenshot1.jpg)
+![Par0001screenshot1.jpg][1]
 
 ###  Application
 
@@ -48,3 +48,5 @@ Image data and manual segmentations have been made available via  ! See  for ins
 ###  References
 
 [1] S. Klein, U.A. van der Heide, I.M. Lips, M. van Vulpen, M. Staring and J.P.W. Pluim, "Automatic Segmentation of the Prostate in 3D MR Images by Atlas Matching using Localised Mutual Information," Medical Physics, vol. 35, no. 4, pp. 1407 - 1417, April 2008.
+
+[1]: https://github.com/SuperElastix/ElastixModelZoo/raw/master/models/Par0001/Par0001screenshot1.jpg
