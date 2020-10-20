@@ -89,5 +89,3 @@ Replace the `RigidityPenaltyWeight` with:
 The other parameters remain unchanged.
 
 Starting with `elastix 4.4` the old implementation was removed.
-
-###  References

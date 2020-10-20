@@ -17,7 +17,7 @@
 
 Screen shots:
 
-![alt-text](387px-Par0002screenshot1.png)   ![alt-text](333px-Par0002screenshot2.png)
+![alt-text](387px-Par0002screenshot1.png)  ![alt-text](333px-Par0002screenshot2.png)
 
 ###  Application
 

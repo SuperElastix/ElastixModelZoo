@@ -81,7 +81,3 @@ I.M.J. van der Bom, S. Klein, M. Staring, R. Homan, L.W. Bartels, J.P.W. Pluim, 
 ###  References
 
 [1] I.M.J. van der Bom, S. Klein, M. Staring, R. Homan, L.W. Bartels, J.P.W. Pluim, "Evaluation of optimization methods for intensity-based 2D-3D registration in X-ray guided interventions", in: SPIE Medical Imaging: Image Processing, SPIE Press, vol. 7962, pp. 796223-1 - 796223-15, 2011.
-
-[1]: http://elastix.bigr.nl/wiki/images/a/ae/ExampleData.zip "ExampleData.zip"
-[2]: http://elastix.bigr.nl/wiki/images/thumb/e/e3/Screenshot_x-ray.jpg/316px-Screenshot_x-ray.jpg
-[3]: http://elastix.bigr.nl/wiki/images/c/c3/Screenshot_x-ray_lat.jpg
