@@ -1,0 +1,2 @@
+cd tools
+brachyvolumesplit.py ..\synth_app.mhd ..\app -n 4 -f 0.8 -s 0.95

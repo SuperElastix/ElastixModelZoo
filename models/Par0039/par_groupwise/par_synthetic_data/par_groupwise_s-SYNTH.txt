@@ -1,0 +1,84 @@
+// *********************
+// * ImageTypes
+// *********************
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(FixedImageDimension 4)
+(MovingImageDimension 4)
+
+(UseDirectionCosines "true")
+
+// *********************
+// * Components
+// *********************
+(Registration "MultiResolutionRegistration")
+(Interpolator "ReducedDimensionBSplineInterpolator")
+(ResampleInterpolator "FinalReducedDimensionBSplineInterpolator")
+(Resampler "DefaultResampler")
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 3)
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(HowToCombineTransforms "Compose")
+(Transform "BSplineStackTransform")
+
+//Choose one of the following groupwise metrics:
+(Metric "PCAMetric2")
+//(Metric "PCAMetric")
+//(Metric "LinearGroupwiseMI")
+//(Metric "SumOfPairwiseCorrelationCoefficientsMetric")
+//(Metric "VarianceOverLastDimensionMetric")
+
+//Specific for the LinearGroupwiseMI metric
+//(TemplateImage "ArithmeticAverage" "ArithmeticAverage")
+//(Combination "Sum" "Sum")
+//(UseFastAndLowMemoryVersion "true")
+//(NumberOfFixedHistogramBins 32)
+//(NumberOfMovingHistogramBins 32)
+
+//Specific for the PCAMetric
+//(NumEigenValues 5)
+
+// *********************
+// * Groupwise Metric settings
+// *********************
+(SubtractMean "true")
+(MovingImageDerivativeScales 1 1 0)
+
+(FinalGridSpacingInPhysicalUnits 16)
+
+// *********************
+// * Optimizer settings
+// *********************
+(NumberOfResolutions 4)
+(AutomaticParameterEstimation "true")
+(ASGDParameterEstimationMethod "Original")
+(MaximumNumberOfIterations 1000)
+
+// *********************
+// * Pyramid settings
+// *********************
+(ImagePyramidSchedule 8 8 0 4 4 0 2 2 0 1 1 0)
+
+// *********************
+// * Sampler parameters
+// *********************
+(NumberOfSpatialSamples 2048)
+(NewSamplesEveryIteration "true")
+(ImageSampler "RandomCoordinate")
+(CheckNumberOfSamples "true")
+
+// *********************
+// * Mask settings
+// *********************
+(ErodeMask "false")
+(ErodeFixedMask "false")
+
+// *********************
+// * Output settings
+// *********************
+(DefaultPixelValue 0)
+(WriteResultImage "true")
+(ResultImagePixelType "float")
+(ResultImageFormat "nii.gz")

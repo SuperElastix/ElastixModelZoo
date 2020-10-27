@@ -31,6 +31,6 @@ Before rigid registration images needs to be aligned due to different longitudin
 
 ###  Published in
 
-V. Fortunati, R.F. Verhaart, F. van der Lijn, W.J. Niessen, J.F. Veenland, M.M. Paulides and T. van Walsum, Tissue segmentation of head and neck CT images for treatment planning: A multiatlas approach combined with intensity modeling, Medical Physics 40(7), 071905 (2013) [AIP][1]
+[V. Fortunati, R.F. Verhaart, F. van der Lijn, W.J. Niessen, J.F. Veenland, M.M. Paulides and T. van Walsum, Tissue segmentation of head and neck CT images for treatment planning: A multiatlas approach combined with intensity modeling, Medical Physics 40(7), 071905 (2013)][1]
 
 [1]: http://dx.doi.org/10.1118/1.4810971

@@ -1,0 +1,1 @@
+Unfortunately I am not allowed to share the image data. The provided mhd file only gives the world coordinates of the image in which the shape model is defined.

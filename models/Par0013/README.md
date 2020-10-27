@@ -53,7 +53,7 @@ Experiments were performed on patient data sets that were obtained during cerebr
 
 Parameter files using a single x-ray image:
 
-  see Github
+  see Github (_singleImage.txt files)
 
 Command line call using a single x-ray image:
 
@@ -62,7 +62,7 @@ Command line call using a single x-ray image:
 
 Parameter files using multiple x-ray images (note: example shows 2, but more fixed images are accepted):
 
-  see Github
+  see Github (_twoImages.txt file)
 
 Command line call using two x-ray images:
 

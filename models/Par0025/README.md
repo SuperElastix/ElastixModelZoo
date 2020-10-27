@@ -43,6 +43,6 @@ with:  = one of {rigid, affine, bspline}
 
 ###  Published in
 
-[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015][1]
+[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015][2]
 
-[1]: http://www.sciencedirect.com/science/article/pii/S1053811915009039
+[2]: http://www.sciencedirect.com/science/article/pii/S1053811915009039

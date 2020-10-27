@@ -20,8 +20,6 @@ Parameter files:
 
 See Github link below
 
-This zip file contains the parameter files used in [1].
-
 An additional script is used to generate the model from a training set. The python script together with an example training set is provided.
 
 ###  Known issues

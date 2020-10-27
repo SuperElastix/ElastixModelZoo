@@ -41,12 +41,12 @@ with:  = one of {rigid, affine, bspline}
 
 ###  Published in
 
-[1] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, N. Rieff, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "Automated ischemic lesion segmentation in MRI mouse brain data after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 3, January 2017][1]
+[1] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, N. Rieff, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "Automated ischemic lesion segmentation in MRI mouse brain data after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 3, January 2017][4]
 
-[2] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 51, September 2017][2]
+[2] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 51, September 2017][5]
 
-[3] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg Data from: MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion. Dryad Digital Repository. https://doi.org/10.5061/dryad.1m528 2017][3]
+[3] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg Data from: MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion. Dryad Digital Repository. https://doi.org/10.5061/dryad.1m528 2017][6]
 
-[1]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full
-[2]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00051/full
-[3]: https://doi.org/10.5061/dryad.1m528
+[4]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full
+[5]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00051/full
+[6]: https://doi.org/10.5061/dryad.1m528

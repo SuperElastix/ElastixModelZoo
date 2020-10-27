@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = True
+CompressedDataSize = 4172
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 0.5 0.5 0.5
+CenterOfRotation = 0 0 0
+AnatomicalOrientation = RAI
+ElementSpacing = 1 1 1
+DimSize = 128 128 128
+ElementType = MET_UCHAR
+ElementDataFile = synth_mask.zraw

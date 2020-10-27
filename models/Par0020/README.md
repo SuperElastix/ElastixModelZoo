@@ -53,9 +53,9 @@ with:  = one of {rigid, affine, bspline64, bspline32, bspline16, bspline08, bspl
 
 ###  Published in
 
-[1] [A. Khmelinskii, L. Mengler, P. Kitslaar, M. Staring, M. Hoehn and B.P.F. Lelieveldt, "A visualization platform for high-throughput, follow-up, co-registered multi-contrast MRI rat brain data," SPIE Medical Imaging: Biomedical Applications in Molecular, Structural, and Functional Imaging, Proceedings of SPIE, vol. 8672, pp. 86721W–86721W-7, February 2013][1]
+[1] [A. Khmelinskii, L. Mengler, P. Kitslaar, M. Staring, M. Hoehn and B.P.F. Lelieveldt, "A visualization platform for high-throughput, follow-up, co-registered multi-contrast MRI rat brain data," SPIE Medical Imaging: Biomedical Applications in Molecular, Structural, and Functional Imaging, Proceedings of SPIE, vol. 8672, pp. 86721W–86721W-7, February 2013][3]
 
-[2] [L. Mengler, A. Khmelinskii, M. Diedenhofen, C. Po, M. Staring, B.P.F. Lelieveldt and M. Hoehn, "Brain maturation of the adolescent rat cortex and striatum: changes in volume and myelination," NeuroImage, vol. 84, pp. 35–44, January 2014][2]
+[2] [L. Mengler, A. Khmelinskii, M. Diedenhofen, C. Po, M. Staring, B.P.F. Lelieveldt and M. Hoehn, "Brain maturation of the adolescent rat cortex and striatum: changes in volume and myelination," NeuroImage, vol. 84, pp. 35–44, January 2014][4]
 
-[1]: http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1674633
-[2]: http://www.sciencedirect.com/science/article/pii/S1053811913008963
+[3]: http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1674633
+[4]: http://www.sciencedirect.com/science/article/pii/S1053811913008963

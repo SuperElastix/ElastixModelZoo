@@ -93,6 +93,6 @@ The code for the 4D registration might not work correctly when the axes of the d
 
 The method and experiments are published in:
 
-[1] [Nonrigid registration of dynamic medical imaging data using nD+t B-splines and a groupwise optimization approach, C.T. Metz, S. Klein, M. Schaap, T. van Walsum and W.J. Niessen, Medical Image Analysis, in press][1]
+[1] [Nonrigid registration of dynamic medical imaging data using nD+t B-splines and a groupwise optimization approach, C.T. Metz, S. Klein, M. Schaap, T. van Walsum and W.J. Niessen, Medical Image Analysis, in press][2]
 
-[1]: http://dx.doi.org/10.1016/j.media.2010.10.003
+[2]: http://dx.doi.org/10.1016/j.media.2010.10.003

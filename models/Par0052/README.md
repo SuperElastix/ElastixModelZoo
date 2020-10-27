@@ -30,6 +30,6 @@ N/A
 
 The method and experiments are published in:
 
-[1] Mehrabian H., Lu Y., Richmond L., Martel, A.L., [Deformable registration for longitudinal breast MRI screening][1], Journal of Digital Imaging (2018). doi.org/10.1007/s10278-018-0063-1
+[1] Mehrabian H., Lu Y., Richmond L., Martel, A.L., [Deformable registration for longitudinal breast MRI screening][2], Journal of Digital Imaging (2018). doi.org/10.1007/s10278-018-0063-1
 
-[1]: https://link.springer.com/article/10.1007/s10278-018-0063-1
+[2]: https://link.springer.com/article/10.1007/s10278-018-0063-1

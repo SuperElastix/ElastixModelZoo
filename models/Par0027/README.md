@@ -32,4 +32,4 @@ See Github link below
 
 ###  Published in
 
-V. Fortunati, R.F. Verhaart, F. Angeloni, A. van der Lugt, W.J. Niessen, J.F. Veenland, M.M. Paulides and T. van Walsum, Feasibility of Multimodal Deformable Registration for Head and Neck Tumor Treatment Planning, Int. J. Radiation Oncology Biology and physics 90, 85-93 (2014) [ScienceDirect][6]
+V. Fortunati, R.F. Verhaart, F. Angeloni, A. van der Lugt, W.J. Niessen, J.F. Veenland, M.M. Paulides and T. van Walsum, Feasibility of Multimodal Deformable Registration for Head and Neck Tumor Treatment Planning, Int. J. Radiation Oncology Biology and physics 90, 85-93 (2014)

@@ -1,0 +1,3 @@
+REM fmesh A2-C2 are for DummyPolydataPenalty to make movie
+
+C:\prog\build\elastix\bin\Release\elastix.exe -f ..\synth_fixed.mhd -m ..\synth_moving.mhd -p Par0024synthMSP.txt -out . -fMask ..\synth_mask.mhd -fmeshA1 ..\appA.vtk -fmeshB1 ..\appB.vtk -fmeshC1 ..\appC.vtk -fmeshD1 ..\appD.vtk -fmeshA2 ..\synth_bones.vtk -fmeshB2 ..\synth_bladder.vtk -fmeshC2 ..\synth_rectum.vtk

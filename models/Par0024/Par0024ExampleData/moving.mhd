@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = True
+CompressedDataSize = 8048
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -149.61 -86.33 17.3913
+CenterOfRotation = 0 0 0
+AnatomicalOrientation = RAI
+ElementSpacing = 0.625 0.625 3
+DimSize = 512 323 50
+ElementType = MET_UCHAR
+ElementDataFile = moving.zraw

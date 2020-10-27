@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = True
+CompressedDataSize = 37184
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -139.577 -85.925 -18.7291
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.625 0.625 3
+DimSize = 512 320 50
+AnatomicalOrientation = ???
+ElementType = MET_FLOAT
+ElementDataFile = mask.zraw

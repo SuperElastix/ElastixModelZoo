@@ -25,7 +25,7 @@ Thoracic registration between End-Inhale // End-Exhale with sliding motion.
 
 Parameter File:
 
-For parameter files see below. 
+For parameter files see below.
 
 Command line calls:
 
@@ -35,6 +35,6 @@ Command line calls:
 
 ###  Published in
 
-V. Delmon, S. Rit, R. Pinho, and D. Sarrut, "Direction dependent B-splines decomposition for the registration of sliding objects", Proceedings of the Fourth International Workshop on Pulmonary Image Analysis, Toronto, Canada, pp. 45–55, 09/2011. [[1]][1]
+[V. Delmon, S. Rit, R. Pinho, and D. Sarrut, "Direction dependent B-splines decomposition for the registration of sliding objects", Proceedings of the Fourth International Workshop on Pulmonary Image Analysis, Toronto, Canada, pp. 45–55, 09/2011.][1]
 
 [1]: http://www.creatis.insa-lyon.fr/site/en/publications/DELM-11

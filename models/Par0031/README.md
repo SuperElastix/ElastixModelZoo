@@ -4,7 +4,7 @@
 
 * 3D chest CT
 * Lung
-* 10 scans (dir-lab[[1]][1])
+* 10 scans ([dir-lab][1])
 * Voxel size mostly 0.97x0.97x2.5 mm.
 * Dimension: on average about 256 x 256 x 100 for 5 first dir-lab patients // 512 x 512 x 128 for 5 last dir-lab patient
 

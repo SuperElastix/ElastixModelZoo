@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -145.498 -146.889 381.766
+CenterOfRotation = 0 0 0
+AnatomicalOrientation = RAI
+ElementSpacing = 1.14538 1.14538 1
+DimSize = 256 256 1
+ElementType = MET_UCHAR
+ElementDataFile = xrayMask1.raw
