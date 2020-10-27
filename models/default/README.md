@@ -1,3 +1,5 @@
+# Default - elastix
+
 This parameter file database entry contains "default" parameter files. These are intended for starting <tt>elastix</tt> users, and should give reasonable results in many applications. The <tt>elastix</tt> example (version 4.3 or higher), which can be downloaded from the [website](http://elastix.isi.uu.nl/download.php) contains the same parameter files, together with a test pair of images and an example script that calls <tt>elastix</tt>.
 
 ''Needless to say, it is virtually impossible to come up with default parameter values that give satisfactory results for every application. The parameter files provided here should rather be considered as a starting point.''
