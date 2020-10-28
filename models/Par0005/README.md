@@ -47,7 +47,7 @@ with: P the number of features
 
 These registrations are described in the publication:
 
-[M. Staring, U.A. van der Heide, S. Klein, M.A. Viergever and J.P.W. Pluim, Registration of Cervical MRI Using Multifeature Mutual Information, IEEE Transactions on Medical Imaging, vol. 28, no. 9, pp. 1412 - 1421, September 2009.][1]
+M. Staring, U.A. van der Heide, S. Klein, M.A. Viergever and J.P.W. Pluim, Registration of Cervical MRI Using Multifeature Mutual Information, IEEE Transactions on Medical Imaging, vol. 28, no. 9, pp. 1412 - 1421, September 2009.
 
 ###
 
@@ -58,7 +58,3 @@ The features were computed outside of `elastix` and before the start of the regi
 
 
 notably the tool `pxgaussianimagefilter`. The PCA analysis was performed using `pxpca`.
-
-###  References
-
-[1]: http://elastix.isi.uu.nl/marius/publications/2009_j_TMI_b.html

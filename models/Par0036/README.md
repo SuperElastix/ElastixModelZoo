@@ -37,6 +37,4 @@ Command line call:
 
 ###  Published in
 
-[1] [O. Dzyubachyk, M. Staring, M. Reijnierse, B.P.F. Lelieveldt, and R.J. van der Geest. "Inter-Station Intensity Standardization for Whole-Body MR Data", Magnetic Resonance in Medicine 2017;77(1):422–433.][2]
-
-[2]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full
+[1] [O. Dzyubachyk, M. Staring, M. Reijnierse, B.P.F. Lelieveldt, and R.J. van der Geest. "Inter-Station Intensity Standardization for Whole-Body MR Data", Magnetic Resonance in Medicine 2017;77(1):422–433.](https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full)

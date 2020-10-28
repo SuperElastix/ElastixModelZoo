@@ -45,7 +45,7 @@ Two situations can be distinguished:
 
 ###  Parameter file combine script
 
-This Python script combines the forward and inverse transformations to make a transformation relative to a chosen reference time point. Syntax:
+This Python script (see Github) combines the forward and inverse transformations to make a transformation relative to a chosen reference time point. Syntax:
 
 
     combine.py       [spacing=5000]
@@ -63,24 +63,20 @@ image: to transform all time point images to the reference time point image fram
 * ref: reference timepoint index number.
 * spacing: new spacing for respaced forward/inverse TransformParameters file [default=5000].
 
-####  Example of combining forward and inverse transformation and corresponding transformix call to transform points from reference time point 12 to other time points
+#####  Example of combining forward and inverse transformation and corresponding transformix call to transform points from reference time point 12 to other time points
 
 
     combine.py point TransformParameters.0.txt TransformParameters.1.txt Combined.0.txt Combined.1.txt 12
-
-
 
     transformix -tp Combined.1.txt -def  -out
 
 
 Note that  contains the x, y, z coordinates of the point to transform and the t coordinate of the time point where you want to transform the points to. So given the above example with reference time point 12, you can transform point from time point 12 to time point 5 by specifying coordinates in the format x y z 5 in the .
 
-####  Example of combining forward and inverse transformation and corresponding transformix call to align all time point images with reference time point 12
+#####  Example of combining forward and inverse transformation and corresponding transformix call to align all time point images with reference time point 12
 
 
     combine.py image TransformParameters.0.txt TransformParameters.1.txt Combined.0.txt Combined.1.txt 12
-
-
 
     transformix -tp Combined.1.txt -in  -out
 
@@ -93,6 +89,4 @@ The code for the 4D registration might not work correctly when the axes of the d
 
 The method and experiments are published in:
 
-[1] [Nonrigid registration of dynamic medical imaging data using nD+t B-splines and a groupwise optimization approach, C.T. Metz, S. Klein, M. Schaap, T. van Walsum and W.J. Niessen, Medical Image Analysis, in press][2]
-
-[2]: http://dx.doi.org/10.1016/j.media.2010.10.003
+[1] [Nonrigid registration of dynamic medical imaging data using nD+t B-splines and a groupwise optimization approach, C.T. Metz, S. Klein, M. Schaap, T. van Walsum and W.J. Niessen, Medical Image Analysis, in press](http://dx.doi.org/10.1016/j.media.2010.10.003)

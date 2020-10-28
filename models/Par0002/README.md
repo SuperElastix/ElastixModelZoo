@@ -59,4 +59,4 @@ See the [elastix manual][5] for hints on how to subsequently apply the transform
 
 [4] P. Thevenaz, M. Bierlaire and M. Unser, "Halton Sampling for Image Registration Based on Mutual Information", Sampling Theory in Signal and Image Processing, vol. 7, no. 2, pp. 141 - 171, 2008.
 
-[5]: http://elastix.isi.uu.nl
+[5]: https://elastix.lumc.nl/download/elastix-5.0.1-manual.pdf

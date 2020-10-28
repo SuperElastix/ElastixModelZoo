@@ -37,6 +37,4 @@ with:  = one of {rigid, affine}
 
 ###  Published in
 
-[1] [D. van Berlo, A. Khmelinskii*, A. Gasparini*, F. J. Salguero, B. Floot, N. de Wit, M. van de Ven, J. Y. Song, R. P. Coppes, M. Verheij, J. J. Sonke and C. Vens, "Micro Cone Beam Computed Tomography for sensitive assessment of radiation-induced late lung toxicity in preclinical models," accepted, Radiotherapy & Oncology, 2019][2]
-
-[2]: https://www.sciencedirect.com/science/article/pii/S0167814019304062?via%3Dihub
+[1] [D. van Berlo, A. Khmelinskii*, A. Gasparini*, F. J. Salguero, B. Floot, N. de Wit, M. van de Ven, J. Y. Song, R. P. Coppes, M. Verheij, J. J. Sonke and C. Vens, "Micro Cone Beam Computed Tomography for sensitive assessment of radiation-induced late lung toxicity in preclinical models," accepted, Radiotherapy & Oncology, 2019](https://www.sciencedirect.com/science/article/pii/S0167814019304062?via%3Dihub)
