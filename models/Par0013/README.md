@@ -13,10 +13,6 @@
 * Stored as in MHD format.
 * Data originated from the Department of Radiology, University of Massachusetts Medical School, Worcester, MA.
 
-Example data:
-
-See Github link below.
-
 Screen shot:
 
 ![alt-text](Screenshot_x-ray.jpg)![alt-text](Screenshot_x-ray_lat.jpg)
