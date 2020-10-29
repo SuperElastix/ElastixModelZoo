@@ -9,7 +9,6 @@
 * Dimension: 192 x 192 x 32
 * Acquired with a Bruker Biospin (Ettlingen, Germany) 11.7T scanner
 * Stored in MHD format
-* [1]
 
 Screen shot:
 
@@ -22,10 +21,6 @@ An example of the co-registered rat brain data: two time-points for subject S1 a
 ###  Registration settings
 
 `elastix` version: 4.500
-
-Parameter files:
-
-See Github link below
 
 Description:
 

@@ -9,7 +9,6 @@
 * Dimension: 191 x 192 x 30
 * Acquired with a Bruker Biospin (Ettlingen, Germany) 11.7T scanner
 * Stored in MHD format
-* [1], [2]
 
 Screen shot:
 
@@ -28,10 +27,6 @@ Cortical thickness reaches final value at 1 month, while volume increases of cor
 ###  Registration settings
 
 `elastix` version: 4.500
-
-Parameter files:
-
-See Github link below
 
 Description:
 
@@ -53,9 +48,6 @@ with:  = one of {rigid, affine, bspline64, bspline32, bspline16, bspline08, bspl
 
 ###  Published in
 
-[1] [A. Khmelinskii, L. Mengler, P. Kitslaar, M. Staring, M. Hoehn and B.P.F. Lelieveldt, "A visualization platform for high-throughput, follow-up, co-registered multi-contrast MRI rat brain data," SPIE Medical Imaging: Biomedical Applications in Molecular, Structural, and Functional Imaging, Proceedings of SPIE, vol. 8672, pp. 86721W–86721W-7, February 2013][3]
+[1] [A. Khmelinskii, L. Mengler, P. Kitslaar, M. Staring, M. Hoehn and B.P.F. Lelieveldt, "A visualization platform for high-throughput, follow-up, co-registered multi-contrast MRI rat brain data," SPIE Medical Imaging: Biomedical Applications in Molecular, Structural, and Functional Imaging, Proceedings of SPIE, vol. 8672, pp. 86721W–86721W-7, February 2013](http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1674633)
 
-[2] [L. Mengler, A. Khmelinskii, M. Diedenhofen, C. Po, M. Staring, B.P.F. Lelieveldt and M. Hoehn, "Brain maturation of the adolescent rat cortex and striatum: changes in volume and myelination," NeuroImage, vol. 84, pp. 35–44, January 2014][4]
-
-[3]: http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1674633
-[4]: http://www.sciencedirect.com/science/article/pii/S1053811913008963
+[2] [L. Mengler, A. Khmelinskii, M. Diedenhofen, C. Po, M. Staring, B.P.F. Lelieveldt and M. Hoehn, "Brain maturation of the adolescent rat cortex and striatum: changes in volume and myelination," NeuroImage, vol. 84, pp. 35–44, January 2014](http://www.sciencedirect.com/science/article/pii/S1053811913008963)

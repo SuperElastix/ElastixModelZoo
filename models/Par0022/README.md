@@ -16,13 +16,7 @@ Inter patient registration of cervical images.
 
 In this work the StatisticalShapePenalty module is introduced in elastix. In order to use this as a metric you need to build elastix from source with the cmake option StatisticalShapePenalty selected.
 
-Parameter files:
-
-See Github link below
-
-An additional script is used to generate the model from a training set. The python script together with an example training set is provided.
-
-###  Known issues
+An additional script is used to generate the model from a training set. The python script together with an example training set is provided on the GitHub repo.
 
 ###  Published in
 

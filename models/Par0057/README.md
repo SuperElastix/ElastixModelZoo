@@ -12,22 +12,18 @@ Registration of DW MR images to the DCE MR image space.
 
 `elastix` version: 4.801
 
-Parameter files:
-
-See Github link below.
-
 ###  Command line calls
 
 To used the rigid registration followed by the b-spline registration, the following command is used:
 
 
-    elastix -f  -m  -p  -p  -fMask  -out
+    elastix -f <fixed image> -m <moving image> -p <par filename rigid> -p <par filename b-spline> -fMask <liver mask>  -out <output dir>
 
-where  is the mean DCE MR image,  is the resized DW MR image with the lowest b-value, and  is a liver mask created before registration to focus the registration on the liver region.
+where <fixed image> is the mean DCE MR image, <moving image> is the resized DW MR image with the lowest b-value, and <liver mask> is a liver mask created before registration to focus the registration on the liver region.
 
-The remaining DW MR images can be transformed to the DCE MR image space by using the 'TransformParameters.1.txt' output in the function . The following command can be used:
+The remaining DW MR images can be transformed to the DCE MR image space by using the 'TransformParameters.1.txt' output in the function <transformix>. The following command can be used:
 
 
-    transformix -in  -out  -tp
+    transformix -in <moving image> -out <output dir> -tp <transform parameters>
 
-where  is the resized DW MR image.
+where <moving image> is the resized DW MR image.

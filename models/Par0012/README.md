@@ -35,9 +35,7 @@ Motion estimation from dynamical medical imaging data.
 
 `elastix` version: 4.305
 
-Parameter files, see github repo.
-
-The zip file contains all the parameter files used in [1]. The directory naming should be self-explanatory.
+The zip file (see Github) contains all the parameter files used in [1]. The directory naming should be self-explanatory.
 
 ###  Command line calls
 

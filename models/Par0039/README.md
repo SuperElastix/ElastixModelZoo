@@ -10,9 +10,9 @@ Real quantitative MRI (qMRI) image data:
 * 4D DTI-BRAIN: Brains were acquired using a diffusion weighted sequence with a single b-value and multiple gradient directions.
 * 4D DCE-ABDOMEN: Abdomen were acquired with a spoiled gradient echo sequence using a contrast agent.
 
-To evaluate how the methods perform with different qMRI models, in a setting with known ground truth, we created synthetic data based on real qMRI data. To save computation time, we extracted a 2D slice from a single subject for each of the qMRI applications. The synthetic data can be downloaded on Github, see link below:
+To evaluate how the methods perform with different qMRI models, in a setting with known ground truth, we created synthetic data based on real qMRI data. To save computation time, we extracted a 2D slice from a single subject for each of the qMRI applications. The synthetic data can be downloaded on the Github repo, see link below:
 
-And a dummy synthetic dataset was created, using a fake model, see Github link:
+And a dummy synthetic dataset was created, using a fake model, see Github repo:
 
 More details about the data and the corresponding qMRI models are described in [1].
 
@@ -23,10 +23,6 @@ Motion and/or geometrical distortion compensation for quantitative MRI.
 ###  Registration settings
 
 `elastix` version: 4.801
-
-Parameter files:
-
-See Github link below.
 
 ###  Command line calls
 

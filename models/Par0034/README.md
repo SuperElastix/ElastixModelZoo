@@ -20,10 +20,6 @@ An example of the co-registered mouse brain data: on the right you see the used 
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * par0034rigid.txt the rigid registration was used to initialize the affine registration in all subjects

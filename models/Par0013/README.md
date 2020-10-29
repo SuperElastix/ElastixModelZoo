@@ -51,18 +51,14 @@ Experiments were performed on patient data sets that were obtained during cerebr
 
 `elastix` version: 4.5
 
-Parameter files using a single x-ray image:
-
-  see Github (_singleImage.txt files)
+Parameter files using a single x-ray image are indicated with '_singleImage.txt'.
 
 Command line call using a single x-ray image:
 
     elastix -f xrayImage.mhd -fMask xrayMask.mhd -m volumeData.mhd -p par0013Powel_NGC_singleImage.txt -out outputdir
 
 
-Parameter files using multiple x-ray images (note: example shows 2, but more fixed images are accepted):
-
-  see Github (_twoImages.txt file)
+Parameter files using multiple x-ray images (note: example shows 2, but more fixed images are accepted) are indicated with '_twoImages.txt'
 
 Command line call using two x-ray images:
 
@@ -75,8 +71,6 @@ Command line call using two x-ray images:
 These registration are described in the publication:
 
 I.M.J. van der Bom, S. Klein, M. Staring, R. Homan, L.W. Bartels, J.P.W. Pluim, "Evaluation of optimization methods for intensity-based 2D-3D registration in X-ray guided interventions", in: SPIE Medical Imaging: Image Processing, SPIE Press, vol. 7962, pp. 796223-1 - 796223-15, 2011.
-
-###
 
 ###  References
 

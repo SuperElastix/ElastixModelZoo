@@ -21,10 +21,6 @@
 
 `elastix` version: 4.600
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * par0036affinedti.txt the affine registration was used to register the histogram of each station to that of the reference one

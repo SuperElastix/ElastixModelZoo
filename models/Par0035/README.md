@@ -19,10 +19,6 @@ An example of the fixed CT image and moving MR T1 image.
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * rigid transformation using mutual information metric for different methods.
@@ -32,10 +28,10 @@ The CT image is treated as fixed image and the MR T1 image is moving image.
 Command line call:
 
 
-    elastix -f ct/patient.mhd -m mr/patient.mhd -p Par0035.RIRE.MI.ri..txt -out outputdir
+    elastix -f ct/patient<numb>.mhd -m mr/patient<numb>.mhd -p Par0035.RIRE.MI.ri.<method>.txt -out outputdir
 
 
-with:  = one of {ASGD, ASGDPrime, FAGSD}  = 1:10
+with: <method> = one of {ASGD, ASGDPrime, FAGSD} and <numb>  = 1:10
 
 ###  SPREAD lung data
 
@@ -56,10 +52,6 @@ An example of the baseline CT scan and follow up CT scan.
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * First affine transformation using different metrics for different methods.
@@ -70,14 +62,14 @@ The baseline CT scans are treated as fixed images and the following-up scans are
 Command line call:
 
 
-    elastix -f baseline/patient.mhd -m followup/patient.mhd -p Par0035.SPREAD..af.0.txt -p Par0035.SPREAD..bs.1..txt -out outputdir
+    elastix -f baseline/patient<numb>.mhd -m followup/patient<numb>.mhd -p Par0035.SPREAD.<metric>.af.0.txt -p Par0035.SPREAD.<metric>.bs.1..txt -out outputdir
 
 
-with:  = one of {ASGD, ASGDPrime, FAGSD}
+with: <method> = one of {ASGD, ASGDPrime, FAGSD}
 
- = 1:19
+ <numb> = 1:19
 
- = one of {MI, MSD, NC,NMI}
+ <metric> = one of {MI, MSD, NC,NMI}
 
 ###  Hammers brain data
 
@@ -99,10 +91,6 @@ An example of the Hammers brain data.
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * First similarity transformation for different methods.
@@ -113,12 +101,12 @@ Each MR scan is treated as fixed image and other 29 scans are treated as moving 
 Command line call:
 
 
-    elastix -f patient.mhd -m patient.mhd -p Par0035.Hammers.MI.si.0.txt -p Par0035.Hammers.MI.bs.1..txt -out outputdir
+    elastix -f patient<numb1>.mhd -m patient<numb2>.mhd -p Par0035.Hammers.MI.si.0.txt -p Par0035.Hammers.MI.bs.1.<method>.txt -out outputdir
 
 
-with:  = one of {ASGD, ASGDPrime, FAGSD}
+with: <method> = one of {ASGD, ASGDPrime, FAGSD}
 
- = 1:30
+<numb1> != <numb2> = 1:30
 
 ###  Abdomen data
 
@@ -133,10 +121,6 @@ with:  = one of {ASGD, ASGDPrime, FAGSD}
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * All time point images are registered to the mean time point image, so the fixed image and moving image are the same one. The inverse registration is just for the evaluations. For different methods, just replace the line (ASGDParameterEstimationMethod "DisplacementDistribution").
@@ -144,10 +128,10 @@ Description:
 Command line call:
 
 
-    elastix -f patient.mhd -m patient.mhd -p Par0035.Ultrasound.MI.txt -out outputdir
+    elastix -f patient<numb>.mhd -m patient<numb>.mhd -p Par0035.Ultrasound.MI.txt -out outputdir
 
 
- = 1:9
+ <numb> = 1:9
 
 ###  Published in
 

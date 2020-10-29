@@ -17,10 +17,6 @@
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * par0049_stdT2000itr.txt to calculate stdT

@@ -15,4 +15,4 @@ Secondly, to compare pre- and post-contrast images of the wrist, they must be re
 
 ![alt-text](Pre11.png) ![alt-text](Post11.png)
 
-###  Parameter files:
+### Registration settings

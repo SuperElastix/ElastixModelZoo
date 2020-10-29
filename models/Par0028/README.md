@@ -1,9 +1,4 @@
 # Par0028 - elastix
-
-
-| ----- |
-|
-
 ## Contents
 
 * Image Data
@@ -29,10 +24,6 @@
 ##  Registration Settings
 
 Elastix version 4.6
-
-Parameter files:
-
-See Github link below
 
 ##  Published in
 

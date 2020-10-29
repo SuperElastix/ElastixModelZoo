@@ -33,17 +33,15 @@ Command line call:
 
 with:  = one of {rigid, affine, bspline64, bspline32, bspline16, bspline08, bspline04}
 
-For parameter files, see below.
-
 ###  Published in
 
 These registration are described in the publication:
 
 S. Klein, M. Staring, K. Murphy, M.A. Viergever, J.P.W. Pluim, "`elastix`: a toolbox for intensity based medical image registration," IEEE Transactions on Medical Imaging, vol. 29, no. 1, pp. 196-205, 2010.
 
-###
+### Other comments
 
-Image data and manual segmentations have been made available via  ! See  for instructions how to log in.
+Image data and manual segmentations have been made available via https://bigr-xnat.erasmusmc.nl. See http://xnat.bigr.nl for instructions how to log in.
 
 ###  References
 

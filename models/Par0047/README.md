@@ -12,13 +12,7 @@ Motion correction for contrast enhanced time series of the abdomen.
 
 `elastix` version: 4.801
 
-Parameter files:
-
-See Github link below
-
-* Groupwise Registration, using PCAmetric2
-
-See Github link below
+For Groupwise Registration PCAmetric2 was used.
 
 ###  Command line calls
 

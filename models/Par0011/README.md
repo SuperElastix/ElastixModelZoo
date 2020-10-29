@@ -27,8 +27,6 @@ The results of the challenge can be found [here][2].
 
 `elastix` version: 4.301
 
-Parameter files, see below.
-
 Command line calls:
 
 

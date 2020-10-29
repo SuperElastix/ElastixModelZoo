@@ -13,10 +13,6 @@ The registration was used to align organs in the abdomen of sequential cine-MR d
 
 `elastix` version: 4.800
 
-Parameter files:
-
-See Github link below.
-
 Command line call:
 
 

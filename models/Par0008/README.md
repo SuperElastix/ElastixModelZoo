@@ -23,8 +23,6 @@ Registration of follow-up inspiration CT scans has multiple applications includi
 
 `elastix` version: 4.0
 
-Parameter files, see below.
-
 ###  Published in
 
 These registration are described in the publication:

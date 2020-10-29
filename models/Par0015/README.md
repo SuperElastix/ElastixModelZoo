@@ -21,10 +21,6 @@ Registration of intra-patient pulmonary CT scans for the purpose of progression 
 
 `elastix` version: 4.6
 
-Parameter files for the several experiments:
-
-See Github
-
 Command line calls:
 
     elastix -f fixed_i.mhd  -m moving_.mhd [-fMask fixed_mask_.mhd]

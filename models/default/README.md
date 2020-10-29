@@ -4,7 +4,7 @@ This parameter file database entry contains "default" parameter files. These are
 
 ''Needless to say, it is virtually impossible to come up with default parameter values that give satisfactory results for every application. The parameter files provided here should rather be considered as a starting point.''
 
-=== Registration settings ===
+### Registration settings
 
 <tt>elastix</tt> version: 4.3 and higher.
 
@@ -13,7 +13,6 @@ Example command line call:
 elastix -f fixed.mhd -m moving.mhd -p parameters_Rigid.txt -p parameters_BSpline.txt -out outputdir
 </pre>
 
-For parameter files, see below.
 NB: the parameter files are designed to work well both for 2D and 3D image registration. However, for 3D image registration you should first make the following change in each parameter file:
 <code>
    (FixedImageDimension 2)   -> (FixedImageDimension 3)

@@ -15,10 +15,6 @@
 
 `elastix` version: 4.800
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * par0048elastic.txt elastic registration was used to register the post-cooling volume to the pre-cooling one

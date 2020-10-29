@@ -30,11 +30,6 @@ MR and CT scans were acquired for 27 male patient for radiotherapy purposes. Non
 
 `Elastix` version: 4.9
 
-
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * Aligns and resamples MR and CT images

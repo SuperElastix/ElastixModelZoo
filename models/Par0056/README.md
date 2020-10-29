@@ -16,10 +16,6 @@ For each subject, each baseline scan (time-point 0 wks) was registered to a temp
 
 `elastix` version: 4.800
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * par0056rigid.txt the rigid registration was used to initialize the affine registration in all subjects
@@ -30,10 +26,10 @@ A fixed image mask was always used.
 Command line call:
 
 
-    elastix -f FixedImage_i.mhd -m MovingImage_j.mhd -fMask FixedImageMask_i -p par0056.txt -out outputdir
+    elastix -f FixedImage_i.mhd -m MovingImage_j.mhd -fMask FixedImageMask_i -p par0056<X>.txt -out outputdir
 
 
-with:  = one of {rigid, affine}
+with: <X> = one of {rigid, affine}
 
 ###  Published in
 

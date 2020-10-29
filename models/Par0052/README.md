@@ -16,10 +16,6 @@ Co-registration of of breast MRI screening at multiple visits of a patient.
 
 In this work the StatisticalShapePenalty module is introduced in elastix. In order to use this as a metric you need to build elastix from source with the cmake option StatisticalShapePenalty selected.
 
-Parameter files:
-
-See Github link below.
-
 The parameter set was determined through exhaustive search over 4050 different combinations of registration parameter combination applied to a breast MRI data deformation simulated with finite element modeling [1].
 
 ###  Known issues

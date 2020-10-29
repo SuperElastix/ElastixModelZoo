@@ -23,10 +23,6 @@ Automatic atlas-based segmentation for the tissues relevant in hyperthermia trea
 
 `elastix` version: 4.5
 
-Parameter files:
-
-See Github link below
-
 Before rigid registration images needs to be aligned due to different longitudinal field of view. Standard center of gravity and origin aligment are not always working.
 
 ###  Published in

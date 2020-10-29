@@ -46,10 +46,6 @@ All experiments and results are described in the accompanying paper. Optimal reg
 
 `elastix` version: 4.5
 
-Parameter files:
-
-See Github link below
-
 Command line call:
 
 

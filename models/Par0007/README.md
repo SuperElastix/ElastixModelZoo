@@ -23,15 +23,13 @@ Present treatment-planning dosimetry constraints for the lung are based on studi
 
 `elastix` version: 4.0
 
-Parameter files, see below
-
 ###  Published in
 
 These registration are described in the publication:
 
 K. Ding, J.E. Bayouth, J.M. Buatti, G.E Christensen, and J.M. Reinhardt, 4DCT-Based Measurement of Radiation Induced Changes in Pulmonary Function, submitted.
 
-###
+### Other comments
 
 The authors would like to thank Ms. Keelin Murphy and Dr. Bram van Ginneken for providing the software iX for annotating landmarks, Dr. Marius Staring for his valuable advice concerning the nonrigid registration with local rigidity. This work was supported in part by NIH grant HL079406.
 

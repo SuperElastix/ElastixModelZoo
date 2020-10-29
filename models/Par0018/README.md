@@ -28,10 +28,6 @@ Automated registration of multi-sequence MR vessel wall images of the carotid ar
 
 `elastix` version: 4.400
 
-Parameter files:
-
-See Github link below
-
 Command line calls:
 
 

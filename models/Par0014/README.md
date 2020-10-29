@@ -28,9 +28,7 @@ Shown are (left to right) 1) Moving image 2) Fixed image 3) Registration with NC
 
 `elastix` version: 4.403
 
-Parameter file for the NCC B-Spline registration, initialized by a similarity registration:
-
-See Github
+Parameter file for the NCC B-Spline registration, initialized by a similarity registration, is indicated with '.NCC.txt'.
 
 Command line call:
 
@@ -38,9 +36,7 @@ Command line call:
     elastix -f fixed_image.mhd -m moving_image.mhd -p parameters.similarity.txt -p parameters.NCC.txt -out resultDir
 
 
-Parameter file for the NCC plus EDM B-Spline registration, initialized by a similarity registration:
-
-See GitHub
+Parameter file for the NCC plus EDM B-Spline registration, initialized by a similarity registration, is indicated with 'NCC_EDM.txt'
 
 Command line call:
 

@@ -15,10 +15,6 @@ Lung Digital Tomosynthesis (DTS)
 
 `elastix` version: 4.600
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * Rigid-TransforTotal: the translational registration was applied on the whole body

@@ -30,9 +30,6 @@ _Figure 2: Subvolumes for registration on femur and tibia separately._
 
 `elastix` version: 4.400
 
-Parameter files:
-
-See github link below
 
 Command line calls:
 

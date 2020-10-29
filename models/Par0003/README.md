@@ -30,8 +30,6 @@ One hundred corresponding points in each baseline and follow-up scan were establ
 
 `elastix` version: 3.9
 
-For parameter files, see below.
-
 Here, `R` refers to the number of resolutions that was used, `fg` uses a fixed B-spline grid (no upsampling) and `ug` additionally performs multi-resolution on the B-spline transform.
 
 Command line call:
@@ -49,7 +47,7 @@ These registration are described in the publication:
 
 S. Klein, M. Staring, K. Murphy, M.A. Viergever, J.P.W. Pluim, "`elastix`: a toolbox for intensity based medical image registration," IEEE Transactions on Medical Imaging, vol. 29, no. 1, pp. 196-205, 2010.
 
-###
+### other comments
 
 See the [elastix manual][3] for hints on how to subsequently apply the transformation to the annotated points using `transformix`.
 

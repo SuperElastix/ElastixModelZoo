@@ -18,10 +18,6 @@ Motion correction in Dynamic Contrast-Enhanced MRI of the breast
 
 `elastix` version: 4.7
 
-Parameter File:
-
-See Github link below. 
-
 Command line calls:
 
 

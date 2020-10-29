@@ -25,10 +25,6 @@ The deformable registration is applied after a rigid registration. The deformabl
 
 based on eight head and neck datasets with respect to quantitative measures derived from segmentations of MR and CT.
 
-Parameter files:
-
-See Github link below
-
 ###  Screenshots
 
 ![alt-text](Fusion.jpg)

@@ -19,10 +19,6 @@ Registration was performed as one of the first steps in an automated ischemic le
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * par0038rigid.txt the rigid registration was used to initialize the affine registration in all subjects
@@ -34,19 +30,15 @@ A fixed image mask was always used.
 Command line call:
 
 
-    elastix -f FixedImage_i.mhd -m MovingImage_j.mhd -fMask FixedImageMask_i -p par0038.txt -out outputdir
+    elastix -f FixedImage_i.mhd -m MovingImage_j.mhd -fMask FixedImageMask_i -p par0038<X>.txt -out outputdir
 
 
-with:  = one of {rigid, affine, bspline}
+with: <X> = one of {rigid, affine, bspline}
 
 ###  Published in
 
-[1] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, N. Rieff, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "Automated ischemic lesion segmentation in MRI mouse brain data after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 3, January 2017][4]
+[1] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, N. Rieff, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "Automated ischemic lesion segmentation in MRI mouse brain data after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 3, January 2017](https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full)
 
-[2] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 51, September 2017][5]
+[2] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg, "MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion," Front. Neuroinform, Vol. 11, Issue 51, September 2017](https://www.frontiersin.org/articles/10.3389/fninf.2017.00051/full)
 
-[3] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg Data from: MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion. Dryad Digital Repository. https://doi.org/10.5061/dryad.1m528 2017][6]
-
-[4]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00003/full
-[5]: https://www.frontiersin.org/articles/10.3389/fninf.2017.00051/full
-[6]: https://doi.org/10.5061/dryad.1m528
+[3] [I.A. Mulder*, A. Khmelinskii*, O. Dzyubachyk*, S. de Jong, M.J.H. Wermer, M. Hoehn, B.P.F. Lelieveldt, A.M.J.M. van den Maagdenberg Data from: MRI mouse brain data of ischemic lesion after transient middle cerebral artery occlusion. Dryad Digital Repository. https://doi.org/10.5061/dryad.1m528 2017](https://doi.org/10.5061/dryad.1m528)

@@ -34,10 +34,6 @@ For each subject, each CT was translated and resampled to CBCT to minimise set-u
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 The translation used to register CT to CBCT in all subjects

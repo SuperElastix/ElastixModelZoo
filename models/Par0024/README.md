@@ -39,20 +39,13 @@ To supply this metric with a triangulated surface mesh (.vtk file) use the comma
 
     elastix.exe [...] -fMask applicatorMask.ext -fmeshA1 applicatorMeshA.vtk -fmeshB1 applicatorMeshB.vtk -fmeshC1 applicatorMeshC.vtk [...]
 
-
-Parameter files and example data files:
-
-See Github link below
-
 ###  Synthetic example
 
 As an example a registration is set up with synthetic images that greatly simplifies a cervical brachy therapy image registration problem.
 
 ![alt-text](ScreenshotMSP.png)
 
-The files of the setup and a movie that visualizes the registration process of the setup:
-
-See Github link below
+See GitHub repo for the files of the setup and a movie that visualizes the registration process of the setup:
 
 To mimic non-rigid deformations in the vicinity of the missing structure, that have impact on the final shape of the missing structure, the following static and moving objects were defined around the missing structure:
 
@@ -62,7 +55,6 @@ To mimic non-rigid deformations in the vicinity of the missing structure, that h
 
 The registration procedure is driven by the image data and the applicator mesh(es) only. The MissingStructurePenalty was configured to write deformed applicator meshes to disk each iteration. The deformed meshes of the surrounding structures are written to disk by the PolydataDummyPenalty each iteration and are used for visualization of the registration process.
 
-###  Known issues
 
 ###  Published in
 

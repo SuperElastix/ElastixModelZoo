@@ -28,11 +28,6 @@ For each treatment session, the mid-treatment (PV) and end (post) scans were reg
 
 `Elastix` version: 4.8
 
-
-Parameter files:
-
-See Github link below.
-
 Description:
 
 The rigid registration that was used to register cropped PV or post scans to the cropped pre scan. A fixed mask was used that encompassed 1 cm around the pre-scan bony anatomy in the region close to the target lymph node (bone mask cropped at 2 cm towards cranial and caudal from the planning target volume).

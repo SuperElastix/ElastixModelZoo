@@ -9,8 +9,6 @@
 * Acquired with a Bruker Biospin (Ettlingen, Germany) 7T scanner
 * With a circular polarized MRI transceiver coil for 1H with an inner diameter of 23 mm and Paravision 5.1 software
 * Stored in MHD format
-* [1, 2]
-
 
 Screen shot:
 
@@ -23,10 +21,6 @@ An example of the co-registered mouse brain data: on the left you see the used t
 ###  Registration settings
 
 `elastix` version: 4.500
-
-Parameter files:
-
-See Github link below.
 
 Description:
 

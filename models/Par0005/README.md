@@ -30,18 +30,16 @@ From the vast amount of choices, features that describe the local structure of i
 
 `elastix` version: 4.003
 
-Parameter files, see below
-
 Command line call:
 
 
-    elastix -f0 patient_week_ffeature0.mhd ... -fP patient_week_ffeatureP.mhd
-            -m0 patient_week_mfeature0.mhd ... -mP patient_week_mfeatureP.mhd
-            -p par0005.MI.rigid.txt -p par0005.txt -out outputdir
+    elastix -f0 patient<j>_week<k>_ffeature0.mhd ... -fP patient<j>_week<k>_ffeatureP.mhd
+            -m0 patient<j>_week<k>_mfeature0.mhd ... -mP patient<j>_week<k>_mfeatureP.mhd
+            -p par0005.MI.rigid.txt -p par0005<X>.txt -out outputdir<k,l>
 
 
 with: P the number of features  
- = one of the parameter files above
+<X> = one of the parameter files (see GitHub repository).
 
 ###  Published in
 
@@ -49,12 +47,11 @@ These registrations are described in the publication:
 
 M. Staring, U.A. van der Heide, S. Klein, M.A. Viergever and J.P.W. Pluim, Registration of Cervical MRI Using Multifeature Mutual Information, IEEE Transactions on Medical Imaging, vol. 28, no. 9, pp. 1412 - 1421, September 2009.
 
-###
+### Other comments
 
 The features were computed outside of `elastix` and before the start of the registration. The source code of the feature computation software is made available through:
 
-
-
+  https://github.com/ITKTools/ITKTools
 
 
 notably the tool `pxgaussianimagefilter`. The PCA analysis was performed using `pxpca`.

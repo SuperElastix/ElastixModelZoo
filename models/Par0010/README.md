@@ -24,19 +24,16 @@ In this study, we use nonrigid registration to predict dementia.
 
 `elastix` version: 4.2
 
-Parameter files, see below
-
 Command line call:
 
 
     elastix -f image_i.mhd -m image_j.mhd -p par0010affine.txt -p par0010bspline.txt -out outputdir
 
-
 ###  Published in
 
 S. Klein, M. Loog, F. van der Lijn, T. den Heijer, A. Hammers, M. de Bruijne, A. van der Lugt, R.P.W. Duin, M.M.B. Breteler and W.J. Niessen, Early diagnosis of dementia based on intersubject whole-brain dissimilarities, Proceedings of IEEE International Symposium on Biomedical Imaging: from Nano to Macro, 2010.
 
-###
+### Other comments
 
 A control point spacing of 15 mm was used for the B-spline transformation (in the finest resolution).
 

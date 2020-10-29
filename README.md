@@ -16,11 +16,13 @@ Model Parameters folder
 The model parameters folder should contain at least:
 - The parameter files in .txt format.
 - A README.md which explains the context/study in which the parameter files where used, including the image content, image dimensionality and the image modality.
-- The image files used in the readme in .png, .jpeg or .jpg format.
+- The image files used in the README in .png, .jpeg or .jpg format.
 
 And optionally:
-- A jupyter notebook file explaining the workflow in python (in case ITKElastix of SimpleElastix was used)
+- A jupyter notebook file explaining the workflow in python (in case ITKElastix of SimpleElastix was used).
 - example image data (try to limit the amount of large images)
 - scripts or other files used in the study.
 
-Github and Jupyter Notebook links will be generated automatically.
+The README.md style should be consistent with the other README.md files and should contain caption like '###  Registration settings'.
+The link to the correct GitHub folder will be automatically appended after the '###  Registration settings' caption or at the end if this caption is absent.
+A Jupyter Notebook link will also be generated automatically.

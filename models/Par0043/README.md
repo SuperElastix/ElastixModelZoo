@@ -14,10 +14,6 @@ it was obtained from 3D Cartesian dual Echo Dixon RF spoiled GRE, TE_1/TE_2 = 1.
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * Aligns the CT image to the pseudo-CT image, resampling it on the same image grid to enable voxelwise comparison.

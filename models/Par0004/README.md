@@ -30,13 +30,13 @@ For evaluation of the rigidity of the tumors, precise manual segmentations of th
 
 `elastix` version: 3.513
 
-For parameter files, see below.
+For results reported in Table I, II and III of the paper.
 
 `elastix` version: 3.703
 
-see below
+For results reported in Table IV of the paper.
 
-Note the following:
+With regards to the parameter files note the following:
 
 * `NRU` refers to unconstrained nonrigid registration (no penalty terms),
 * `NRP` refers to nonrigid registration with a rigidity penalty term,
@@ -63,7 +63,7 @@ These registration are described in the publication:
 
 M. Staring, S. Klein and J.P.W. Pluim, "A Rigidity Penalty Term for Nonrigid Registration," Medical Physics, vol. 34, no. 11, pp. 4098 - 4108, November 2007.
 
-###
+### Other comments
 
 In `elastix 4.2` we rewrote the rigidity penalty term metric, so that it works independently from the Mattes mutual information metric. Now it is possible to combine the rigidity penalty term with any metric, not just MI. The new implementation is exactly the same as the old one. In order to use the new one you need to replace several lines in the parameter files from above.
 

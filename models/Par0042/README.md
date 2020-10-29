@@ -14,10 +14,6 @@
 
 `elastix` version: 4.600
 
-Parameter files:
-
-See Github link below.
-
 Description:
 
 * Aligns the atlas image to the target image

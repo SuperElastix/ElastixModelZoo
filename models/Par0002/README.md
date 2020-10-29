@@ -31,13 +31,10 @@ The cost function (MI) was analysed using an exhaustive search in a single trans
 
 `elastix` version: 4.103
 
-
 Command line call:
 
 
     elastix -f PET.mhd -m MR_T1.mhd -p par0002..txt -out outputdir
-
-For parameter files, see below.
 
 ###  Published in
 
@@ -45,7 +42,7 @@ These registration are described in the publication:
 
 S. Klein, M. Staring, K. Murphy, M.A. Viergever, J.P.W. Pluim, "`elastix`: a toolbox for intensity based medical image registration," IEEE Transactions on Medical Imaging, vol. 29, no. 1, pp. 196-205, 2010.
 
-###
+### Other comments
 
 See the [elastix manual][5] for hints on how to subsequently apply the transformation to the annotated points using `transformix`.
 

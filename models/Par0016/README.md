@@ -23,10 +23,6 @@ Thoracic registration between End-Inhale // End-Exhale with sliding motion.
 
 `elastix` version: svn (probably 4.6)
 
-Parameter File:
-
-For parameter files see below.
-
 Command line calls:
 
 

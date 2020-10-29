@@ -16,15 +16,9 @@ Screen shot:
 
 An example of a mouse brain dataset co-registered to the template: on the left you see the used template.
 
-###  Application
-
 ###  Registration settings
 
 `elastix` version: 4.500
-
-Parameter files:
-
-See Github link below
 
 Description:
 
@@ -43,6 +37,4 @@ with:  = one of {rigid, affine, bspline}
 
 ###  Published in
 
-[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015][2]
-
-[2]: http://www.sciencedirect.com/science/article/pii/S1053811915009039
+[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015](http://www.sciencedirect.com/science/article/pii/S1053811915009039) 

@@ -33,9 +33,6 @@ The parameter files are denoted using the step numbers used in the article of Gu
 
 `elastix` version: 4.6
 
-Parameter files:
-
-See Github link below.
 
 ###  Published in
 

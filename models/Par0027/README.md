@@ -26,10 +26,6 @@ Fixed and moving image masks have been used in all the experiments. In the case 
 
     elastix -f  -m0  -m1  -out  -p  -t0  -fMask  -mMask0  -mMask1  
 
-###  Parameter files:
-
-See Github link below
-
 ###  Published in
 
 V. Fortunati, R.F. Verhaart, F. Angeloni, A. van der Lugt, W.J. Niessen, J.F. Veenland, M.M. Paulides and T. van Walsum, Feasibility of Multimodal Deformable Registration for Head and Neck Tumor Treatment Planning, Int. J. Radiation Oncology Biology and physics 90, 85-93 (2014)

@@ -13,10 +13,6 @@ The registration was used to align the prostate of sequential cine-MR dynamics t
 
 `elastix` version: 4.700
 
-Parameter files:
-
-See Github link below.
-
 Command line call:
 
 
