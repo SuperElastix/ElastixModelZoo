@@ -9,7 +9,7 @@
 * Dimensions for the 3 main sets: 128 x 128 x 16; 128 x 128 x 10; 196 x 196 x 10 & 196 x 196 x 12
 * Acquired with a Bruker Biospin (Ettlingen, Germany) 7T and 11.7T scanner
 * Stored in MHD format
-* All data available at
+* All data available at [data dryad](https://datadryad.org/resource/doi:10.5061/dryad.1m528)
 
 ###  Application
 

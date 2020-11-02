@@ -8,12 +8,13 @@
 * Voxel size mostly 0.97x0.97x2.5 mm for dir-lab patients // 1x1x2 for extended popi-model.
 * Dimension: on average about 256 x 256 x 100 for 5 first dir-lab patients // 512 x 512 x 128 for 5 last dir-lab patient // 512 x 512 x 165 for extended popi-model
 
-Popi-model:    
-Patient Download:
+[Popi-model](http://www.creatis.insa-lyon.fr/rio/popi-model)    
 
-dir-lab:
+[Patient Download](http://www.creatis.insa-lyon.fr/~delmon/MedPhys11/)
 
-my masks are available here:
+[dir-lab]( http://www.dir-lab.com/)
+
+my masks are available [here](http://www.creatis.insa-lyon.fr/~delmon/MICCAI11/masks.tgz)
 
 ###  Application
 

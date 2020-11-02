@@ -6,7 +6,7 @@
 * Voxel size 1 x 1 x 3 mm
 * Dimension 512 x 512 x 114
 
-The sample CT dataset is available for download ().
+The sample CT dataset is available for [download](https://github.com/guycl/elastix_examples/tree/master/sstvd).
 
 ###  Application
 
