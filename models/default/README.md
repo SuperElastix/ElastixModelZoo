@@ -13,14 +13,17 @@ Example command line call:
 elastix -f fixed.mhd -m moving.mhd -p parameters_Rigid.txt -p parameters_BSpline.txt -out outputdir
 </pre>
 
-NB: the parameter files are designed to work well both for 2D and 3D image registration. However, for 3D image registration you should first make the following change in each parameter file:
+NB:
+Up to elastix 4.5 the image dimensions had to be specified by the user.
 <code>
    (FixedImageDimension 2)   -> (FixedImageDimension 3)
    (MovingImageDimension 2)  -> (MovingImageDimension 3)
 </code>
+From elastix 4.6, this is not necessary anymore.
 
-NB2: the files are saved in DOS text format. In order to use them on a Linux-based system, use the <tt>dos2unix</tt> tool to convert them to unix text format.
+NB2:
+The files are saved in DOS text format. In order to use them on a Linux-based system, use the <tt>dos2unix</tt> tool to convert them to unix text format.
 
-=== Other comments ===
+### Other comments
 
 See the [elastix manual](https://elastix.lumc.nl/download/elastix-5.0.1-manual.pdf) for an extensive introduction to <tt>elastix</tt> and explanation of many parameters. If you have any questions, please subscribe to the <tt>elastix</tt> mailing list and post your question there. We (the authors of <tt>elastix</tt>) are happy to answer any questions. Please do read the [FAQ](https://github.com/SuperElastix/elastix/wiki/FAQ) though ;)
