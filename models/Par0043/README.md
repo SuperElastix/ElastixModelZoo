@@ -8,7 +8,7 @@ it was obtained from 3D Cartesian dual Echo Dixon RF spoiled GRE, TE_1/TE_2 = 1.
 
 ###  Application
 
-* The registration was used to align and resample CT to MR-based pseudo-CT aiming at aligning the spatial coordinate of CT and MR-based pseudo-CT and also minimising positioning errors.
+* The registration was used to align and resample CT to MR-based synbthetic-CT aiming at aligning the spatial coordinate of CT and MR-based synthetic-CT and also minimising positioning errors.
 
 ###  Registration settings
 
@@ -25,3 +25,8 @@ Command line call:
 
 
 where $gipl_fix is the fixed image (pseudo-CT), $gipl_mov is the moving image (CT), $dirReg is the output directory, and $Para_File_Trans is the file attached in this page.
+
+
+### Reference
+
+Maspero M, Tyyger MD, Tijssen RH, Seevinck PR, Intven MP, van den Berg CA. Feasibility of magnetic resonance imaging-only rectum radiotherapy with a commercial synthetic computed tomography generation solution. Physics and imaging in radiation oncology. 2018 Jul 1;7:58-64. doi:[https://doi.org/10.1016/j.phro.2018.09.002](https://doi.org/10.1016/j.phro.2018.09.002).
