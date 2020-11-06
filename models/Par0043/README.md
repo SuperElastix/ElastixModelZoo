@@ -31,4 +31,10 @@ where $gipl_fix is the fixed image (pseudo-CT), $gipl_mov is the moving image (C
 
 Maspero M, Seevinck PR, Schubert G, Hoesl MA, van Asselen B, Viergever MA, Lagendijk JJ, Meijer GJ, van den Berg CA. Quantification of confounding factors in MRI-based dose calculations as applied to prostate IMRT. Physics in Medicine & Biology. 2017 Jan 11;62(3):948. doi:[https://doi.org/10.1088/1361-6560/aa4fe7](https://doi.org/10.1088/1361-6560/aa4fe7);
 
+### Used also in
+
+Maspero M, Savenije MH, Dinkla AM, Seevinck PR, Intven MP, Jurgenliemk-Schulz IM, Kerkmeijer LG, van den Berg CA. Dose evaluation of fast synthetic-CT generation using a generative adversarial network for general pelvis MR-only radiotherapy. Physics in Medicine & Biology. 2018 Sep 10;63(18):185001. doi:[https://doi.org/10.1088/1361-6560/aada6d](https://doi.org/10.1088/1361-6560/aada6d);
+
+
+
 Maspero M, Tyyger MD, Tijssen RH, Seevinck PR, Intven MP, van den Berg CA. Feasibility of magnetic resonance imaging-only rectum radiotherapy with a commercial synthetic computed tomography generation solution. Physics and imaging in radiation oncology. 2018 Jul 1;7:58-64. doi:[https://doi.org/10.1016/j.phro.2018.09.002](https://doi.org/10.1016/j.phro.2018.09.002).
