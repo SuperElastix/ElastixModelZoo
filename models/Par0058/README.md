@@ -47,6 +47,8 @@ Command line call:
     elastix -f Fixed_CBCT.gipl -m Moving_CT.gipl -out ./  -mMask Cylinder.gipl -fMask Cylinder.gipl -p par0058trans.txt
 
 
-###  Submitted to
+###  Reference
 
-[1] XXX (the journal where the work has been submitted is double blind, so authors have been omitted) et al. 2019 [WIP, it will be updated upon acceptance]
+Maspero M, Houweling AC, Savenije MH, van Heijst TC, Verhoeff JJ, Kotte AN, van den Berg CA. A single neural network for cone-beam computed tomography-based radiotherapy of head-and-neck, lung and breast cancer. Physics and Imaging in Radiation Oncology. 2020 Apr 1;14:24-31. doi:[https://doi.org/10.1016/j.phro.2020.04.002](https://doi.org/10.1016/j.phro.2020.04.002);
+
+Maspero M, Savenije MH, van Heijst TC, Verhoeff JJ, Kotte AN, Houweling AC, van den Berg CA. CBCT-to-CT synthesis with a single neural network for head-and-neck, lung and breast cancer adaptive radiotherapy. arXiv preprint arXiv:1912.11136. 2019 Dec 23. arXiv:[https://arxiv.org/abs/1912.11136v1](https://arxiv.org/abs/1912.11136v1).
