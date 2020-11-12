@@ -1,5 +1,8 @@
 # Par0015 - elastix
 
+###  Registration Description
+intrapatient; B-spline transformation; several similarity metrics
+
 ###  Image data
 
 * 3D chest CT

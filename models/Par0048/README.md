@@ -1,5 +1,8 @@
 # Par0048 - elastix
 
+###  Registration Description
+intra-subject; B-spline transformation; Mattes mutual information	
+
 ###  Image data
 
 ![alt-text](6-point-Dixon-elastix-wiki.jpg)

@@ -1,5 +1,8 @@
 # Par0012 - elastix
 
+###  Registration Description
+motion estimation; (cyclic) B-spline transformation; variance over last dimension
+
 ###  Image data
 
 * 4D chest CT

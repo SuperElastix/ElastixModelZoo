@@ -1,5 +1,8 @@
 # Par0009 - elastix
 
+###  Registration Description
+interpatient; B-spline transformation; mutual information	
+
 ###  Image data
 
 * 3D brain MRI, T1-weighted

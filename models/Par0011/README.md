@@ -1,5 +1,8 @@
 # Par0011 - elastix
 
+###  Registration Description
+intrapatient (sometimes intra-sheep); B-spline transformation; normalized correlation	
+
 ###  Image data
 
 * 3D chest CT

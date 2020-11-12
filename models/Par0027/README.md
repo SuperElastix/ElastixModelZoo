@@ -1,5 +1,8 @@
 # Par0027 - elastix
 
+###  Registration Description
+intra patient; rigid + B-spline transformation; mutual information, multi parametric mutual information	
+
 ###  Image data
 
 CT and MR images of the head and neck (HN) region

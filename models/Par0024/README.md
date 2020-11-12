@@ -1,5 +1,8 @@
 # Par0024 - elastix
 
+###  Registration Description
+interpatient; rigid + B-spline transformation; missing structure penalty	
+
 ###  Image data
 
 * 3D T2 Cervical MR (0.625 x 0.625 x 4.5/3.0 mm)

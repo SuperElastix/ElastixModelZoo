@@ -2,6 +2,12 @@
 
 ### Note the three hashtags paragraph captions
 
+###  Registration Description
+This short registration description will be used in the overview:
+example:
+"interpatient; affine transform; mutual information"
+
+
 ###  Image data
 
  * Points

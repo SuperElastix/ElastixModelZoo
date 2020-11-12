@@ -1,5 +1,8 @@
 # Par0023 - elastix
 
+###  Registration Description
+intrapatient; rigid + B-spline transformation; localized mutual information combined with bending energy penalty	
+
 ###  Image data
 
 CT and MR images of the head and neck (HN) region

@@ -1,5 +1,8 @@
 # Par0056 - elastix
 
+###  Registration Description
+inter and intra-subject; rigid + affine transformation	
+
 ###  Image data
 
 * CBCT mouse lung data

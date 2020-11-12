@@ -1,5 +1,8 @@
 # Par0001 - elastix
 
+###  Registration Description
+interpatient; affine + B-spline transformation; mutual information
+
 ###  Image data
 
 * MR 3D, balanced steady-state free precession sequence with fat suppression

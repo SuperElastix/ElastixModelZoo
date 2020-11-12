@@ -1,5 +1,8 @@
 # Par0003 - elastix
 
+###  Registration Description
+interpatient; affine + B-spline transformation; mutual information	
+
 ###  Image data
 
 * 3D chest CT

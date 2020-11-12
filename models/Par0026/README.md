@@ -1,5 +1,8 @@
 # Par0026 - elastix
 
+###  Registration Description
+intra-subject, longitudinal data; rigid + affine + B-spline transformation	
+
 ###  Image data
 
 * MR 3D multi-contrast rat brain data

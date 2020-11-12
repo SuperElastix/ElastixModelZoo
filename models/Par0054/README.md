@@ -1,5 +1,8 @@
 # Par0054 - elastix
 
+###  Registration Description
+intra-subject respiratory motion; B-spline transformation	
+
 ###  Image data
 
 * 3D thoracic CT (inhale/exhale phases from 4DCT)

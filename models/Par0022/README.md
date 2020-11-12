@@ -1,5 +1,8 @@
 # Par0022 - elastix
 
+###  Registration Description
+intrapatient; rigid + B-spline transformation; statistical shape regularization	
+
 ###  Image data
 
 * 3D T2 Cervical MR (0.625 x 0.625 x 4.5 mm)

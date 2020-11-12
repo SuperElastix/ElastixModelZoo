@@ -1,5 +1,8 @@
 # Par0052 - elastix
 
+###  Registration Description
+inter-subject; Longitudinal Data, affine + B-spline transformation	
+
 ###  Image data
 
 * 3D T1-weghted MRI (0.625 x 0.625 x 4.5 mm)

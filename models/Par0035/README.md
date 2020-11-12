@@ -1,5 +1,8 @@
 # Par0035 - elastix
 
+###  Registration Description
+intra-subject, inter-subject; mono-modal and multi-modal; rigid, affine and B-spline transformations; mean square difference, normalized correlation, mutual information	
+
 ###  RIRE brain data
 
 * Multi-modality intra subject registration

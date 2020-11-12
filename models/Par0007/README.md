@@ -1,5 +1,8 @@
 # Par0007 - elastix
 
+###  Registration Description
+intrapatient; B-spline transformation; mutual information	
+
 ###  Image data
 
 * 4D chest CT

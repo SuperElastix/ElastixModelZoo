@@ -1,5 +1,8 @@
 # Par0029 - elastix
 
+###  Registration Description
+intra patient; B-spline transformation; mutual information	
+
 ###  Image data
 
 * 3D DW-MR images

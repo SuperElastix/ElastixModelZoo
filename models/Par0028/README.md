@@ -1,4 +1,8 @@
 # Par0028 - elastix
+
+###  Registration Description
+intra patient; rigid + B-spline transformation; several B-pline knot spacings; synthesized head and neck phantoms	
+
 ## Contents
 
 * Image Data

@@ -1,5 +1,8 @@
 # Par0005 - elastix
 
+###  Registration Description
+intrapatient; rigid + B-spline transformation; multi-feature α-mutual information	
+
 ###  Image data
 
 * MR 3D, T2-weighted sequence taken in the transversal direction

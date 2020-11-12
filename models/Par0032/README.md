@@ -1,5 +1,8 @@
 # Par0032 - elastix
 
+###  Registration Description
+intrapatient; rigid + B-spline transformation; mutual information	
+
 ###  Image data
 
 * 3D breast T1-weighted DCE-MRI

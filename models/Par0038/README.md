@@ -1,5 +1,8 @@
 # Par0038 - elastix
 
+###  Registration Description
+intra-subject, longitudinal data; rigid + affine + B-spline transformation, advanced normalized correlation metric with a transform bending energy penalty	
+
 ###  Image data
 
 * MR 3D multi-contrast mouse brain data with ischemic lesion

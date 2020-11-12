@@ -1,5 +1,8 @@
 # Par0049 - elastix
 
+###  Registration Description
+intra-subject; B-spline transformation; Mattes mutual information
+
 ###  Image data
 
 * 3D chest CT

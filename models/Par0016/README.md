@@ -1,5 +1,9 @@
 # Par0016 - elastix
 
+###  Registration Description
+intrapatient; Multi B-spline transformation; sliding motion	
+
+
 ###  Image data
 
 * 3D chest CT

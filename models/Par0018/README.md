@@ -1,5 +1,9 @@
 # Par0018 - elastix
 
+###  Registration Description
+interpatient; several transformation models; mutual information based similarity metrics	
+
+
 ###  Image data
 
 Multisequence MRI protocol:

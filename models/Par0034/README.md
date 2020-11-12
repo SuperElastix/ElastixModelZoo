@@ -1,5 +1,8 @@
 # Par0034 - elastix
 
+###  Registration Description
+inter-subject; rigid + affine + B-spline transformation; advanced normalized correlation + mutual information metric with a transform bending energy penalty	
+
 ###  Image data
 
 * _In vivo_ Cerebral Blood Flow (CBF) MRI mouse data

@@ -1,5 +1,8 @@
 # Par0042 - elastix
 
+###  Registration Description
+inter-subject; rigid + B-spline transformation, advanced normalized correlation metric	
+
 ###  Image data
 
 * MRI

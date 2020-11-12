@@ -1,5 +1,8 @@
 # Par0002 - elastix
 
+###  Registration Description
+interpatient; several transformation models; localised mutual information
+
 ###  Image data
 
 * 3D PET

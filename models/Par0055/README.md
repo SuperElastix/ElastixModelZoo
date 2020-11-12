@@ -1,5 +1,8 @@
 # Par0055 - elastix
 
+###  Registration Description
+intra-subject cine-MRI motion; rigid transformation	
+
 ###  Image data
 
 * 3D cine-MRI acquired at 3T with 55 frames ('dynamics') per imaging session.

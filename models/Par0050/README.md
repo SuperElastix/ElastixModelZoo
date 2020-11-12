@@ -1,5 +1,8 @@
 # Par0050 - elastix
 
+###  Registration Description
+intra-subject; affine transformation, mutual information metric	
+
 ###  Image data
 
 * Extremity MRI

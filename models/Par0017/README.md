@@ -1,5 +1,8 @@
 # Par0017 - elastix
 
+###  Registration Description
+intrapatient; rigid; localized mutual information
+
 ###  Image data
 
 * 3D inversion recovery Fast Spoiled Gradient-Recalled echo (FSPGR) sequences, T1-weighted, acquired at a range of inversion times (TI = 100, 200, 400, 800, 2100ms) (Figure 1).

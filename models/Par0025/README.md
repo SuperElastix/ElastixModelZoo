@@ -1,5 +1,8 @@
 # Par0025 - elastix
 
+###  Registration Description
+intra-subject, longitudinal data; rigid + affine + B-spline transformation, advanced normalized correlation metric with a transform bending energy penalty	
+
 ###  Image data
 
 * MR 3D multi-contrast mouse brain data
@@ -37,4 +40,4 @@ with:  = one of {rigid, affine, bspline}
 
 ###  Published in
 
-[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015](http://www.sciencedirect.com/science/article/pii/S1053811915009039) 
+[1] [L. Hammelrath, S. Škokić, A. Khmelinski, A. Hess, N. van der Knaap, M. Staring, B.P.F. Lelieveldt, D. Wiedermann, M. Hoehn, "Morphological maturation of the mouse brain: an _in vivo_ MRI and histology investigation," NeuroImage, 2015](http://www.sciencedirect.com/science/article/pii/S1053811915009039)

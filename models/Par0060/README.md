@@ -1,5 +1,8 @@
 # Par0060 - elastix
 
+###  Registration Description
+Intapatient, rigid+ affine+ b-spline transformation, mutual information	
+
 ###  Image data
 
 * 2D cine-MRI acquired at 1.5T with 50-300 frames ('dynamics') per imaging session.

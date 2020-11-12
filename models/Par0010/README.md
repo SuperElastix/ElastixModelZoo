@@ -1,5 +1,8 @@
 # Par0010 - elastix
 
+###  Registration Description
+interpatient; affine + B-spline transformation; mutual information	
+
 ###  Image data
 
 * MR 3D

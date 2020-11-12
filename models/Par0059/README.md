@@ -1,5 +1,8 @@
 # Par0059 - elastix
 
+###  Registration Description
+Intrapatient, B-spline transformation, mutual information, rigidity penalty	
+
 ###  Subjects
 
 CT and MR images in the pelvic region.

@@ -1,5 +1,8 @@
 # Par0021 - elastix
 
+###  Registration Description
+Registration optimisation for subject-FA images to FA template, multiple data sources	
+
 ###  Image data
 
 Rotterdam data:

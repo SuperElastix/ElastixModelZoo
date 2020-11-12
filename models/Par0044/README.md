@@ -1,5 +1,8 @@
 # Par0044 - elastix
 
+###  Registration Description
+intra-subject; multi-image; affine (Mutual Information) + multi-image B-spline transformation (Mutual Information and mean square difference);	
+
 ###  Image data
 
 Single phase cardiac CTA acquired in diastole, slice thickness 0.4 mm, in plane resolution 0.35 mm.

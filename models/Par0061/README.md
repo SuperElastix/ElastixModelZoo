@@ -1,5 +1,8 @@
 # Par0061 - elastix
 
+###  Registration Description
+Intrapatient, rigid transformation
+
 ###  Subjects
 
 39 patients with lymph node metastases in pelvic or para-aortic region, each patient underwent 5 SBRT treatment sessions except 1 patient who underwent 2 cycles, so 10 SBRT treatment sessions in total. MR images of the pelvic or abdominal region were obtained at the start, during and after each treatment session.

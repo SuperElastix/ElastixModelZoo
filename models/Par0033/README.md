@@ -1,5 +1,8 @@
 # Par0033 - elastix
 
+###  Registration Description
+inter-subject; rigid + affine + B-spline transformation; mutual information metric with a transform bending energy penalty	
+
 ###  Image data
 
 * _Ex vivo_ MRI on mouse skulls to image the brain

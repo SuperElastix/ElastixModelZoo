@@ -1,5 +1,8 @@
 # Par0043 - elastix
 
+###  Registration Description
+intra-subject; multi-resolution (4), rigid, Mutual Information metric (Mattes) with Adaptive Stochastic Gradient Descent optimizer	
+
 ###  Image data
 
 FOV was variable, but a typical value was about 500x500x300 mm^3 , in-plane matrix = 512x512, 3 mm slice thickness, 120 kV, exposure time = 923 ms, tube current = 121-183 mA.

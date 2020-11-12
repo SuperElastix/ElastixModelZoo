@@ -1,5 +1,8 @@
 # Par0047 - elastix
 
+###  Registration Description
+intra-subject; B-spline transformation; groupwise registration; PCA metric	
+
 ###  Image data
 
 Clinical 4D dynamic contrast enhanced MR images with focus on the liver.

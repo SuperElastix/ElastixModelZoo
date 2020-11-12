@@ -1,5 +1,8 @@
 # Par0014 - elastix
 
+###  Registration Description
+intra-mouse; B-spline transformation; combination of normalized correlation and the Euclidean distance metric
+
 ###  Image data
 
 * 3D whole-body, in vivo, longitudinal MicroCT of mice

@@ -1,5 +1,8 @@
 # Par0036 - elastix
 
+###  Registration Description
+intra-subject, inter-station; affine; normalized correlation	
+
 ###  Image data
 
 * 2D joint intensity histograms of the multi-spectral multi-station whole-body MR data

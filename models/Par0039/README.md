@@ -1,5 +1,8 @@
 # Par0039 - elastix
 
+###  Registration Description
+intra-subject; affine or B-spline transformation; groupwise registration; PCA metrics	
+
 ###  Image data
 
 Real quantitative MRI (qMRI) image data:

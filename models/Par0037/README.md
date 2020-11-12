@@ -1,5 +1,8 @@
 # Par0037 - elastix
 
+###  Registration Description
+intra-subject; translational registration; mutual information	
+
 ###  Image data
 
 Lung Digital Tomosynthesis (DTS)

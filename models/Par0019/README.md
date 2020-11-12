@@ -1,5 +1,8 @@
 # Par0019 - elastix
 
+###  Registration Description
+inter patient; rigid and B-spline transformation, advanced mean square and normalized correlation metrics	
+
 ###  Image data
 
 * 3D neck CT for radiotherapy planning

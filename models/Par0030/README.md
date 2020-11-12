@@ -1,5 +1,8 @@
 # Par0030 - elastix
 
+###  Registration Description
+inter patient; Affine + B-spline transformation; normalized cross correlation. intra patient; Rigid transformation; mutual information	
+
 ###  Image data
 
 * T1-weighted pre-contrast coronal extremity MRI of the wrist (~TE=11, TR=575)

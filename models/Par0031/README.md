@@ -1,5 +1,8 @@
 # Par0031 - elastix
 
+###  Registration Description
+intrapatient; regional-independent B-spline transformation; sliding surface penalty	
+
 ###  Image data
 
 * 3D chest CT

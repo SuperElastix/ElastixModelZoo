@@ -1,5 +1,8 @@
 # Par0041 - elastix
 
+###  Registration Description
+inter-subject; similarity + B-spline transformation, advanced normalized correlation metric	
+
 ###  Image data
 
 * Extremity MRI
