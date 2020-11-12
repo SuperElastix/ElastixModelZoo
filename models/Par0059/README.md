@@ -46,4 +46,4 @@ Command line call:
 
 ###  Reference
 
-Florkow et al. (2019), Deep learning-based MR-to-CT synthesis: the influence of varying gradient echo-based MR images as input channels, under submission
+Florkow MC, Zijlstra F, Willemsen K, Maspero M, van den Berg CA, Kerkmeijer LG, Castelein RM, Weinans H, Viergever MA, van Stralen M, Seevinck PR. Deep learning–based MR‐to‐CT synthesis: The influence of varying gradient echo–based MR images as input channels. Magnetic resonance in medicine. 2020 Apr;83(4):1429-41. doi:[https://doi.org/10.1002/mrm.28008](https://doi.org/10.1002/mrm.28008).

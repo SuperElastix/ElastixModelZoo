@@ -30,4 +30,4 @@ N/A
 
 ###  Submitted for publication in
 
-Maarten L. Terpstra, Matteo Maspero, Federico d'Agata, Bjorn Stemkens, Martijn P.W. Intven, Jan J.W. Lagendijk, Cornelis A.T. van den Berg, and Rob H.N. Tijssen, Deep learning-based image reconstruction and motion estimation from undersampled radial k-space for real-time MRI-guided radiotherapy, Physics in Medicine and Biology (submitted), February 2020.
+Terpstra ML, Maspero M, D'Agata F, Stemkens B, Intven MP, Lagendijk JJ, Van den Berg CA, Tijssen RH. Deep learning-based image reconstruction and motion estimation from undersampled radial k-space for real-time MRI-guided radiotherapy. Physics in Medicine & Biology. 2020 July 30; 66(15). doi:[https://doi.org/10.1088/1361-6560/ab9358](https://doi.org/10.1088/1361-6560/ab9358).
