@@ -28,4 +28,5 @@ And optionally:
 
 The README.md style should be consistent with the other README.md files and should contain caption like '###  Registration settings'.
 The link to the correct GitHub folder will be automatically appended after the '###  Registration settings' caption or at the end if this caption is absent.
-A Jupyter Notebook link will also be generated automatically.
+
+A Jupyter Notebook link will also be generated automatically on the model zoo website if an .ipynb file is found in the model folder.
