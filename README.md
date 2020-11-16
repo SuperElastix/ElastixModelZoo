@@ -13,6 +13,9 @@ How to Upload Model Parameters
 Model Parameters folder
 ----------
 
+A template model folder can be found under models/template.
+The template should be followed to ensure that the links on the model zoo website and the references in the overview table are correctly generated.
+
 The model parameters folder should contain at least:
 - The parameter files in .txt format.
 - A README.md which explains the context/study in which the parameter files where used, including the image content, image dimensionality and the image modality.
