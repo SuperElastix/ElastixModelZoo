@@ -42,7 +42,8 @@ Command line call:
 
 ###  Published in
 
-....
+If the results are published in a paper the paper should be listed here, 
+this paper will then also be used in the overview table of the model zoo.
 
 ### Other comments
 
