@@ -44,6 +44,6 @@ Command line call:
     elastix -p  par0059_rigid.txt -p par0059_bspline.txt –f MR_image.nii.gz -m CT_image.nii.gz -out output_dir -fMask MR_body_mask.nii.gz
 
 
-###  Reference
+###  Published in
 
 Florkow et al. (2019), Deep learning-based MR-to-CT synthesis: the influence of varying gradient echo-based MR images as input channels, under submission

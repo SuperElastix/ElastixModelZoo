@@ -1,7 +1,7 @@
 # Par0060 - elastix
 
 ###  Registration Description
-Intapatient, rigid+ affine+ b-spline transformation, mutual information	
+Intapatient, rigid+ affine+ b-spline transformation, mutual information
 
 ###  Image data
 
@@ -28,6 +28,6 @@ where  is the path to fixed image, the reference cine MRI dynamic. The  is the p
 
 N/A
 
-###  Submitted for publication in
+###  Published in
 
 Terpstra ML, Maspero M, D'Agata F, Stemkens B, Intven MP, Lagendijk JJ, Van den Berg CA, Tijssen RH. Deep learning-based image reconstruction and motion estimation from undersampled radial k-space for real-time MRI-guided radiotherapy. Physics in Medicine & Biology. 2020 July 30; 66(15). doi:[https://doi.org/10.1088/1361-6560/ab9358](https://doi.org/10.1088/1361-6560/ab9358).

@@ -41,6 +41,6 @@ Command line call:
     elastix -p  par0061.txt –f pre_scan.mhd -m post_scan.mhd -out output_dir -fMask bone_mask.mhd
 
 
-###  Reference
+###  Published in
 
 Werensteijn-Honingh et al. (2020), Impact of a vacuum cushion on intrafraction motion during online adaptive MR-guided SBRT, submitted.

@@ -1,7 +1,7 @@
 # Par0048 - elastix
 
 ###  Registration Description
-intra-subject; B-spline transformation; Mattes mutual information	
+intra-subject; B-spline transformation; Mattes mutual information
 
 ###  Image data
 
@@ -28,6 +28,6 @@ Command line call:
     elastix -f preCooling.mhd -m postCooling.mhd -p par0048elastic.txt -out outputdir
 
 
-###  Submitted manuscript
+###  Published in
 
-[1] G. Abreu-Vieira*, J. Burakiewicz*, L.G.M. Janssen, K.J. Nahon, M.R. Boon, O. Dzyubachyk, A.G. Webb, H.E. Kan, P.C.N. Rensen. "Human brown adipose tissue lipid mapping by MRI and its heterogenic changes in volume, mass and energy content after cold exposure"
+G. Abreu-Vieira*, J. Burakiewicz*, L.G.M. Janssen, K.J. Nahon, M.R. Boon, O. Dzyubachyk, A.G. Webb, H.E. Kan, P.C.N. Rensen. "Human brown adipose tissue lipid mapping by MRI and its heterogenic changes in volume, mass and energy content after cold exposure"

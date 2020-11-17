@@ -47,6 +47,9 @@ Command line call:
     elastix -f fixed_image.mhd -m moving_image.mhd -fp fixedPointSet.txt -mp movingPointSet.txt -p parameters.similarity.txt
       -p parameters.NCC_EDM.txt -out resultDir
 
+### Published in
+
+Baiker (2011), Automated Registration of Whole-Body Follow-Up MicroCT Data of Mice [1]
 
 ###  References
 

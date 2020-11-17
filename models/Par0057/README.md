@@ -1,7 +1,7 @@
 # Par0057 - elastix
 
 ###  Registration Description
-intra-subject; Rigid transformation; B-spline transformation	
+intra-subject; Rigid transformation; B-spline transformation
 
 ###  Image data
 
@@ -30,3 +30,7 @@ The remaining DW MR images can be transformed to the DCE MR image space by using
     transformix -in <moving image> -out <output dir> -tp <transform parameters>
 
 where <moving image> is the resized DW MR image.
+
+
+### Published in
+Jansen et al. (2019) Liver segmentation and metastases detection in MR images using convolutional neural networks (submitted)

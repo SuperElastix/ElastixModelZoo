@@ -1,7 +1,7 @@
 # Par0030 - elastix
 
 ###  Registration Description
-inter patient; Affine + B-spline transformation; normalized cross correlation. intra patient; Rigid transformation; mutual information	
+inter patient; Affine + B-spline transformation; normalized cross correlation. intra patient; Rigid transformation; mutual information
 
 ###  Image data
 
@@ -19,3 +19,8 @@ Secondly, to compare pre- and post-contrast images of the wrist, they must be re
 ![alt-text](Pre11.png) ![alt-text](Post11.png)
 
 ### Registration settings
+
+
+### Published in
+
+Roex - MSc thesis: Early Detection of Rheumatoid Arthritis using extremity MRI: Quantification of Bone Marrow Edema in the Carpal bones

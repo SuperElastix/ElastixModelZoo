@@ -27,6 +27,10 @@ Description:
 * par0049_stdT-advanced.txt to calculate stdT using elastix-advanced setting
 * par0049_stdTL-advanced.txt to calculate stdTL using elastix-advanced setting
 
+### Published in
+
+Sokooti, et al. (2017), Accuracy Estimation for Medical Image Registration Using Regression Forests.
+
 ###  Reference
 
 [1] Sokooti, H., Saygili, G., Glocker, B., Lelieveldt, B.P. and Staring, M., 2016, October. Accuracy Estimation for Medical Image Registration Using Regression Forests. In International Conference on Medical Image Computing and Computer-Assisted Intervention (pp. 107-115). Springer International Publishing.

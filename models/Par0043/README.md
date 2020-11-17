@@ -1,7 +1,7 @@
 # Par0043 - elastix
 
 ###  Registration Description
-intra-subject; multi-resolution (4), rigid, Mutual Information metric (Mattes) with Adaptive Stochastic Gradient Descent optimizer	
+intra-subject; multi-resolution (4), rigid, Mutual Information metric (Mattes) with Adaptive Stochastic Gradient Descent optimizer
 
 ###  Image data
 
@@ -29,6 +29,9 @@ Command line call:
 
 where $gipl_fix is the fixed image (pseudo-CT), $gipl_mov is the moving image (CT), $dirReg is the output directory, and $Para_File_Trans is the file attached in this page.
 
+### Published in
+
+Maspero M, et al. (2017), Quantification of confounding factors in MRI-based dose calculations as applied to prostate IMRT. Phys Med Biol. 62(3)
 
 ### References
 

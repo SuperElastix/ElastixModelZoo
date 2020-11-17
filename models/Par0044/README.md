@@ -1,7 +1,7 @@
 # Par0044 - elastix
 
 ###  Registration Description
-intra-subject; multi-image; affine (Mutual Information) + multi-image B-spline transformation (Mutual Information and mean square difference);	
+intra-subject; multi-image; affine (Mutual Information) + multi-image B-spline transformation (Mutual Information and mean square difference);
 
 ###  Image data
 
@@ -16,3 +16,7 @@ Dynamic stress CTP after adenosine acquired in end diastole. Reconstructed with 
 Registration of myocardium from CTA to CT perfusion using myocardial territory labels for regularization
 
 ###  Registration settings
+
+### Published in
+
+Hirschler and Munting (2016) - Transit time mapping in the mouse brain using time‐encoded pCASL
