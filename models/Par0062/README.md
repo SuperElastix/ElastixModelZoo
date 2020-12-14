@@ -25,16 +25,14 @@ Parameter files:
 
 Command line call:
 
+> elastix -f baseline.gipl -m follow-up.gipl -p Parameters_Translation.txt -out . -fMask baseline_bonemask.gipl -mMask follow-up_bonemask.gipl
+> mv TransformParameters.0.txt TP_Translation_follow-up.txt
+> elastix -f baseline.gipl -m follow-up.gipl -p Parameters_Rigid.txt -out . -fMask baseline_bonemask.gipl -mMask follow-up_bonemask.gipl -t0 TP_Translation_follow-up.txt
+> mv TransformParameters.0.txt TP_Euler_follow-up.txt
+> elastix -f baseline.gipl -m follow-up.gipl -p DIR-step1.txt -out . -t0 TP_Euler_follow-up.txt
+> mv TransformParameters.0.txt TP_DIR_step1.txt
+> elastix -f0 baseline_ctvmask.gipl -m0 follow-up_ctvmask.gipl -p DIR-step2.txt -out . -t0 TP_DIR_step1.txt
 
-<code>
-elastix -f baseline.gipl -m follow-up.gipl -p Parameters_Translation.txt -out . -fMask baseline_bonemask.gipl -mMask follow-up_bonemask.gipl
-mv TransformParameters.0.txt TP_Translation_follow-up.txt
-elastix -f baseline.gipl -m follow-up.gipl -p Parameters_Rigid.txt -out . -fMask baseline_bonemask.gipl -mMask follow-up_bonemask.gipl -t0 TP_Translation_follow-up.txt
-mv TransformParameters.0.txt TP_Euler_follow-up.txt
-elastix -f baseline.gipl -m follow-up.gipl -p DIR-step1.txt -out . -t0 TP_Euler_follow-up.txt
-mv TransformParameters.0.txt TP_DIR_step1.txt
-elastix -f0 baseline_ctvmask.gipl -m0 follow-up_ctvmask.gipl -p DIR-step2.txt -out . -t0 TP_DIR_step1.txt
-</code>
 
 where "baseline.gipl" is the fixed image, the reference MRI. The "follow-up.gipl" is the follow-up MRI.
 
