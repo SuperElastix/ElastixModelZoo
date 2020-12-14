@@ -1,6 +1,6 @@
 # General
 
-<tt>elastix</tt> image registration of anatomical MR scans of esophageal cancer tumors
+<tt>elastix</tt> image registration of anatomical MR scans of esophageal cancer tumors.
 
 ### Image data
 
