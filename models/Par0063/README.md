@@ -1,6 +1,4 @@
-# The title of the project.
-autoTICI: Automatic Brain Tissue Reperfusion Scoring on 2D DSA Images of Acute Ischemic Stroke Patients
-### Note the three hashtags paragraph captions
+### autoTICI: Automatic Brain Tissue Reperfusion Scoring on 2D DSA Images of Acute Ischemic Stroke Patients
 
 ###  Registration Description
 "inter/intra-patient; affine transformation; mutual information"
