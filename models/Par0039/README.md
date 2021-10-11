@@ -32,9 +32,9 @@ Motion and/or geometrical distortion compensation for quantitative MRI.
 For groupwise registration one should use the following command line call:
 
 
-    elastix -f  -m  -p  -out
+    elastix -f <qMRI image> -m <qMRI image> -p <par filename> -out <output dir>
 
-where  is the entire group of images that are acquired in a single quantitative MRI acquisition. Note that the fixed and moving image should be the same. The fixed image is not used for the registration, but acts as a dummy to prevent elastix throwing error messages. When a mask is used to restrict the samples to be taken from a certain region, it can be added with -fMask.
+where 'qMRI image' is the entire group of images that are acquired in a single quantitative MRI acquisition. Note that the fixed and moving image should be the same. The fixed image is not used for the registration, but acts as a dummy to prevent elastix throwing error messages. When a mask is used to restrict the samples to be taken from a certain region, it can be added with -fMask.
 
 The reference frame for this alignment lies somewhere in between the transformations of all the images, due to the constraint applied to the transform parameters. For more information see [1].
 
