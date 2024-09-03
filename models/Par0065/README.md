@@ -6,10 +6,10 @@ interpatient; rigid, affine and bspline transform; advanced cross correlation
 
 ###  Image data
 
- 3D MRI T1 Data healthy volunteers
- Abdomen
- 3 different states: end-expiration, end-inspiration, Ddrinking of 1.5l of water
- Resolution: 1.5x1.5x3mm^3
+ - 3D MRI T1 Data healthy volunteers
+ - Liver
+ - 3 different states: end-expiration, end-inspiration, drinking of 1.5l of water
+ - Resolution: 1.5x1.5x3mm^3
 
 ###  Application
 
@@ -19,8 +19,8 @@ These parameters are used to register the livers at end-inspiration and 1.5l wat
 
 Livers are aligned using rigid transform first. Next an affine and bspline transform is performed on the livers.
 
-`Elastix` version: 5.0.0
-ITKElastix version: 0.21.0
+- Elastix version: 5.0.0
+- ITKElastix version: 0.21.0
 
 Python call:
 
