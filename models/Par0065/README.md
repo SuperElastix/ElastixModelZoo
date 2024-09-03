@@ -17,8 +17,6 @@ interpatient; rigid, affine and bspline transform; normalized cross correlation
 
 These parameters are used to register the livers at end-inspiration and 1.5l water drinking to end-expiration. From the deformation field volumetric strain and octahedral shear strain [1] is determined.
 
-![alt-text](Screenshot.png)
-
 ###  Registration settings
 
 Livers are aligned using rigid transform first. Next an affine and bspline transform is performed on the livers.
