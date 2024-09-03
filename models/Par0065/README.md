@@ -1,9 +1,7 @@
 # Registration parameters for strain liver analysis.
 
-### Note the three hashtags paragraph captions
-
 ###  Registration Description
-interpatient; rigid, affine and bspline transform; normalized cross correlation
+interpatient; rigid, affine and bspline transform; advanced cross correlation
 
 
 ###  Image data
