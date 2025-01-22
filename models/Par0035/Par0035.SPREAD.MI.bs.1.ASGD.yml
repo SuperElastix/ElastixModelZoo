@@ -1,0 +1,92 @@
+// ********** Image Types
+
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 3)
+
+
+// ********** Components
+
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(ImageSampler "RandomCoordinate")
+(Interpolator "BSplineInterpolator")
+(Metric "AdvancedMattesMutualInformation")
+//(Optimizer "QuasiNewtonLBFGS")
+//(Optimizer "AdaptiveStochasticLBFGS")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "BSplineTransform")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+// ********** Pyramid
+
+// Total number of resolutions
+(NumberOfResolutions 3)
+(ImagePyramidSchedule  4 4 4 2 2 2 1 1 1)
+
+// ********** ImageSampler
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+
+// ********** Interpolator and Resampler
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+// ********** Metric
+
+(NumberOfHistogramBins 32)
+(FixedLimitRangeRatio 0.0)
+(MovingLimitRangeRatio 0.0)
+(FixedKernelBSplineOrder 1)
+(MovingKernelBSplineOrder 3)
+(UseFastAndLowMemoryVersion "true")
+
+// ********** Optimizer
+
+// Maximum number of iterations in each resolution level:
+
+(AutomaticParameterEstimation "true")
+
+//***************testing
+(UseAdaptiveStepSizes "true")
+
+(MaximumNumberOfIterations 500)
+(NumberOfSpatialSamples 5000)
+
+// This is for original ASGD
+(ASGDParameterEstimationMethod "Original")
+
+
+// ********** Transform
+
+(FinalGridSpacingInPhysicalUnits 10.0 10.0 10.0)
+(GridSpacingSchedule 4.0 2.0 1.0)
+(HowToCombineTransforms "Compose")
+
+
+// ********** Several
+
+(ShowExactMetricValue "false")
+(ExactMetricSampleGridSpacing 2)
+(ErodeMask "false")
+(UseDirectionCosines "true")
+(NewSamplesEveryIteration "true")
+(UseRandomSampleRegion "false")
+
+// ********** Output settings
+//the format of resulting deformed moving image
+(ResultImageFormat "mha")
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+(WriteTransformParametersEachIteration "false")
+(WriteTransformParametersEachResolution "true")
+(WriteResultImageAfterEachResolution "false")
+(WritePyramidImagesAfterEachResolution "false")
+(WriteResultImage "false")

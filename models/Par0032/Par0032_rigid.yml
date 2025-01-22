@@ -1,0 +1,64 @@
+(FixedInternalImagePixelType "short")
+(MovingInternalImagePixelType "short")
+
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+(UseDirectionCosines "true")
+
+// **************** Main Components **************************
+
+(Registration "MultiResolutionRegistration")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "EulerTransform")
+(Metric "AdvancedMattesMutualInformation")
+
+// ***************** Transformation **************************
+
+(AutomaticScalesEstimation "true")
+(AutomaticTransformInitialization "true")
+(HowToCombineTransforms "Compose")
+
+// ******************* Similarity measure *********************
+
+(NumberOfHistogramBins 32)
+(ErodeMask "false")
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 3)
+(ImagePyramidSchedule 4 4 4  2 2 2  1 1 1 )
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 250)
+
+// The step size of the optimizer, in mm. By default the voxel size is used.
+// which usually works well. In case of unusual high-resolution images
+// (eg histology) it is necessary to increase this value a bit, to the size
+// of the "smallest visible structure" in the image:
+//(MaximumStepLength 1.0)
+
+// **************** Image sampling **********************
+
+(NumberOfSpatialSamples 10000)
+(NewSamplesEveryIteration "true")
+(ImageSampler "Random")
+
+// ************* Interpolation and Resampling ****************
+
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 1)
+(DefaultPixelValue 0)
+(WriteResultImage "false")
+(ResultImagePixelType "unsigned short")
+(ResultImageFormat "dcm")
+(CompressResultImage "true")
+
+

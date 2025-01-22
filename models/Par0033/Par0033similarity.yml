@@ -1,0 +1,91 @@
+// SimilarityTransform
+
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+
+(UseDirectionCosines "true")
+
+
+// **************** Main Components **************************
+
+(Registration "MultiResolutionRegistration")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+//(FixedImagePyramid "FixedSmoothingImagePyramid")
+//(MovingImagePyramid "MovingSmoothingImagePyramid")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "SimilarityTransform")
+(Metric "AdvancedMattesMutualInformation")
+//(Metric "AdvancedNormalizedCorrelation")
+
+
+// ***************** Transformation **************************
+
+(AutomaticScalesEstimation "true")
+
+(AutomaticTransformInitializationMethod "CenterOfGravity")
+
+(AutomaticTransformInitialization "true")
+
+(HowToCombineTransforms "Compose")
+
+
+// ******************* Similarity measure *********************
+
+(NumberOfHistogramBins 32)
+
+// If you use a mask, this option is important. 
+// If the mask serves as region of interest, set it to false.
+// If the mask indicates which pixels are valid, then set it to true.
+(ErodeMask "false")
+
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 2)
+
+(ImagePyramidSchedule 1 1 1  1 1 1  1 1 1  1 1 1)
+
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 1000)
+
+(MaximumStepLength 0.2)
+
+
+// **************** Image sampling **********************
+
+(NumberOfSpatialSamples 2048)
+
+(NewSamplesEveryIteration "true")
+(ImageSampler "RandomCoordinate")
+//(ImageSampler "Random")
+
+// ************* Interpolation and Resampling ****************
+
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 3)
+
+(DefaultPixelValue 0)
+
+// Choose whether to generate the deformed moving image.
+// You can save some time by setting this to false, if you are
+// only interested in the final (nonrigidly) deformed moving image
+// for example.
+(WriteResultImage "true")
+
+// The pixel type and format of the resulting deformed moving image
+(ResultImagePixelType "float")
+(ResultImageFormat "mhd")
+
+
+(RequiredRatioOfValidSamples 0.001)

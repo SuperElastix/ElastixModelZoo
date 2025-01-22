@@ -1,0 +1,112 @@
+// ********** Image Types
+
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 3)
+
+
+// ********** Components
+
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "BSplineInterpolator")
+//(Metric "AdvancedMattesMutualInformation")
+(Metric "MattesMutualInformationWithRigidityPenalty")
+(Optimizer "StandardGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+
+// ********** Pyramid
+
+// Total number of resolutions
+// (NumberOfResolutions 2)
+// (ImagePyramidSchedule 4 4 4 1 1 1)
+(NumberOfResolutions 6)
+(ImagePyramidSchedule 16 16 16 8 8 8 4 4 4 2 2 2 1 1 1 1 1 1)
+
+// ********** Transform
+
+// (FinalGridSpacingInPhysicalUnits 8.0 8.0 8.0)
+// (GridSpacingSchedule 16.0 8.0 4.0 2.0 1.0)
+(FinalGridSpacingInPhysicalUnits 4.0 4.0 4.0)
+(GridSpacingSchedule 32.0 16.0 8.0 4.0 2.0 1.0)
+(HowToCombineTransforms "Compose")
+
+
+// ********** Optimizer
+
+// Maximum number of iterations in each resolution level:
+(MaximumNumberOfIterations 500 500 500 500 20 20)
+
+//SP: Param_a in each resolution level. a_k = a/(A+k+1)^alpha
+//good(SP_a 50000.0 30000.0 10000.0 10000.0 5000.0)
+//from paper
+(SP_a 50000.0 10000.0 2000.0 500.0 100.0 100.0)
+
+//SP: Param_alpha in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_alpha 0.6)
+
+//SP: Param_A in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_A 50.0)
+
+
+// ********** Metric
+
+(NumberOfHistogramBins 16 32 32 32 32 32)
+(UseFastAndLowMemoryVersion "true")
+//RigidPenaly
+//RigidityPenaltyWeight: A parameter to weigh the rigidity penalty term against the mutual information metric. 
+(RigidityPenaltyWeight 4.0) 
+
+//LinearityConditionWeight: A parameter to weigh the linearity condition term of the rigidity term. 
+(LinearityConditionWeight 100.0)
+//OrthonormalityConditionWeight: A parameter to weigh the orthonormality condition term of the rigidity term.
+(OrthonormalityConditionWeight 1.0) 
+//PropernessConditionWeight: A parameter to weigh the properness condition term of the rigidity term.
+(PropernessConditionWeight 2.0) 
+//UseFixedRigidityImage: flag to specify the use of the fixed rigidity image when calculating the rigidity coefficient image.
+(UseFixedRigidityImage "true") 
+//FixedRigidityImageName: the name of a coefficient image to specify the rigidity index of voxels in the fixed image.
+(FixedRigidityImageName "/max/home00/kding/lungmech/2009_04_20_4DCTPulmonaryFunction/CASE8/resample/BeforeRT_Static-tumorphantom.nii.gz") 
+//UseMovingRigidityImage: flag to specify the use of the moving rigidity image when calculating the rigidity coefficient image.
+(UseMovingRigidityImage "false")
+//DilateRigidityImages: flag to specify the dilation of the rigidity coefficient images. With this the region of rigidity can be extended to force rigidity of the inner region.
+(DilateRigidityImages "false")
+
+
+// ********** Several
+
+(WriteTransformParametersEachIteration "false")
+(WriteTransformParametersEachResolution "true")
+(WriteResultImageAfterEachResolution "false")
+(WriteResultImage "true")
+(ShowExactMetricValue "false")
+(ErodeMask "false")
+
+
+// ********** ImageSampler
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(ImageSampler "RandomCoordinate")
+(NumberOfSpatialSamples 5000)
+(NewSamplesEveryIteration "true")
+//(UseRandomSampleRegion "true")
+//(SampleRegionSize 50.0 50.0 50.0)
+//(MaximumNumberOfSamplingAttempts 50)
+
+
+// ********** Interpolator and Resampler
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+

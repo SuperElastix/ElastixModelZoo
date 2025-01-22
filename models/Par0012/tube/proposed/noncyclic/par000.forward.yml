@@ -1,0 +1,73 @@
+// *********************
+// * ImageTypes
+// *********************
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 3)
+
+// *********************
+// * Components
+// *********************
+(Registration "MultiResolutionRegistration" )
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(Interpolator "ReducedDimensionBSplineInterpolator")
+(BSplineInterpolationOrder 1)
+(Metric "VarianceOverLastDimensionMetric")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(ResampleInterpolator "FinalLinearInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+(BSplineTransformSplineOrder 3)
+(UseCyclicTransform "false")
+
+// Parameters for varianceoverLastDimension metric
+(MovingImageDerivativeScales 1.0 1.0 0.0)
+(SampleLastDimensionRandomly "true")
+(NumSamplesLastDimension 5)
+(SubtractMean "true")
+
+// *********************
+// * Optimizer settings
+// *********************
+(NumberOfSamplesForExactGradient 10000)
+(NumberOfResolutions 2)
+(FinalGridSpacingInPhysicalUnits 4.0 4.0 4.0)
+(GridSpacingSchedule 2.0 2.0 2.0 1.0 1.0 1.0)
+(SP_A 20.0)
+(SigmoidInitialTime 1.0)
+(MaximumNumberOfIterations 2000)
+(AutomaticParameterEstimation "true")
+
+// *********************
+// * Transform settings
+// *********************
+(HowToCombineTransforms "Compose" )
+
+// *********************
+// * Pyramid settings
+// *********************
+(ImagePyramidSchedule 2 2 0 0 0 0)
+
+// *********************
+// * Sampler parameters
+// *********************
+(ImageSampler "Random")
+(NumberOfSpatialSamples 500)
+(CheckNumberOfSamples "true")
+(MaximumNumberOfSamplingAttempts 10)
+(NewSamplesEveryIteration "true")
+(FinalBSplineInterpolationOrder 1)
+
+// *********************
+// * Output settings
+// *********************
+(WriteTransformParametersEachIteration "false" )
+(WriteResultImage "true" )
+(CompressResultImage "true" )
+(WriteResultImageAfterEachResolution "false" )
+(ShowExactMetricValue "false" )
+(DefaultPixelValue 0)
+

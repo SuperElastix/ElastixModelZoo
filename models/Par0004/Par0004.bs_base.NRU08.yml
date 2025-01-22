@@ -1,0 +1,70 @@
+//ImageTypes
+(FixedImagePixelType "short")
+(FixedImageDimension 3)
+(MovingImagePixelType "short")
+(MovingImageDimension 3)
+
+//Components
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "BSplineInterpolator")
+(Metric "MattesMutualInformationWithRigidityPenalty")
+(Optimizer "StandardGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+// Transform
+(FinalGridSpacing 8.0)
+(UpsampleGridOption "true")
+
+// Multi resolution
+(NumberOfResolutions 4)
+
+// Sampling
+(NewSamplesEveryIteration "true" "true" "true" "true")
+(NumberOfSpatialSamples 5000 5000 5000 5000)
+(NewSamplesEveryIteration "true" "true")
+(ErodeMask "true" "true")
+
+// Interpolation and resampling
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 3)
+(DefaultPixelValue -1000)
+
+// Output and other
+(WriteTransformParametersEachIteration "false" "false" "false" "false")
+(WriteTransformParametersEachResolution "true" "true" "true" "true")
+(ShowExactMetricValue "false" "false" "false" "false")
+(WriteResultImageAfterEachResolution "false")
+
+// Optimiser
+// SP: a_k = a/(A+k+1)^alpha
+(MaximumNumberOfIterations 300 300 300 1200)
+(SP_a 150000.0 120000.0 70000.0 20000.0)
+(SP_alpha 0.602 0.602 0.602 0.602)
+(SP_A 100.0 100.0 100.0 100.0)
+
+// Metric
+
+// Mattes mutual information:
+(NumberOfHistogramBins 32 32 32 32)
+
+// MMIWRR specific
+(RigidityPenaltyWeight 1.0)
+(LinearityConditionWeight 1.0)
+(OrthonormalityConditionWeight 1.0)
+(PropernessConditionWeight 1.0)
+(UseLinearityCondition "false")
+(UseOrthonormalityCondition "false")
+(UsePropernessCondition "false")
+(CalculateLinearityCondition "true")
+(CalculateOrthonormalityCondition "true")
+(CalculatePropernessCondition "true")
+(DilateRigidityImages "true")
+(DilationRadiusMultiplier 1.0)
+(UseFixedRigidityImage "false")
+(FixedRigidityImageName "dummy")
+(UseMovingRigidityImage "true")
+//(MovingRigidityImageName "/data/marius/data/XRAngio/name_rs_vessels.mhd")

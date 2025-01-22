@@ -1,0 +1,82 @@
+// The internal pixel type, used for internal computations
+(FixedInternalImagePixelType "short")
+(MovingInternalImagePixelType "short")
+
+// The dimensions of the fixed and moving image
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+
+(UseDirectionCosines "true")
+
+// **************** Main Components **************************
+
+// The following components should usually be left as they are:
+(Registration "MultiResolutionRegistration")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+// Ultimitely, this could be a smoothing pyramid since we use a random sampler.
+//(FixedImagePyramid "FixedSmoothingImagePyramid")
+//(MovingImagePyramid "MovingSmoothingImagePyramid")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "AffineTransform")
+(Metric "AdvancedNormalizedCorrelation")
+
+// ***************** Transformation **************************
+
+(AutomaticScalesEstimation "true")
+
+// Automatically guess an initial translation by aligning the
+// geometric centers of the fixed and moving.
+(AutomaticTransformInitialization "true")
+(AutomaticTransformInitializationMethod "GeometricalCenter")
+
+(HowToCombineTransforms "Compose")
+
+// ******************* Similarity measure *********************
+
+(ErodeMask "false")
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 6)
+
+// By default, the images are downsampled by a factor of 2
+// compared to the next resolution.
+//(ImagePyramidSchedule 8 8 8  4 4 4  2 2 2  1 1 1 )
+
+// ******************* Optimizer ****************************
+
+// Maximum number of iterations in each resolution level:
+(MaximumNumberOfIterations 2000)
+(MaximumNumberOfSamplingAttempts 10)
+
+// **************** Image sampling **********************
+
+(NumberOfSpatialSamples 4000)
+(NewSamplesEveryIteration "true")
+(ImageSampler "RandomSparseMask")
+
+// ************* Interpolation and Resampling ****************
+
+// Order of B-Spline interpolation used during registration/optimisation.
+(BSplineInterpolationOrder 1)
+
+// Order of B-Spline interpolation used for applying the final
+// deformation.
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+
+// Choose whether to generate the deformed moving image.
+(WriteResultImage "false")
+
+// The pixel type and format of the resulting deformed moving image
+(ResultImagePixelType "short")
+(ResultImageFormat "nii")
+

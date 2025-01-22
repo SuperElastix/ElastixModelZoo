@@ -1,0 +1,90 @@
+// ********** Image Types
+
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 3)
+
+
+// ********** Components
+
+(Registration "MultiMetricMultiResolutionRegistration")
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(Interpolator "BSplineInterpolator")
+(Metric "AdvancedNormalizedCorrelation" "CorrespondingPointsEuclideanDistanceMetric")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+
+// ********** Pyramid
+
+// Total number of resolutions
+(NumberOfResolutions 6)
+(ImagePyramidSchedule 16 16 16 16 16 16 8 8 8 4 4 4 2 2 2 1 1 1)
+
+// ********** Transform
+
+(FinalGridSpacingInPhysicalUnits 10.0 10.0 10.0)
+(GridSpacingSchedule 16 8 8 4 2 1)
+(HowToCombineTransforms "Compose")
+
+
+// ********** Optimizer
+
+// Maximum number of iterations in each resolution level:
+//(MaximumNumberOfIterations 2000)
+(MaximumNumberOfIterations 2000 2000 2000 2000 2000 2000)
+//(MaximumNumberOfIterations 500)
+(MaximumStepLength 1.0 1.0 1.0 1.0 1.0 0.5)
+
+
+(AutomaticParameterEstimation "true")
+(UseAdaptiveStepSizes "true")
+(UseDirectionCosines "true")
+
+
+// ********** Metric
+
+// Just using the default values for the NC metric
+
+(Metric0Weight 1.0)
+(Metric1Weight 0.05 0.05 0.05 0.05 0.005 0.000005)
+//(Metric1Weight 0.5 0.5 0.5 0.5 0.05 0.0005)
+//(Metric1Weight 50 50 0.5 0.5 0.05 0.0005)
+
+
+// ********** Several
+
+(WriteTransformParametersEachIteration "false")
+(WriteTransformParametersEachResolution "false")
+(WriteResultImageAfterEachResolution "false")
+(WriteResultImage "true")
+(CompressResultImage "false")
+(ResultImageFormat "mhd")
+(ShowExactMetricValue "false")
+(ErodeMask "false")
+
+
+// ********** ImageSampler
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(ImageSampler "RandomCoordinate")
+(NumberOfSpatialSamples 2000)
+(NewSamplesEveryIteration "true")
+(UseRandomSampleRegion "false")
+
+
+// ********** Interpolator and Resampler
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+

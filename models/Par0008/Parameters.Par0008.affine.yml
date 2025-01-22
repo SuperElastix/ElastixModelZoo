@@ -1,0 +1,69 @@
+(WriteResultImage "false")
+(AutomaticTransformInitialization "true")
+(HowToCombineTransforms "Compose")
+
+(ErodeMask "false")
+
+(ImageSampler "RandomSparseMask")
+
+//ImageTypes
+(FixedInternalImagePixelType "short")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "short")
+(MovingImageDimension 3)
+
+//Components
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "BSplineInterpolator")
+(Metric "AdvancedMattesMutualInformation")
+(Optimizer "StandardGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "AffineTransform")
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 0)
+
+(AutomaticScalesEstimation "true")
+
+(NumberOfResolutions 4)
+
+//Maximum number of iterations in each resolution level:
+(MaximumNumberOfIterations 256)
+
+//Number of grey level bins in each resolution level:
+(NumberOfHistogramBins 32)
+
+(NewSamplesEveryIteration "true")
+(UseAllPixels "false")
+(WriteTransformParametersEachResolution "false")
+(WriteTransformParametersEachIteration "false")
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(NumberOfSpatialSamples 5000)
+
+(MaximumNumberOfSamplingAttempts 10)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+
+(ImagePyramidSchedule 8.0 4.0 4.0 2.0 1.0)
+
+//SP: Param_a in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_a 500.0)
+
+//SP: Param_A in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_A 50.0)
+
+//SP: Param_alpha in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_alpha 0.602) 
+
+
+
+
+
