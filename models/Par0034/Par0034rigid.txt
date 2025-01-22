@@ -60,8 +60,8 @@
 // geometric centers of the fixed and moving.
 (AutomaticTransformInitialization "true")
 //(AutomaticTransformInitializationMethod "CenterOfGravity")
-//(AutomaticTransformInitializationMethod " GeometricalCenter")
-(AutomaticTransformInitializationMethod " Origins")
+//(AutomaticTransformInitializationMethod "GeometricalCenter")
+(AutomaticTransformInitializationMethod "Origins")
 
 // Whether transforms are combined by composition or by addition.
 // In generally, Compose is the best option in most cases.

@@ -64,8 +64,8 @@
 
 //THE DEFAULT WAS NONE!!!???...BUT FOR THE LM_25211 16M->14M IT IS NOT WORKING
 
-(AutomaticTransformInitializationMethod " GeometricalCenter")
-//(AutomaticTransformInitializationMethod " Origins")
+(AutomaticTransformInitializationMethod "GeometricalCenter")
+//(AutomaticTransformInitializationMethod "Origins")
 
 // Whether transforms are combined by composition or by addition.
 // In generally, Compose is the best option in most cases.
