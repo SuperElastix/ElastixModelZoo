@@ -1,55 +1,55 @@
-// **************** Image Types ******************************
+# **************** Image Types ******************************
 
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(UseDirectionCosines "true")
+FixedInternalImagePixelType: "float"
+MovingInternalImagePixelType: "float"
+FixedImageDimension: 3
+MovingImageDimension: 3
+UseDirectionCosines: true
 
-// **************** Main Components **************************
+# **************** Main Components **************************
 
-(Registration "MultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
-(FixedImagePyramid "FixedSmoothingImagePyramid")
-(MovingImagePyramid "MovingSmoothingImagePyramid")
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "BSplineTransform")
-(Metric "AdvancedMattesMutualInformation")
+Registration: "MultiResolutionRegistration"
+Interpolator: "BSplineInterpolator"
+ResampleInterpolator: "FinalBSplineInterpolator"
+Resampler: "DefaultResampler"
+FixedImagePyramid: "FixedSmoothingImagePyramid"
+MovingImagePyramid: "MovingSmoothingImagePyramid"
+Optimizer: "AdaptiveStochasticGradientDescent"
+Transform: "BSplineTransform"
+Metric: "AdvancedMattesMutualInformation"
 
-// ***************** Transformation **************************
+# ***************** Transformation **************************
 
-// next line variable in study: from 5 - 40
-(FinalGridSpacingInPhysicalUnits 15)
-(GridSpacingSchedule 4 2 1 )
-(HowToCombineTransforms "Compose")
+# next line variable in study: from 5 - 40
+FinalGridSpacingInPhysicalUnits: 15
+GridSpacingSchedule: [4, 2, 1 ]
+HowToCombineTransforms: "Compose"
 
-// ******************* Similarity measure *********************
+# ******************* Similarity measure *********************
 
-(NumberOfHistogramBins 32 )
-(ErodeMask "false")
+NumberOfHistogramBins: 32 
+ErodeMask: false
 
-// ******************** Multiresolution **********************
+# ******************** Multiresolution **********************
 
-(NumberOfResolutions 3)
-(ImagePyramidSchedule  4 4 2   2 2 1  1 1 1 )
+NumberOfResolutions: 3
+ImagePyramidSchedule: [4, 4, 2, 2, 2, 1, 1, 1, 1 ]
 
-// ******************* Optimizer ****************************
+# ******************* Optimizer ****************************
 
-(MaximumNumberOfIterations 500)
+MaximumNumberOfIterations: 500
 
-// **************** Image sampling **********************
+# **************** Image sampling **********************
 
-(NumberOfSpatialSamples 2048)
-(NewSamplesEveryIteration "true")
-(ImageSampler "RandomCoordinate")
+NumberOfSpatialSamples: 2048
+NewSamplesEveryIteration: true
+ImageSampler: "RandomCoordinate"
 
-// ************* Interpolation and Resampling ****************
+# ************* Interpolation and Resampling ****************
 
-(BSplineInterpolationOrder 1)
-(FinalBSplineInterpolationOrder 3)
-(DefaultPixelValue 0)
-(WriteResultImage "true")
-(ResultImagePixelType "short")
-(ResultImageFormat "mhd")
+BSplineInterpolationOrder: 1
+FinalBSplineInterpolationOrder: 3
+DefaultPixelValue: 0
+WriteResultImage: true
+ResultImagePixelType: "short"
+ResultImageFormat: "mhd"

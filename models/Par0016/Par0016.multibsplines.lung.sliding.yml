@@ -1,58 +1,58 @@
-// Input images
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
+# Input images
+FixedInternalImagePixelType: "float"
+MovingInternalImagePixelType: "float"
 
-(FixedImageDimension 3)
-(MovingImageDimension 3)
+FixedImageDimension: 3
+MovingImageDimension: 3
 
-(UseDirectionCosines "true")
+UseDirectionCosines: true
 
-// **************** Main Components **************************
+# **************** Main Components **************************
 
-(Registration "MultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
+Registration: "MultiResolutionRegistration"
+Interpolator: "BSplineInterpolator"
+ResampleInterpolator: "FinalBSplineInterpolator"
+Resampler: "DefaultResampler"
 
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
+FixedImagePyramid: "FixedRecursiveImagePyramid"
+MovingImagePyramid: "MovingRecursiveImagePyramid"
 
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "MultiBSplineTransformWithNormal")
-(Metric "AdvancedMattesMutualInformation")
+Optimizer: "AdaptiveStochasticGradientDescent"
+Transform: "MultiBSplineTransformWithNormal"
+Metric: "AdvancedMattesMutualInformation"
 
-// ***************** Transformation **************************
+# ***************** Transformation **************************
 
-(FinalGridSpacingInPhysicalUnits 32)
-(HowToCombineTransforms "Compose")
+FinalGridSpacingInPhysicalUnits: 32
+HowToCombineTransforms: "Compose"
 
-// ******************* Similarity measure *********************
+# ******************* Similarity measure *********************
 
-(NumberOfHistogramBins 32)
-(ErodeMask "false")
+NumberOfHistogramBins: 32
+ErodeMask: false
 
-// ******************** Multiresolution **********************
+# ******************** Multiresolution **********************
 
-(NumberOfResolutions 3)
+NumberOfResolutions: 3
 
-// ******************* Optimizer ****************************
+# ******************* Optimizer ****************************
 
-(MaximumNumberOfIterations 16000)
+MaximumNumberOfIterations: 16000
 
-// **************** Image sampling **********************
+# **************** Image sampling **********************
 
-(NumberOfSpatialSamples 2048)
-(NewSamplesEveryIteration "true")
-(ImageSampler "Random")
+NumberOfSpatialSamples: 2048
+NewSamplesEveryIteration: true
+ImageSampler: "Random"
 
-// ************* Interpolation and Resampling ****************
+# ************* Interpolation and Resampling ****************
 
-(BSplineInterpolationOrder 3)
+BSplineInterpolationOrder: 3
 
-// Output Image
+# Output Image
 
-(FinalBSplineInterpolationOrder 3)
-(DefaultPixelValue 0)
-(WriteResultImage "true")
-(ResultImagePixelType "short")
-(ResultImageFormat "mhd")
+FinalBSplineInterpolationOrder: 3
+DefaultPixelValue: 0
+WriteResultImage: true
+ResultImagePixelType: "short"
+ResultImageFormat: "mhd"

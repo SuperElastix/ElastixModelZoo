@@ -1,60 +1,60 @@
-(FixedImageDimension 3)
-(MovingImageDimension 3)
+FixedImageDimension: 3
+MovingImageDimension: 3
 
-(UseDirectionCosines "true")
+UseDirectionCosines: true
 
-(Registration "MultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
+Registration: "MultiResolutionRegistration"
+Interpolator: "BSplineInterpolator"
+ResampleInterpolator: "FinalBSplineInterpolator"
+Resampler: "DefaultResampler"
 
-(FixedImagePyramid "FixedSmoothingImagePyramid")
-(MovingImagePyramid "MovingSmoothingImagePyramid")
+FixedImagePyramid: "FixedSmoothingImagePyramid"
+MovingImagePyramid: "MovingSmoothingImagePyramid"
 
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "BSplineTransform")
-(Metric "AdvancedMattesMutualInformation")
+Optimizer: "AdaptiveStochasticGradientDescent"
+Transform: "BSplineTransform"
+Metric: "AdvancedMattesMutualInformation"
 
-// ***************** Transformation **************************
+# ***************** Transformation **************************
 
-(FinalGridSpacingInPhysicalUnits 16)
+FinalGridSpacingInPhysicalUnits: 16
 
-(GridSpacingSchedule 4.0 2.0 1.0)
+GridSpacingSchedule: [4.0, 2.0, 1.0]
 
-(HowToCombineTransforms "Compose")
+HowToCombineTransforms: "Compose"
 
-// ******************* Similarity measure *********************
+# ******************* Similarity measure *********************
 
-(NumberOfHistogramBins 32)
+NumberOfHistogramBins: 32
 
-(ErodeMask "false")
+ErodeMask: false
 
-// ******************** Multiresolution **********************
+# ******************** Multiresolution **********************
 
-(NumberOfResolutions 3)
+NumberOfResolutions: 3
 
-(ImagePyramidSchedule 4 4 4  2 2 2  1 1 1 )
+ImagePyramidSchedule: [4, 4, 4, 2, 2, 2, 1, 1, 1 ]
 
-// ******************* Optimizer ****************************
+# ******************* Optimizer ****************************
 
-(MaximumNumberOfIterations 500)
+MaximumNumberOfIterations: 500
 
-// **************** Image sampling **********************
+# **************** Image sampling **********************
 
-(NumberOfSpatialSamples 2048)
+NumberOfSpatialSamples: 2048
 
-(NewSamplesEveryIteration "true")
-(ImageSampler "Random")
+NewSamplesEveryIteration: true
+ImageSampler: "Random"
 
-// ************* Interpolation and Resampling ****************
+# ************* Interpolation and Resampling ****************
 
-(BSplineInterpolationOrder 1)
+BSplineInterpolationOrder: 1
 
-(FinalBSplineInterpolationOrder 3)
+FinalBSplineInterpolationOrder: 3
 
-(DefaultPixelValue 0)
+DefaultPixelValue: 0
 
-(WriteResultImage "true")
-(ResultImagePixelType "short")
-(ResultImageFormat "mhd")
+WriteResultImage: true
+ResultImagePixelType: "short"
+ResultImageFormat: "mhd"
 

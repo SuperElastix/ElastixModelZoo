@@ -1,69 +1,69 @@
-// Parameter file created by ElastixParameterFile module
+# Parameter file created by ElastixParameterFile module
 
-// Registration parameters
-(Registration "MultiResolutionRegistration")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(UseDirectionCosines "true")
-(NumberOfResolutions 4)
-(ErodeFixedMask "false")
-(ErodeMovingMask "false")
+# Registration parameters
+Registration: "MultiResolutionRegistration"
+FixedImageDimension: 3
+MovingImageDimension: 3
+FixedInternalImagePixelType: "float"
+MovingInternalImagePixelType: "float"
+UseDirectionCosines: true
+NumberOfResolutions: 4
+ErodeFixedMask: false
+ErodeMovingMask: false
 
-// Transform parameters
-(Transform "EulerTransform")
-(HowToCombineTransforms "Compose")
-(AutomaticScalesEstimation "true")
-(AutomaticTransformInitialization "true")
-(AutomaticTransformInitializationMethod "CenterOfGravity")
+# Transform parameters
+Transform: "EulerTransform"
+HowToCombineTransforms: "Compose"
+AutomaticScalesEstimation: true
+AutomaticTransformInitialization: true
+AutomaticTransformInitializationMethod: "CenterOfGravity"
 
-// Metric parameters
-(Metric "AdvancedMattesMutualInformation")
-(ShowExactMetricValues "true")
-(CheckNumberOfSamples "true")
-(RequiredRatioOfValidSamples 0.05)
-(SubtractMean "true")
+# Metric parameters
+Metric: "AdvancedMattesMutualInformation"
+ShowExactMetricValues: true
+CheckNumberOfSamples: true
+RequiredRatioOfValidSamples: 0.05
+SubtractMean: true
 
-// Optimizer parameters
-(Optimizer "AdaptiveStochasticGradientDescent")
-(NewSamplesEveryIteration "true")
-(MaximumNumberOfIterations 150 200 500 1000)
-(MaximumNumberOfSamplingAttempts 15)
-(AutomaticParameterEstimation "true")
-(SigmoidInitialTime 0)
-(UseAdaptiveStepSizes "true")
-(NumberOfSamplesForExactGradient 100000)
+# Optimizer parameters
+Optimizer: "AdaptiveStochasticGradientDescent"
+NewSamplesEveryIteration: true
+MaximumNumberOfIterations: [150, 200, 500, 1000]
+MaximumNumberOfSamplingAttempts: 15
+AutomaticParameterEstimation: true
+SigmoidInitialTime: 0
+UseAdaptiveStepSizes: true
+NumberOfSamplesForExactGradient: 100000
 
-// Interpolator parameters
-(Interpolator "BSplineInterpolatorFloat")
-(BSplineInterpolationOrder 1)
+# Interpolator parameters
+Interpolator: "BSplineInterpolatorFloat"
+BSplineInterpolationOrder: 1
 
-// ResampleInterpolator parameters
-(ResampleInterpolator "FinalBSplineInterpolatorFloat")
-(FinalBSplineInterpolationOrder 3)
+# ResampleInterpolator parameters
+ResampleInterpolator: "FinalBSplineInterpolatorFloat"
+FinalBSplineInterpolationOrder: 3
 
-// ImageSampler parameters
-(ImageSampler "RandomSparseMask")
-(NumberOfSpatialSamples 5000)
-(UseRandomSampleRegion "true")
-(FixedImageBSplineInterpolationOrder 1)
+# ImageSampler parameters
+ImageSampler: "RandomSparseMask"
+NumberOfSpatialSamples: 5000
+UseRandomSampleRegion: true
+FixedImageBSplineInterpolationOrder: 1
 
-// FixedImagePyramid parameters
-(FixedImagePyramid "FixedSmoothingImagePyramid")
-(FixedImagePyramidSchedule 8 8 4  4 4 2  2 2 1  2 2 1)
+# FixedImagePyramid parameters
+FixedImagePyramid: "FixedSmoothingImagePyramid"
+FixedImagePyramidSchedule: [8, 8, 4, 4, 4, 2, 2, 2, 1, 2, 2, 1]
 
-// MovingImagePyramid parameters
-(MovingImagePyramid "MovingSmoothingImagePyramid")
-(MovingImagePyramidSchedule 8 8 4  4 4 2  2 2 1  2 2 1)
+# MovingImagePyramid parameters
+MovingImagePyramid: "MovingSmoothingImagePyramid"
+MovingImagePyramidSchedule: [8, 8, 4, 4, 4, 2, 2, 2, 1, 2, 2, 1]
 
-(WritePyramidImagesAfterEachResolution "false")
+WritePyramidImagesAfterEachResolution: false
 
-// Resampler parameters
-(Resampler "DefaultResampler")
-(WriteResultImage "false")
-(CompressResultImage "true")
-(ResultImageFormat "mhd")
-(ResultImagePixelType "float")
-(WriteResultImageAfterEachResolution "false")
+# Resampler parameters
+Resampler: "DefaultResampler"
+WriteResultImage: false
+CompressResultImage: true
+ResultImageFormat: "mhd"
+ResultImagePixelType: "float"
+WriteResultImageAfterEachResolution: false
 

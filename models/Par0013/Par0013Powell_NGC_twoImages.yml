@@ -1,73 +1,73 @@
 
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(UseDirectionCosines "false")
+FixedInternalImagePixelType: "float"
+MovingInternalImagePixelType: "float"
+FixedImageDimension: 3
+MovingImageDimension: 3
+UseDirectionCosines: false
 
-// **************** Main Components **************************
+# **************** Main Components **************************
 
-(Registration "MultiMetricMultiResolutionRegistration")
-(Interpolator "RayCastInterpolator" "RayCastInterpolator")
-(ResampleInterpolator "FinalRayCastInterpolator")
-(Resampler "DefaultResampler")
+Registration: "MultiMetricMultiResolutionRegistration"
+Interpolator: ["RayCastInterpolator", "RayCastInterpolator"]
+ResampleInterpolator: "FinalRayCastInterpolator"
+Resampler: "DefaultResampler"
 
-(FixedImagePyramid "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
+FixedImagePyramid: ["FixedRecursiveImagePyramid", "FixedRecursiveImagePyramid"]
+MovingImagePyramid: "MovingRecursiveImagePyramid"
 
-(Optimizer "Powell")
-(Transform "EulerTransform")
-(Metric "NormalizedGradientCorrelation" "NormalizedGradientCorrelation")
+Optimizer: "Powell"
+Transform: "EulerTransform"
+Metric: ["NormalizedGradientCorrelation", "NormalizedGradientCorrelation"]
 
-// ***************** Transformation **************************
+# ***************** Transformation **************************
 
-(Scales 57.3)
-(AutomaticTransformInitialization "false")
-(HowToCombineTransforms "Compose")
-(CenterOfRotationPoint 0.0 0.0 0.0)
+Scales: 57.3
+AutomaticTransformInitialization: false
+HowToCombineTransforms: "Compose"
+CenterOfRotationPoint: [0.0, 0.0, 0.0]
 
-// ******************* Similarity measure *********************
+# ******************* Similarity measure *********************
 
-(UseNormalization "true")
+UseNormalization: true
 
-// ******************** Multiresolution **********************
+# ******************** Multiresolution **********************
 
-(NumberOfResolutions 1)
+NumberOfResolutions: 1
 
-// ******************* Optimizer ****************************
+# ******************* Optimizer ****************************
 
-(MaximumNumberOfIterations 20)
-(MaximumStepLength 2.0)
-(StepTolerance 0.0001)
-(ValueTolerance 0.000001)
+MaximumNumberOfIterations: 20
+MaximumStepLength: 2.0
+StepTolerance: 0.0001
+ValueTolerance: 0.000001
 
-// **************** Image sampling **********************
+# **************** Image sampling **********************
 
-(ImageSampler "Full")
-(NewSamplesEveryIteration "false")
+ImageSampler: "Full"
+NewSamplesEveryIteration: false
 
-// ************* Interpolation and Resampling ****************
+# ************* Interpolation and Resampling ****************
 
-(Interpolator0PreParameters -0.009475 -0.006807 -0.030067 0.0 0.0 0.0)
-(ResampleInterpolator0PreParameters -0.009475 -0.006807 -0.030067 0.0 0.0 0.0)
+Interpolator0PreParameters: [-0.009475, -0.006807, -0.030067, 0.0, 0.0, 0.0]
+ResampleInterpolator0PreParameters: [-0.009475, -0.006807, -0.030067, 0.0, 0.0, 0.0]
 
-(Interpolator0FocalPoint 0.54 -0.85 -813.234)
-(ResampleInterpolator0FocalPoint 0.54 -0.85 -813.234)
+Interpolator0FocalPoint: [0.54, -0.85, -813.234]
+ResampleInterpolator0FocalPoint: [0.54, -0.85, -813.234]
 
-(Interpolator1PreParameters -0.007455 -1.585835 -0.024683 -2.0 0.5 -0.6)
-(ResampleInterpolator1PreParameters -0.007455 -1.585835 -0.024683 -2.0 0.5 -0.6)
+Interpolator1PreParameters: [-0.007455, -1.585835, -0.024683, -2.0, 0.5, -0.6]
+ResampleInterpolator1PreParameters: [-0.007455, -1.585835, -0.024683, -2.0, 0.5, -0.6]
 
-(Interpolator1FocalPoint -2.91 -1.22 -812.96)
-(ResampleInterpolator1FocalPoint -2.91 -1.22 -812.96)
+Interpolator1FocalPoint: [-2.91, -1.22, -812.96]
+ResampleInterpolator1FocalPoint: [-2.91, -1.22, -812.96]
 
-(Threshold 1000)
+Threshold: 1000
 
-(DefaultPixelValue 0)
+DefaultPixelValue: 0
 
-(WriteResultImage "true")
-(WriteTransformParametersEachIteration "false")
+WriteResultImage: true
+WriteTransformParametersEachIteration: false
 
-(ResultImagePixelType "float")
-(ResultImageFormat "mhd")
+ResultImagePixelType: "float"
+ResultImageFormat: "mhd"
 
 

@@ -1,63 +1,63 @@
-(ImageSampler "RandomCoordinate")
-(NumberOfSpatialSamples 5000 5000 5000) 
-(CheckNumberOfSamples "true")
+ImageSampler: "RandomCoordinate"
+NumberOfSpatialSamples: [5000, 5000, 5000] 
+CheckNumberOfSamples: true
 
-(MaximumNumberOfSamplingAttempts 10)
+MaximumNumberOfSamplingAttempts: 10
 
-(NewSamplesEveryIteration "true" "true" "true") 
+NewSamplesEveryIteration: [true, true, true] 
 
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(UseDirectionCosines "true")
+FixedInternalImagePixelType: "float"
+MovingInternalImagePixelType: "float"
+FixedImageDimension: 3
+MovingImageDimension: 3
+UseDirectionCosines: true
 
-(Resampler "DefaultResampler")
-(ResampleInterpolator "FinalBSplineInterpolator")
+Resampler: "DefaultResampler"
+ResampleInterpolator: "FinalBSplineInterpolator"
 
-(Interpolator "BSplineInterpolator")
-(FixedImageBSplineInterpolationOrder 1 1 1)
-(MovingImageBSplineInterpolationOrder 1 1 1)
+Interpolator: "BSplineInterpolator"
+FixedImageBSplineInterpolationOrder: [1, 1, 1]
+MovingImageBSplineInterpolationOrder: [1, 1, 1]
 
-(HowToCombineTransforms "Compose")
+HowToCombineTransforms: "Compose"
 
-(ErodeMask "false")
-(WriteResultImage "false")
-(DefaultPixelValue 0)
-(ResultImagePixelType "short")
-(ResultImageFormat "mhd")
+ErodeMask: false
+WriteResultImage: false
+DefaultPixelValue: 0
+ResultImagePixelType: "short"
+ResultImageFormat: "mhd"
 
-(SubtractMean "true")
-//(Optimizer "StandardGradientDescent")
-(Optimizer "AdaptiveStochasticGradientDescent")
-//(SP_a 10000.0)
-//(SP_A 20.0) 
-//(SP_alpha 0.602)
+SubtractMean: true
+#(Optimizer "StandardGradientDescent")
+Optimizer: "AdaptiveStochasticGradientDescent"
+#(SP_a 10000.0)
+#(SP_A 20.0) 
+#(SP_alpha 0.602)
 
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
+FixedImagePyramid: "FixedRecursiveImagePyramid"
+MovingImagePyramid: "MovingRecursiveImagePyramid"
 
-//(Registration "MultiResolutionRegistration")
-(Registration "MultiMetricMultiResolutionRegistration")
-(Metric "AdvancedNormalizedCorrelation" "StatisticalShapePenalty")
+#(Registration "MultiResolutionRegistration")
+Registration: "MultiMetricMultiResolutionRegistration"
+Metric: ["AdvancedNormalizedCorrelation", "StatisticalShapePenalty"]
 
-(Metric0Weight 1 1 1)
-(Metric1Weight 0.09 0.07 0.05) 
+Metric0Weight: [1, 1, 1]
+Metric1Weight: [0.09, 0.07, 0.05] 
 
-(NumberOfResolutions 3)
-(ImagePyramidSchedule 2 2 1  2 2 1  1 1 1)
-(MaximumNumberOfIterations 300)
-(Transform "BSplineTransform")
-(FinalGridSpacingInPhysicalUnits 5.0 5.0 5.0  5.0 5.0 5.0  5.0 5.0 5.0)
-(GridSpacingSchedule 8.0 8.0 8.0  4.0 4.0 4.0  2.0 2.0 2.0)
+NumberOfResolutions: 3
+ImagePyramidSchedule: [2, 2, 1, 2, 2, 1, 1, 1, 1]
+MaximumNumberOfIterations: 300
+Transform: "BSplineTransform"
+FinalGridSpacingInPhysicalUnits: [5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0]
+GridSpacingSchedule: [8.0, 8.0, 8.0, 4.0, 4.0, 4.0, 2.0, 2.0, 2.0]
 
-(WriteTransformParametersEachResolution "true")
-(WriteTransformParametersEachIteration "false")
+WriteTransformParametersEachResolution: true
+WriteTransformParametersEachIteration: false
 
-(NormalizedShapeModel "false")
-(ShapeModelCalculation 1)
+NormalizedShapeModel: false
+ShapeModelCalculation: 1
 
-(ShrinkageIntensity 0.2)
+ShrinkageIntensity: 0.2
 
-(BaseVariance 1000.0)
-(CutOffValue 0)
+BaseVariance: 1000.0
+CutOffValue: 0

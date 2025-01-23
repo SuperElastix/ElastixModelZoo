@@ -1,54 +1,54 @@
-// **************** Image Types ******************************
+# **************** Image Types ******************************
 
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(UseDirectionCosines "true")
+FixedInternalImagePixelType: "float"
+MovingInternalImagePixelType: "float"
+FixedImageDimension: 3
+MovingImageDimension: 3
+UseDirectionCosines: true
 
-// **************** Main Components **************************
+# **************** Main Components **************************
 
-(Registration "MultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "EulerTransform")
-(Metric "AdvancedMeanSquares")
+Registration: "MultiResolutionRegistration"
+Interpolator: "BSplineInterpolator"
+ResampleInterpolator: "FinalBSplineInterpolator"
+Resampler: "DefaultResampler"
+FixedImagePyramid: "FixedRecursiveImagePyramid"
+MovingImagePyramid: "MovingRecursiveImagePyramid"
+Optimizer: "AdaptiveStochasticGradientDescent"
+Transform: "EulerTransform"
+Metric: "AdvancedMeanSquares"
 
-// ***************** Transformation **************************
+# ***************** Transformation **************************
 
-(AutomaticScalesEstimation "true")
-(AutomaticTransformInitialization "false")
-(HowToCombineTransforms "Compose")
+AutomaticScalesEstimation: true
+AutomaticTransformInitialization: false
+HowToCombineTransforms: "Compose"
 
-// ******************* Similarity measure *********************
+# ******************* Similarity measure *********************
 
-(UseNormalization "true")
-(ErodeMask "false")
+UseNormalization: true
+ErodeMask: false
 
-// ******************** Multiresolution **********************
+# ******************** Multiresolution **********************
 
-(NumberOfResolutions 4)
-(ImagePyramidSchedule 8 8 4  4 4 2  2 2 1  1 1 1 )
+NumberOfResolutions: 4
+ImagePyramidSchedule: [8, 8, 4, 4, 4, 2, 2, 2, 1, 1, 1, 1 ]
 
-// ******************* Optimizer ****************************
+# ******************* Optimizer ****************************
 
-(MaximumNumberOfIterations 250)
+MaximumNumberOfIterations: 250
 
-// **************** Image sampling **********************
+# **************** Image sampling **********************
 
-(NumberOfSpatialSamples 2048)
-(NewSamplesEveryIteration "true")
-(ImageSampler "Random")
+NumberOfSpatialSamples: 2048
+NewSamplesEveryIteration: true
+ImageSampler: "Random"
 
-// ************* Interpolation and Resampling ****************
+# ************* Interpolation and Resampling ****************
 
-(BSplineInterpolationOrder 1)
-(FinalBSplineInterpolationOrder 3)
-(DefaultPixelValue -1)
-(WriteResultImage "false")
-(ResultImagePixelType "short")
-(ResultImageFormat "mhd")
+BSplineInterpolationOrder: 1
+FinalBSplineInterpolationOrder: 3
+DefaultPixelValue: -1
+WriteResultImage: false
+ResultImagePixelType: "short"
+ResultImageFormat: "mhd"
