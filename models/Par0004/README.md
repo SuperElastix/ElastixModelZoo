@@ -66,6 +66,10 @@ These registration are described in the publication:
 
 M. Staring, S. Klein and J.P.W. Pluim, "A Rigidity Penalty Term for Nonrigid Registration," Medical Physics, vol. 34, no. 11, pp. 4098 - 4108, November 2007.
 
+### Note
+
+"Par0004.bs_base.NRU08.txt" has accidentally specified the `NewSamplesEveryIteration` parameter twice. This may cause an error in elastix versions built after October 13, 2009 (more specifically, after commit https://github.com/SuperElastix/elastix/commit/2c72f70c738c7f95067747af486216223e1e2268), saying  "The parameter ... is specified more than once." Older elastix versions probably just ignore the first occurrence of the parameter. 
+
 ### Other comments
 
 In `elastix 4.2` we rewrote the rigidity penalty term metric, so that it works independently from the Mattes mutual information metric. Now it is possible to combine the rigidity penalty term with any metric, not just MI. The new implementation is exactly the same as the old one. In order to use the new one you need to replace several lines in the parameter files from above.
