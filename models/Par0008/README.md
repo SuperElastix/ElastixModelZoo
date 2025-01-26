@@ -32,6 +32,10 @@ These registration are described in the publication:
 
 K. Murphy, B. van Ginneken, J.P.W. Pluim, S. Klein, and M. Staring, Semi-Automatic Reference Standard Construction for Quantitative Evaluation of Lung CT Registration, in MICCAI, ser. Lecture Notes in Computer Science, vol. 5242, 2008, pp. 1006 – 1013.
 
+### Note
+
+"Parameters.Par0008.elastic.txt" has accidentally specified the parameters `BSplineInterpolationOrder` and `FinalBSplineInterpolationOrder` twice, with different values. This may cause an error in elastix versions built after October 13, 2009 (more specifically, after commit https://github.com/SuperElastix/elastix/commit/2c72f70c738c7f95067747af486216223e1e2268), saying  "The parameter ... is specified more than once." Older elastix versions probably just ignore the first occurrences of those parameters. 
+
 ###  References
 
 [1] K. Murphy, B. van Ginneken, J. P. W. Pluim, S. Klein, and M. Staring, "Semi-automatic reference standard construction for quantitative evaluation of lung CT registration," in MICCAI, ser. Lecture Notes in Computer Science, vol. 5242, 2008, pp. 1006 – 1013.
