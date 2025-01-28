@@ -1,0 +1,32 @@
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+FixedImageDimension = 3
+MovingImageDimension = 3
+UseDirectionCosines = true
+Registration = "MultiResolutionRegistration"
+Interpolator = "BSplineInterpolator"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
+FixedImagePyramid = "FixedRecursiveImagePyramid"
+MovingImagePyramid = "MovingRecursiveImagePyramid"
+Optimizer = "AdaptiveStochasticGradientDescent"
+Transform = "TranslationTransform"
+Metric = "AdvancedMattesMutualInformation"
+AutomaticScalesEstimation = true
+AutomaticTransformInitialization = true
+HowToCombineTransforms = "Compose"
+NumberOfHistogramBins = 32
+ErodeMask = false
+NumberOfResolutions = 4
+MaximumNumberOfIterations = 250
+NumberOfSpatialSamples = 2048
+NewSamplesEveryIteration = true
+ImageSampler = "Random"
+BSplineInterpolationOrder = 1
+FinalBSplineInterpolationOrder = 3
+DefaultPixelValue = 0
+WriteResultImage = true
+ResultImagePixelType = "float"
+ResultImageFormat = "gipl"
+
+
