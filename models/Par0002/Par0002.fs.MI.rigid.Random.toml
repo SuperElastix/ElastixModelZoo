@@ -1,74 +1,74 @@
-//ImageTypes
-(FixedInternalImagePixelType "float")
-(FixedImageDimension 3)
-(MovingInternalImagePixelType "float")
-(MovingImageDimension 3)
+#ImageTypes
+FixedInternalImagePixelType = "float"
+FixedImageDimension = 3
+MovingInternalImagePixelType = "float"
+MovingImageDimension = 3
 
-//Components
-(Registration "MultiResolutionRegistration")
-(FixedImagePyramid "FixedSmoothingImagePyramid")
-(MovingImagePyramid "MovingSmoothingImagePyramid")
-(Interpolator "BSplineInterpolator")
-(Metric "AdvancedMattesMutualInformation")
-(Optimizer "FullSearch")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
-(Transform "EulerTransform")
+#Components
+Registration = "MultiResolutionRegistration"
+FixedImagePyramid = "FixedSmoothingImagePyramid"
+MovingImagePyramid = "MovingSmoothingImagePyramid"
+Interpolator = "BSplineInterpolator"
+Metric = "AdvancedMattesMutualInformation"
+Optimizer = "FullSearch"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
+Transform = "EulerTransform"
 
-// ********** Pyramid
+# ********** Pyramid
 
-// Total number of resolutions
-(NumberOfResolutions 1)
-(ImagePyramidSchedule 0 0 0)
-
-
-// ********** Transform
-
-(AutomaticTransformInitialization "true")
-(HowToCombineTransforms "Compose")
+# Total number of resolutions
+NumberOfResolutions = 1
+ImagePyramidSchedule = [0, 0, 0]
 
 
-// ********** Optimizer
-(FullSearchSpace0 "t_z" 5 -10.0 30.0 0.1)
-//(FullSearchSpace0 "t_x" 3 -10.0 20.0 0.1)
+# ********** Transform
+
+AutomaticTransformInitialization = true
+HowToCombineTransforms = "Compose"
 
 
-// ********** Metric
-
-//Number of grey level bins in each resolution level:
-(NumberOfHistogramBins 32)
-(FixedLimitRangeRatio 0.0)
-(MovingLimitRangeRatio 0.0)
-(FixedKernelBSplineOrder 1)
-(MovingKernelBSplineOrder 3)
+# ********** Optimizer
+FullSearchSpace0 = ["t_z", 5, -10.0, 30.0, 0.1]
+#(FullSearchSpace0 "t_x" 3 -10.0 20.0 0.1)
 
 
-// ********** Several
+# ********** Metric
 
-(WriteTransformParametersEachIteration "false")
-(WriteTransformParametersEachResolution "false")
-(WriteResultImage "false")
-(ShowExactMetricValue "false")
-(ErodeMask "true")
-(UseDifferentiableOverlap "false")
-
-
-// ********** ImageSampler
-
-//Number of spatial samples used to compute the mutual information in each resolution level:
-(ImageSampler "Random")
-(NumberOfSpatialSamples 100000)
-(NewSamplesEveryIteration "false")
+#Number of grey level bins in each resolution level:
+NumberOfHistogramBins = 32
+FixedLimitRangeRatio = 0.0
+MovingLimitRangeRatio = 0.0
+FixedKernelBSplineOrder = 1
+MovingKernelBSplineOrder = 3
 
 
-// ********** Interpolator and Resampler
+# ********** Several
 
-//Order of B-Spline interpolation used in each resolution level:
-(BSplineInterpolationOrder 1)
+WriteTransformParametersEachIteration = false
+WriteTransformParametersEachResolution = false
+WriteResultImage = false
+ShowExactMetricValue = false
+ErodeMask = true
+UseDifferentiableOverlap = false
 
-//Order of B-Spline interpolation used for applying the final deformation:
-(FinalBSplineInterpolationOrder 3)
 
-//Default pixel value for pixels that come from outside the picture:
-(DefaultPixelValue 0)
+# ********** ImageSampler
+
+#Number of spatial samples used to compute the mutual information in each resolution level:
+ImageSampler = "Random"
+NumberOfSpatialSamples = 100000
+NewSamplesEveryIteration = false
+
+
+# ********** Interpolator and Resampler
+
+#Order of B-Spline interpolation used in each resolution level:
+BSplineInterpolationOrder = 1
+
+#Order of B-Spline interpolation used for applying the final deformation:
+FinalBSplineInterpolationOrder = 3
+
+#Default pixel value for pixels that come from outside the picture:
+DefaultPixelValue = 0
 

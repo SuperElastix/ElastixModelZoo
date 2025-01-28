@@ -1,75 +1,75 @@
 
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(UseDirectionCosines "false")
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+FixedImageDimension = 3
+MovingImageDimension = 3
+UseDirectionCosines = false
 
-// **************** Main Components **************************
+# **************** Main Components **************************
 
-(Registration "MultiResolutionRegistration")
-(Interpolator "RayCastInterpolator")
-(ResampleInterpolator "FinalRayCastInterpolator")
-(Resampler "DefaultResampler")
+Registration = "MultiResolutionRegistration"
+Interpolator = "RayCastInterpolator"
+ResampleInterpolator = "FinalRayCastInterpolator"
+Resampler = "DefaultResampler"
 
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
+FixedImagePyramid = "FixedRecursiveImagePyramid"
+MovingImagePyramid = "MovingRecursiveImagePyramid"
 
-(Optimizer "ConjugateGradient")
-(Transform "EulerTransform")
-(Metric "NormalizedGradientCorrelation")
+Optimizer = "ConjugateGradient"
+Transform = "EulerTransform"
+Metric = "NormalizedGradientCorrelation"
 
-// ***************** Transformation **************************
+# ***************** Transformation **************************
 
-(Scales 57.3)
-(AutomaticTransformInitialization "false")
-(HowToCombineTransforms "Compose")
-(CenterOfRotationPoint 0.0 0.0 0.0)
+Scales = 57.3
+AutomaticTransformInitialization = false
+HowToCombineTransforms = "Compose"
+CenterOfRotationPoint = [0.0, 0.0, 0.0]
 
-// ******************* Similarity measure *********************
+# ******************* Similarity measure *********************
 
-(UseNormalization "true")
+UseNormalization = true
 
-// ******************** Multiresolution **********************
+# ******************** Multiresolution **********************
 
-(NumberOfResolutions 1)
+NumberOfResolutions = 1
 
-// ******************* Optimizer ****************************
+# ******************* Optimizer ****************************
 
-(MaximumNumberOfIterations 500)
-(GenerateLineSearchIterations "false")
-(MaximumNumberOfLineSearchIterations 10)
-(StepLength 1.0)
-(LineSearchValueTolerance 0.0001)
-(LineSearchGradientTolerance 0.9)
-(ValueTolerance 0.000001)
-(GradientMagnitudeTolerance 0.000000001)
-(ConjugateGradientType "DaiYuanHestenesStiefel") 
-(StopIfWolfeNotSatisfied "true")
+MaximumNumberOfIterations = 500
+GenerateLineSearchIterations = false
+MaximumNumberOfLineSearchIterations = 10
+StepLength = 1.0
+LineSearchValueTolerance = 0.0001
+LineSearchGradientTolerance = 0.9
+ValueTolerance = 0.000001
+GradientMagnitudeTolerance = 0.000000001
+ConjugateGradientType = "DaiYuanHestenesStiefel" 
+StopIfWolfeNotSatisfied = true
 
-// **************** Image sampling **********************
+# **************** Image sampling **********************
 
-(ImageSampler "Full")
-(NewSamplesEveryIteration "false")
+ImageSampler = "Full"
+NewSamplesEveryIteration = false
 
-// ************* Interpolation and Resampling ****************
+# ************* Interpolation and Resampling ****************
 
-(Origin -145.498 -146.889 381.766)
+Origin = [-145.498, -146.889, 381.766]
 
-(Interpolator0PreParameters -0.009475 -0.006807 -0.030067 0.0 0.0 0.0)
-(ResampleInterpolator0PreParameters -0.009475 -0.006807 -0.030067 0.0 0.0 0.0)
+Interpolator0PreParameters = [-0.009475, -0.006807, -0.030067, 0.0, 0.0, 0.0]
+ResampleInterpolator0PreParameters = [-0.009475, -0.006807, -0.030067, 0.0, 0.0, 0.0]
 
-(Interpolator0FocalPoint 0.54 -0.85 -813.234)
-(ResampleInterpolator0FocalPoint 0.54 -0.85 -813.234)
+Interpolator0FocalPoint = [0.54, -0.85, -813.234]
+ResampleInterpolator0FocalPoint = [0.54, -0.85, -813.234]
 
-(Threshold 1000)
+Threshold = 1000
 
-(DefaultPixelValue 0)
+DefaultPixelValue = 0
 
-(WriteResultImage "true")
-(WriteTransformParametersEachIteration "true")
+WriteResultImage = true
+WriteTransformParametersEachIteration = true
 
-(ResultImagePixelType "float")
-(ResultImageFormat "mhd")
+ResultImagePixelType = "float"
+ResultImageFormat = "mhd"
 
 

@@ -1,22 +1,22 @@
-(Transform "TranslationTransform")
-(NumberOfParameters 3)
-(TransformParameters 0. 0. 0.)
-(InitialTransformParametersFileName "NoInitialTransform")
-(HowToCombineTransforms "Compose")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(Index 0 0 0)
-(Size 256 224 40)
-(Spacing 1.4843750000 1.4843750000 5.0000000000)
-(Origin -164.3700561523 164.7656250000 -87.4708862305)
-(Direction 1.0000000000 0.0000000000 0.0000000000 0.0000000000 -1.0000000000 0.0000000000 0.0000000000 0.0000000000 1.0000000000)
-(UseDirectionCosines "true")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(FinalBSplineInterpolationOrder 1)
-(Resampler "DefaultResampler")
-(DefaultPixelValue -1.000000)
-(ResultImageFormat "nii")
-(ResultImagePixelType "float")
-(CompressResultImage "false")
+Transform = "TranslationTransform"
+NumberOfParameters = 3
+TransformParameters = [0., 0., 0.]
+InitialTransformParametersFileName = "NoInitialTransform"
+HowToCombineTransforms = "Compose"
+FixedImageDimension = 3
+MovingImageDimension = 3
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+Index = [0, 0, 0]
+Size = [256, 224, 40]
+Spacing = [1.4843750000, 1.4843750000, 5.0000000000]
+Origin = [-164.3700561523, 164.7656250000, -87.4708862305]
+Direction = [1.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, -1.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 1.0000000000]
+UseDirectionCosines = true
+ResampleInterpolator = "FinalBSplineInterpolator"
+FinalBSplineInterpolationOrder = 1
+Resampler = "DefaultResampler"
+DefaultPixelValue = -1.000000
+ResultImageFormat = "nii"
+ResultImagePixelType = "float"
+CompressResultImage = false

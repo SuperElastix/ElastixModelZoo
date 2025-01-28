@@ -1,55 +1,55 @@
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
 
-(UseDirectionCosines "false")
+UseDirectionCosines = false
 
-// **************** Main Components **************************
+# **************** Main Components **************************
 
-(Registration "MultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
+Registration = "MultiResolutionRegistration"
+Interpolator = "BSplineInterpolator"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
 
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
+FixedImagePyramid = "FixedRecursiveImagePyramid"
+MovingImagePyramid = "MovingRecursiveImagePyramid"
 
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "EulerTransform")
-(Metric "AdvancedMattesMutualInformation")
+Optimizer = "AdaptiveStochasticGradientDescent"
+Transform = "EulerTransform"
+Metric = "AdvancedMattesMutualInformation"
 
-// ***************** Transformation **************************
+# ***************** Transformation **************************
 
-(AutomaticScalesEstimation "true")
+AutomaticScalesEstimation = true
 
-(AutomaticTransformInitialization "true")
-(AutomaticTransformInitializationMethod "CenterOfGravity")
+AutomaticTransformInitialization = true
+AutomaticTransformInitializationMethod = "CenterOfGravity"
 
-// ******************** Multiresolution **********************
+# ******************** Multiresolution **********************
 
-(NumberOfResolutions 2)
-(ImagePyramidSchedule 4 4 4 1 1 1)
+NumberOfResolutions = 2
+ImagePyramidSchedule = [4, 4, 4, 1, 1, 1]
 
-// ******************* Optimizer ****************************
+# ******************* Optimizer ****************************
 
-(MaximumNumberOfIterations 200)
+MaximumNumberOfIterations = 200
 
 
-// **************** Image sampling **********************
+# **************** Image sampling **********************
 
-(NumberOfSpatialSamples 65536)
+NumberOfSpatialSamples = 65536
 
-(NewSamplesEveryIteration "true")
-(ImageSampler "Random")
+NewSamplesEveryIteration = true
+ImageSampler = "Random"
 
-// ************* Interpolation and Resampling ****************
+# ************* Interpolation and Resampling ****************
 
-(BSplineInterpolationOrder 3)
-(FinalBSplineInterpolationOrder 3)
+BSplineInterpolationOrder = 3
+FinalBSplineInterpolationOrder = 3
 
-(DefaultPixelValue -1024)
-(WriteResultImage "true")
+DefaultPixelValue = -1024
+WriteResultImage = true
 
-(ResultImagePixelType "float")
-(ResultImageFormat "nii.gz")
+ResultImagePixelType = "float"
+ResultImageFormat = "nii.gz"
 
 

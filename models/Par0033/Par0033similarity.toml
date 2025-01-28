@@ -1,91 +1,91 @@
-// SimilarityTransform
+# SimilarityTransform
 
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
 
-(FixedImageDimension 3)
-(MovingImageDimension 3)
+FixedImageDimension = 3
+MovingImageDimension = 3
 
-(UseDirectionCosines "true")
-
-
-// **************** Main Components **************************
-
-(Registration "MultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
-
-//(FixedImagePyramid "FixedSmoothingImagePyramid")
-//(MovingImagePyramid "MovingSmoothingImagePyramid")
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
-
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "SimilarityTransform")
-(Metric "AdvancedMattesMutualInformation")
-//(Metric "AdvancedNormalizedCorrelation")
+UseDirectionCosines = true
 
 
-// ***************** Transformation **************************
+# **************** Main Components **************************
 
-(AutomaticScalesEstimation "true")
+Registration = "MultiResolutionRegistration"
+Interpolator = "BSplineInterpolator"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
 
-(AutomaticTransformInitializationMethod "CenterOfGravity")
+#(FixedImagePyramid "FixedSmoothingImagePyramid")
+#(MovingImagePyramid "MovingSmoothingImagePyramid")
+FixedImagePyramid = "FixedRecursiveImagePyramid"
+MovingImagePyramid = "MovingRecursiveImagePyramid"
 
-(AutomaticTransformInitialization "true")
-
-(HowToCombineTransforms "Compose")
-
-
-// ******************* Similarity measure *********************
-
-(NumberOfHistogramBins 32)
-
-// If you use a mask, this option is important. 
-// If the mask serves as region of interest, set it to false.
-// If the mask indicates which pixels are valid, then set it to true.
-(ErodeMask "false")
+Optimizer = "AdaptiveStochasticGradientDescent"
+Transform = "SimilarityTransform"
+Metric = "AdvancedMattesMutualInformation"
+#(Metric "AdvancedNormalizedCorrelation")
 
 
-// ******************** Multiresolution **********************
+# ***************** Transformation **************************
 
-(NumberOfResolutions 2)
+AutomaticScalesEstimation = true
 
-(ImagePyramidSchedule 1 1 1  1 1 1  1 1 1  1 1 1)
+AutomaticTransformInitializationMethod = "CenterOfGravity"
 
+AutomaticTransformInitialization = true
 
-// ******************* Optimizer ****************************
-
-(MaximumNumberOfIterations 1000)
-
-(MaximumStepLength 0.2)
+HowToCombineTransforms = "Compose"
 
 
-// **************** Image sampling **********************
+# ******************* Similarity measure *********************
 
-(NumberOfSpatialSamples 2048)
+NumberOfHistogramBins = 32
 
-(NewSamplesEveryIteration "true")
-(ImageSampler "RandomCoordinate")
-//(ImageSampler "Random")
-
-// ************* Interpolation and Resampling ****************
-
-(BSplineInterpolationOrder 1)
-(FinalBSplineInterpolationOrder 3)
-
-(DefaultPixelValue 0)
-
-// Choose whether to generate the deformed moving image.
-// You can save some time by setting this to false, if you are
-// only interested in the final (nonrigidly) deformed moving image
-// for example.
-(WriteResultImage "true")
-
-// The pixel type and format of the resulting deformed moving image
-(ResultImagePixelType "float")
-(ResultImageFormat "mhd")
+# If you use a mask, this option is important. 
+# If the mask serves as region of interest, set it to false.
+# If the mask indicates which pixels are valid, then set it to true.
+ErodeMask = false
 
 
-(RequiredRatioOfValidSamples 0.001)
+# ******************** Multiresolution **********************
+
+NumberOfResolutions = 2
+
+ImagePyramidSchedule = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+
+# ******************* Optimizer ****************************
+
+MaximumNumberOfIterations = 1000
+
+MaximumStepLength = 0.2
+
+
+# **************** Image sampling **********************
+
+NumberOfSpatialSamples = 2048
+
+NewSamplesEveryIteration = true
+ImageSampler = "RandomCoordinate"
+#(ImageSampler "Random")
+
+# ************* Interpolation and Resampling ****************
+
+BSplineInterpolationOrder = 1
+FinalBSplineInterpolationOrder = 3
+
+DefaultPixelValue = 0
+
+# Choose whether to generate the deformed moving image.
+# You can save some time by setting this to false, if you are
+# only interested in the final (nonrigidly) deformed moving image
+# for example.
+WriteResultImage = true
+
+# The pixel type and format of the resulting deformed moving image
+ResultImagePixelType = "float"
+ResultImageFormat = "mhd"
+
+
+RequiredRatioOfValidSamples = 0.001

@@ -1,63 +1,63 @@
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
 
-(UseDirectionCosines "false")
-
-
-(HowToCombineTransforms "Compose")
-
-// **************** Main Components **************************
-
-(Registration "MultiMetricMultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
-
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
-
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "BSplineTransform")
-
-(Metric "AdvancedMattesMutualInformation" "TransformRigidityPenalty")
-(NumberOfHistogramBins 64)
-
-(Metric0Weight 3)
-(Metric0Use "true")
-(Metric1Weight 10)
-(Metric1Use "true")
+UseDirectionCosines = false
 
 
-// ***************** Transformation **************************
+HowToCombineTransforms = "Compose"
 
-(AutomaticScalesEstimation "true")
-(FinalGridSpacingInPhysicalUnits 10.0 10.0 10.0)
+# **************** Main Components **************************
 
-// ******************** Multiresolution **********************
+Registration = "MultiMetricMultiResolutionRegistration"
+Interpolator = "BSplineInterpolator"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
 
-(NumberOfResolutions 3)
-(ImagePyramidSchedule 4 4 4 2 2 2 1 1 1)
+FixedImagePyramid = "FixedRecursiveImagePyramid"
+MovingImagePyramid = "MovingRecursiveImagePyramid"
 
-// ******************* Optimizer ****************************
+Optimizer = "AdaptiveStochasticGradientDescent"
+Transform = "BSplineTransform"
 
-(MaximumNumberOfIterations 200)
+Metric = ["AdvancedMattesMutualInformation", "TransformRigidityPenalty"]
+NumberOfHistogramBins = 64
 
-// **************** Image sampling **********************
+Metric0Weight = 3
+Metric0Use = true
+Metric1Weight = 10
+Metric1Use = true
 
-(NumberOfSpatialSamples 65536)
 
-(NewSamplesEveryIteration "true")
-(ImageSampler "Random")
+# ***************** Transformation **************************
 
-// ************* Interpolation and Resampling ****************
+AutomaticScalesEstimation = true
+FinalGridSpacingInPhysicalUnits = [10.0, 10.0, 10.0]
 
-(BSplineInterpolationOrder 3)
-(FinalBSplineInterpolationOrder 3)
+# ******************** Multiresolution **********************
 
-(DefaultPixelValue -1024)
+NumberOfResolutions = 3
+ImagePyramidSchedule = [4, 4, 4, 2, 2, 2, 1, 1, 1]
 
-(WriteResultImage "true")
-(ResultImagePixelType "float")
-(ResultImageFormat "nii.gz")
+# ******************* Optimizer ****************************
+
+MaximumNumberOfIterations = 200
+
+# **************** Image sampling **********************
+
+NumberOfSpatialSamples = 65536
+
+NewSamplesEveryIteration = true
+ImageSampler = "Random"
+
+# ************* Interpolation and Resampling ****************
+
+BSplineInterpolationOrder = 3
+FinalBSplineInterpolationOrder = 3
+
+DefaultPixelValue = -1024
+
+WriteResultImage = true
+ResultImagePixelType = "float"
+ResultImageFormat = "nii.gz"
 
 

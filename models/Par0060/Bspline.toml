@@ -1,33 +1,33 @@
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-  (AutomaticParameterEstimation "true")
-  (CheckNumberOfSamples "true")
-  (DefaultPixelValue 0)
-  (FinalBSplineInterpolationOrder 3)
-  (FinalGridSpacingInVoxels 8)
-  (FixedImagePyramid "FixedSmoothingImagePyramid")
-  (ImageSampler "RandomCoordinate")
-  (Interpolator "BSplineInterpolator")
-  (MaximumNumberOfIterations 256)
-  (MaximumNumberOfSamplingAttempts 8)
-  (Metric "AdvancedMattesMutualInformation" "TransformBendingEnergyPenalty")
-  (Metric0Weight 1)
-  (Metric1Weight 2)
-  (MovingImagePyramid "MovingSmoothingImagePyramid")
-  (NewSamplesEveryIteration "true")
-  (NumberOfHistogramBins 32)
-  (NumberOfResolutions 4)
-  (NumberOfSamplesForExactGradient 4096)
-  (NumberOfSpatialSamples 3000)
-  (Optimizer "AdaptiveStochasticGradientDescent")
-  (Registration "MultiMetricMultiResolutionRegistration")
-  (ResampleInterpolator "FinalBSplineInterpolator")
-  (Resampler "DefaultResampler")
-  (ResultImageFormat "nii")
-  (Transform "BSplineTransform")
-  (WriteIterationInfo "false")
-  (WriteResultImage "true")
-  (HowToCombineTransforms "Compose")
-  (AutomaticScalesEstimation "true")
-  (AutomaticTransformInitialization "true")
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+AutomaticParameterEstimation = true
+CheckNumberOfSamples = true
+DefaultPixelValue = 0
+FinalBSplineInterpolationOrder = 3
+FinalGridSpacingInVoxels = 8
+FixedImagePyramid = "FixedSmoothingImagePyramid"
+ImageSampler = "RandomCoordinate"
+Interpolator = "BSplineInterpolator"
+MaximumNumberOfIterations = 256
+MaximumNumberOfSamplingAttempts = 8
+Metric = ["AdvancedMattesMutualInformation", "TransformBendingEnergyPenalty"]
+Metric0Weight = 1
+Metric1Weight = 2
+MovingImagePyramid = "MovingSmoothingImagePyramid"
+NewSamplesEveryIteration = true
+NumberOfHistogramBins = 32
+NumberOfResolutions = 4
+NumberOfSamplesForExactGradient = 4096
+NumberOfSpatialSamples = 3000
+Optimizer = "AdaptiveStochasticGradientDescent"
+Registration = "MultiMetricMultiResolutionRegistration"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
+ResultImageFormat = "nii"
+Transform = "BSplineTransform"
+WriteIterationInfo = false
+WriteResultImage = true
+HowToCombineTransforms = "Compose"
+AutomaticScalesEstimation = true
+AutomaticTransformInitialization = true
 

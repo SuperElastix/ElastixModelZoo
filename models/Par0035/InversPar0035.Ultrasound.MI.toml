@@ -1,86 +1,86 @@
-// *********************
-// * ImageTypes
-// *********************
-(FixedInternalImagePixelType "short")
-(FixedImageDimension 4)
-(MovingInternalImagePixelType "short")
-(MovingImageDimension 4)
+# *********************
+# * ImageTypes
+# *********************
+FixedInternalImagePixelType = "short"
+FixedImageDimension = 4
+MovingInternalImagePixelType = "short"
+MovingImageDimension = 4
 
-// *********************
-// * Components
-// *********************
-(Registration "MultiResolutionRegistration" )
-(FixedImagePyramid "FixedSmoothingImagePyramid")
-(MovingImagePyramid "MovingSmoothingImagePyramid")
-(Interpolator "ReducedDimensionBSplineInterpolator")
-(BSplineInterpolationOrder 1)
-(Metric "DisplacementMagnitudePenalty")
-(Optimizer "AdaptiveStochasticGradientDescent")
-(ResampleInterpolator "FinalReducedDimensionBSplineInterpolator")
-(Resampler "DefaultResampler")
-(Transform "BSplineTransform")
-(UseDirectionCosines "true")
+# *********************
+# * Components
+# *********************
+Registration = "MultiResolutionRegistration" 
+FixedImagePyramid = "FixedSmoothingImagePyramid"
+MovingImagePyramid = "MovingSmoothingImagePyramid"
+Interpolator = "ReducedDimensionBSplineInterpolator"
+BSplineInterpolationOrder = 1
+Metric = "DisplacementMagnitudePenalty"
+Optimizer = "AdaptiveStochasticGradientDescent"
+ResampleInterpolator = "FinalReducedDimensionBSplineInterpolator"
+Resampler = "DefaultResampler"
+Transform = "BSplineTransform"
+UseDirectionCosines = true
 
-// Spline order of B-spline transform
-(BSplineTransformSplineOrder 2)
-// Enable/disable periodicity constraint of B-spline transformation
-(UseCyclicTransform "false")
+# Spline order of B-spline transform
+BSplineTransformSplineOrder = 2
+# Enable/disable periodicity constraint of B-spline transformation
+UseCyclicTransform = false
 
-// *********************
-// * Metric settings
-// *********************
-(MovingImageDerivativeScales 1.0 1.0 1.0 0.0)
-(SampleLastDimensionRandomly "true")
-(NumSamplesLastDimension 5)
-(SubtractMean "true")
+# *********************
+# * Metric settings
+# *********************
+MovingImageDerivativeScales = [1.0, 1.0, 1.0, 0.0]
+SampleLastDimensionRandomly = true
+NumSamplesLastDimension = 5
+SubtractMean = true
 
-// *********************
-// * Optimizer settings
-// *********************
-(NumberOfSamplesForExactGradient 20000)
-(NumberOfResolutions 3)
-//(FinalGridSpacingInPhysicalUnits 24.0 24.0 24.0 2)
-(FinalGridSpacingInPhysicalUnits 15.0 15.0 15.0 1)
-(GridSpacingSchedule 4.0 4.0 4.0 2.0 2.0 2.0 2.0 1.0 1.0 1.0 1.0 1.0)
-(MaximumNumberOfIterations 2000)
-(SP_A 20.0)
-(SigmoidInitialTime 0.0)
-(AutomaticParameterEstimation "true")
-(ASGDParameterEstimationMethod "Original")
-// *********************
-// * Mask settings
-// *********************
-(ErodeMask "false")
+# *********************
+# * Optimizer settings
+# *********************
+NumberOfSamplesForExactGradient = 20000
+NumberOfResolutions = 3
+#(FinalGridSpacingInPhysicalUnits 24.0 24.0 24.0 2)
+FinalGridSpacingInPhysicalUnits = [15.0, 15.0, 15.0, 1]
+GridSpacingSchedule = [4.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+MaximumNumberOfIterations = 2000
+SP_A = 20.0
+SigmoidInitialTime = 0.0
+AutomaticParameterEstimation = true
+ASGDParameterEstimationMethod = "Original"
+# *********************
+# * Mask settings
+# *********************
+ErodeMask = false
 
-// *********************
-// * Transform settings
-// *********************
-(HowToCombineTransforms "Compose" )
+# *********************
+# * Transform settings
+# *********************
+HowToCombineTransforms = "Compose" 
 
-// *********************
-// * Pyramid settings
-// *********************
-(FixedImagePyramidSchedule 0 0 0 0  0 0 0 0  0 0 0 0)
-(MovingImagePyramidSchedule 4 4 4 0  2 2 2 0  1 1 1 0)
+# *********************
+# * Pyramid settings
+# *********************
+FixedImagePyramidSchedule = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+MovingImagePyramidSchedule = [4, 4, 4, 0, 2, 2, 2, 0, 1, 1, 1, 0]
 
-// *********************
-// * Sampler parameters
-// *********************
-(ImageSampler "Random")
-(NumberOfSpatialSamples 2000)
-(CheckNumberOfSamples "true")
-(NewSamplesEveryIteration "true")
-(MaximumNumberOfSamplingAttempts 50)
+# *********************
+# * Sampler parameters
+# *********************
+ImageSampler = "Random"
+NumberOfSpatialSamples = 2000
+CheckNumberOfSamples = true
+NewSamplesEveryIteration = true
+MaximumNumberOfSamplingAttempts = 50
 
-// *********************
-// * Output settings
-// *********************
-(WriteTransformParametersEachIteration "false" )
-(WriteTransformParametersEachResolution "false" )
-(WriteResultImage "false" )
-(CompressResultImage "true" )
-(WriteResultImageAfterEachResolution "false")
-(ShowExactMetricValue "false" )
-(DefaultPixelValue 0)
+# *********************
+# * Output settings
+# *********************
+WriteTransformParametersEachIteration = false 
+WriteTransformParametersEachResolution = false 
+WriteResultImage = false 
+CompressResultImage = true 
+WriteResultImageAfterEachResolution = false
+ShowExactMetricValue = false 
+DefaultPixelValue = 0
 
-(FinalBSplineInterpolationOrder 1)
+FinalBSplineInterpolationOrder = 1

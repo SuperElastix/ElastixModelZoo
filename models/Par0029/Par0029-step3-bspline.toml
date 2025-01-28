@@ -1,29 +1,29 @@
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(UseDirectionCosines "true")
-(Registration "MultiResolutionRegistration")
-(Interpolator "BSplineInterpolator")
-(ResampleInterpolator "FinalBSplineInterpolator")
-(Resampler "DefaultResampler")
-(FixedImagePyramid "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid")
-(Optimizer "AdaptiveStochasticGradientDescent")
-(Transform "BSplineTransform")
-(Metric "AdvancedMattesMutualInformation")
-(FinalGridSpacingInPhysicalUnits 150)
-(HowToCombineTransforms "Compose")
-(NumberOfHistogramBins 32)
-(ErodeMask "true")
-(NumberOfResolutions 2)
-(MaximumNumberOfIterations 2000)
-(NumberOfSpatialSamples 2048)
-(NewSamplesEveryIteration "true")
-(ImageSampler "Random")
-(BSplineInterpolationOrder 1)
-(FinalBSplineInterpolationOrder 1)
-(DefaultPixelValue 0)
-(WriteResultImage "true")
-(ResultImagePixelType "float")
-(ResultImageFormat "nii")
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+FixedImageDimension = 3
+MovingImageDimension = 3
+UseDirectionCosines = true
+Registration = "MultiResolutionRegistration"
+Interpolator = "BSplineInterpolator"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
+FixedImagePyramid = "FixedRecursiveImagePyramid"
+MovingImagePyramid = "MovingRecursiveImagePyramid"
+Optimizer = "AdaptiveStochasticGradientDescent"
+Transform = "BSplineTransform"
+Metric = "AdvancedMattesMutualInformation"
+FinalGridSpacingInPhysicalUnits = 150
+HowToCombineTransforms = "Compose"
+NumberOfHistogramBins = 32
+ErodeMask = true
+NumberOfResolutions = 2
+MaximumNumberOfIterations = 2000
+NumberOfSpatialSamples = 2048
+NewSamplesEveryIteration = true
+ImageSampler = "Random"
+BSplineInterpolationOrder = 1
+FinalBSplineInterpolationOrder = 1
+DefaultPixelValue = 0
+WriteResultImage = true
+ResultImagePixelType = "float"
+ResultImageFormat = "nii"

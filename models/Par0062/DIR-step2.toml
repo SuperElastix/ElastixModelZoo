@@ -1,47 +1,47 @@
-(NumberOfResolutions 2)
-(Metric "AdvancedKappaStatistic" "TransformBendingEnergyPenalty")
-(Metric0Weight 1)
-(Metric1Weight 1000)
-(GridSpacingSchedule 2.0 2.0 2.0  1.0 1.0 1.0)
-(FixedImagePyramidSchedule 2 2 1  2 2 1)
-(MovingImagePyramidSchedule 2 2 1  2 2 1)
-(MaximumNumberOfIterations 500)
-(MaximumNumberOfSamplingAttempts 8 8 8 8)
-(ImageSampler "Random" "Random")
-(Interpolator "BSplineInterpolator" "BSplineInterpolator")
-(FixedImagePyramid "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid")
-(MovingImagePyramid "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid")
-(Registration "MultiMetricMultiResolutionRegistration")
-(FixedImageDimension 3)
-(MovingImageDimension 3)
-(FixedInternalImagePixelType "float")
-(MovingInternalImagePixelType "float")
-(CheckNumberOfSamples "false")
-(RequiredRatioOfValidSamples 0.125)
-(NumberOfHistogramBins 32)
-(NumberOfFixedHistogramBins 32)
-(FixedKernelBSplineOrder 1)
-(FixedLimitRangeRatio 0.00)
-(NumberOfMovingHistogramBins 32)
-(MovingKernelBSplineOrder 3)
-(MovingLimitRangeRatio 0.00)
-(UseFastAndLowMemoryVersion "true")
-(ForegroundValue 1)
-(Transform "BSplineTransform")
-(HowToCombineTransforms "Compose")
-(FinalGridSpacingInPhysicalUnits 16 16 32)
-(Optimizer "AdaptiveStochasticGradientDescent" "AdaptiveStochasticGradientDescent")
-(NewSamplesEveryIteration "true")
-(NumberOfSpatialSamples 5000)
-(SampleRegionSize 50.0 50.0 50.0)
-(AutomaticParameterEstimation "true")
-(BSplineInterpolationOrder 1)
-(ResampleInterpolator "FinalBSplineInterpolator")
-(FinalBSplineInterpolationOrder 0)
-(WriteResultImage "true")
-(ResultImagePixelType "float")
-(ResultImageFormat "gipl")
-(UseRandomSampleRegion "true")
-(FixedImageBSplineInterpolationOrder 1)
-(WritePyramidImagesAfterEachResolution "false")
-(Resampler "DefaultResampler")
+NumberOfResolutions = 2
+Metric = ["AdvancedKappaStatistic", "TransformBendingEnergyPenalty"]
+Metric0Weight = 1
+Metric1Weight = 1000
+GridSpacingSchedule = [2.0, 2.0, 2.0, 1.0, 1.0, 1.0]
+FixedImagePyramidSchedule = [2, 2, 1, 2, 2, 1]
+MovingImagePyramidSchedule = [2, 2, 1, 2, 2, 1]
+MaximumNumberOfIterations = 500
+MaximumNumberOfSamplingAttempts = [8, 8, 8, 8]
+ImageSampler = ["Random", "Random"]
+Interpolator = ["BSplineInterpolator", "BSplineInterpolator"]
+FixedImagePyramid = ["FixedRecursiveImagePyramid", "FixedRecursiveImagePyramid"]
+MovingImagePyramid = ["MovingRecursiveImagePyramid", "MovingRecursiveImagePyramid"]
+Registration = "MultiMetricMultiResolutionRegistration"
+FixedImageDimension = 3
+MovingImageDimension = 3
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+CheckNumberOfSamples = false
+RequiredRatioOfValidSamples = 0.125
+NumberOfHistogramBins = 32
+NumberOfFixedHistogramBins = 32
+FixedKernelBSplineOrder = 1
+FixedLimitRangeRatio = 0.00
+NumberOfMovingHistogramBins = 32
+MovingKernelBSplineOrder = 3
+MovingLimitRangeRatio = 0.00
+UseFastAndLowMemoryVersion = true
+ForegroundValue = 1
+Transform = "BSplineTransform"
+HowToCombineTransforms = "Compose"
+FinalGridSpacingInPhysicalUnits = [16, 16, 32]
+Optimizer = ["AdaptiveStochasticGradientDescent", "AdaptiveStochasticGradientDescent"]
+NewSamplesEveryIteration = true
+NumberOfSpatialSamples = 5000
+SampleRegionSize = [50.0, 50.0, 50.0]
+AutomaticParameterEstimation = true
+BSplineInterpolationOrder = 1
+ResampleInterpolator = "FinalBSplineInterpolator"
+FinalBSplineInterpolationOrder = 0
+WriteResultImage = true
+ResultImagePixelType = "float"
+ResultImageFormat = "gipl"
+UseRandomSampleRegion = true
+FixedImageBSplineInterpolationOrder = 1
+WritePyramidImagesAfterEachResolution = false
+Resampler = "DefaultResampler"
