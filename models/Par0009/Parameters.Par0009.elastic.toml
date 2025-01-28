@@ -1,0 +1,121 @@
+// Parameter file for B-Spline registration
+// as used in: Artaechevarria X, Munoz-Barrutia A, Ortiz-de-Solorzano C., 
+// "Combination strategies in multi-atlas image segmentation: application to brain MR data,"
+// IEEE Trans Med Imaging. 2009 Aug;28(8):1266-77.
+
+// The internal pixel type, used for computations
+// Leave to float in general
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+
+// The dimensions of the fixed and moving image
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+
+//Components
+
+// The following components should be left as they are:
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+
+// You may change these:
+// The optimizer StandardGradientDescent works quite ok 
+// in general. The Transform and Metric are important and
+// need to be chosen careful for each application.
+(Optimizer "QuasiNewtonLBFGS")
+(Transform "BSplineTransform")
+(Metric "AdvancedMattesMutualInformation")
+
+
+// The number of resolutions. 1 Is only enough if the expected
+// deformations are small. 3 or 4 mostly works fine.
+(NumberOfResolutions 3)
+
+// The pixel type of the resulting image
+(ResultImagePixelType "short")
+
+// If you use a mask, this option is important. You can 
+// set it for each resolution differently.
+// If the mask serves as region of interest, set it to false.
+// If the mask indicates which pixels are valid, then set it to true.
+// If you do not use a mask, the option doesn't matter.
+(ErodeMask "false" "false" "false")
+
+// Whether transforms are combined by composition or by addition.
+// In generally, Compose is the best option in most cases.
+// It does not influence the results very much.
+(HowToCombineTransforms "Compose")
+
+// This is an important option. It defines the complexity of
+// the deformation field.
+// Final spacing of B-Spline grid (unit = size of 1 voxel)
+// You can give it for each dimension differently, or for 
+// all dimensions the same.
+(FinalGridSpacing 8.0 8.0 8.0)
+(UpsampleGridOption "true")
+
+// Number of spatial samples used to compute the mutual
+// information in each resolution level.
+(NumberOfSpatialSamples 20000 30000 80000)
+
+// Refresh these spatial samples in every iteration, and select
+// them randomly.
+(NewSamplesEveryIteration "true" "true" "true")
+(ImageSampler "Random")
+
+//Number of grey level bins in each resolution level,
+// for the mutual information. 16 or 32 usually works fine.
+(NumberOfHistogramBins 16 32 32)
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 2 2 2)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 0)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+
+// The following parameters are for the QuasiNewtonLBFGS
+// optimizer.
+
+//MaximumNumberOfIterations: The maximum number of iterations in each resolution.
+(MaximumNumberOfIterations 100 75 25)
+
+
+//StepLength: Set the length of the initial step tried by the itk::MoreThuenteLineSearchOptimizer.
+(StepLength 2.0 1.0 5.0)
+
+
+//LineSearchValueTolerance: Determine the Wolfe conditions that the itk::MoreThuenteLineSearchOptimizer tries to satisfy.
+(LineSearchValueTolerance 0.001 0.0001 0.0001)
+//Default value: 0.0001.
+
+//LineSearchGradientTolerance: Determine the Wolfe conditions that the itk::MoreThuenteLineSearchOptimizer tries to satisfy.
+(LineSearchGradientTolerance 0.7 0.7 0.7)
+//Default value: 0.9.
+
+//GradientMagnitudeTolerance: Stopping criterion. See the documentation of the itk::QuasiNewtonLBFGSOptimizer for more information.
+//(GradientMagnitudeTolerance 0.001 0.0001 0.000001)
+// good, but too long(GradientMagnitudeTolerance 0.0001 0.000001 0.000001)
+(GradientMagnitudeTolerance 0.00001 0.000001 0.000001) //to compare
+
+//Default value: 0.000001.
+
+//LBFGSUpdateAccuracy: The "memory" of the optimizer. This determines how many past iterations are used to construct the Hessian approximation. The higher, the more memory is used, but the better the Hessian approximation. If set to zero, The QuasiNewtonLBFGS equals a gradient descent method with line search.
+(LBFGSUpdateAccuracy 10 20 40)
+//(LBFGSUpdateAccuracy 10 20 20)
+
+//StopIfWolfeNotSatisfied: Whether to stop the optimisation if in one iteration the Wolfe conditions can not be satisfied by the itk::MoreThuenteLineSearchOptimizer.
+//In general it is wise to do so.
+(StopIfWolfeNotSatisfied "true")
+//Default value: "true".
+
+
+//Result image format
+(ResultImageFormat "hdr")
+

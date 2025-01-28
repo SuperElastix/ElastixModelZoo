@@ -1,0 +1,81 @@
+// *********************
+// * ImageTypes
+// *********************
+(FixedInternalImagePixelType "short")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "short")
+(MovingImageDimension 3)
+
+// *********************
+// * Components
+// *********************
+(Registration "MultiResolutionRegistration" )
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(Interpolator "ReducedDimensionBSplineInterpolator")
+(BSplineInterpolationOrder 1)
+(Metric "VarianceOverLastDimensionMetric")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(ResampleInterpolator "FinalLinearInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+// *********************
+// * Metric settings
+// *********************
+(MovingImageDerivativeScales 1.0 1.0 0.0)
+(SampleLastDimensionRandomly "true")
+(NumSamplesLastDimension 5)
+(SubtractMean "true")
+
+// *********************
+// * Optimizer settings
+// *********************
+(NumberOfSamplesForExactGradient 20000)
+(NumberOfResolutions 3)
+(FinalGridSpacingInPhysicalUnits 1.0 1.0 3.0)
+(GridSpacingSchedule 4.0 4.0 2.0 2.0 2.0 2.0 1.0 1.0 1.0)
+(MaximumNumberOfIterations 2000)
+(SP_A 20.0)
+(SigmoidInitialTime 1.0)
+(AutomaticParameterEstimation "true")
+
+// *********************
+// * Mask settings
+// *********************
+(ErodeMask "false")
+(ErodeFixedMask "false")
+
+// *********************
+// * Transform settings
+// *********************
+(HowToCombineTransforms "Compose" )
+
+// *********************
+// * Pyramid settings
+// *********************
+(FixedImagePyramidSchedule 0 0 0 0 0 0 0 0 0)
+(MovingImagePyramidSchedule 4 4 0 2 2 0 1 1 0)
+
+// *********************
+// * Sampler parameters
+// *********************
+// The variance metric is allowed to get random samples, the penalty term isn't,
+// because of the langrage multipliers, which should correspond to the same
+// sample locations in every iteration
+(ImageSampler "Random")
+(NumberOfSpatialSamples 1000)
+(CheckNumberOfSamples "true")
+(MaximumNumberOfSamplingAttempts 10)
+(NewSamplesEveryIteration "true")
+
+// *********************
+// * Output settings
+// *********************
+(WriteTransformParametersEachIteration "false" )
+(WriteResultImage "true" )
+(CompressResultImage "false" )
+(WriteResultImageAfterEachResolution "false" )
+(ShowExactMetricValue "false" )
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)

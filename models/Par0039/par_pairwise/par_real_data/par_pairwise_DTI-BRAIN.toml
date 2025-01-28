@@ -1,0 +1,61 @@
+// *********************
+// * ImageTypes
+// *********************
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+
+(UseDirectionCosines "true")
+
+// *********************
+// * Components
+// *********************
+(Registration "MultiResolutionRegistration")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 3)
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "AffineTransform")
+(AutomaticScalesEstimation "true")
+(HowToCombineTransforms "Compose")
+(Metric "AdvancedMattesMutualInformation")
+
+// *********************
+// * Optimizer settings
+// *********************
+(NumberOfResolutions 2)
+(AutomaticParameterEstimation "true")
+(ASGDParameterEstimationMethod "Original")
+(MaximumNumberOfIterations 1000)
+
+// *********************
+// * Mask settings
+// *********************
+(ErodeMask "false")
+(ErodeFixedMask "false")
+
+// *********************
+// * Pyramid settings
+// *********************
+(ImagePyramidSchedule 2 2 2 1 1 1)
+
+// *********************
+// * Sampler parameters
+// *********************
+(NumberOfSpatialSamples 2048)
+(NewSamplesEveryIteration "true")
+(ImageSampler "RandomCoordinate")
+(CheckNumberOfSamples "true")
+
+// *********************
+// * Output settings
+// *********************
+(DefaultPixelValue 0)
+(WriteResultImage "true")
+(ResultImagePixelType "float")
+(ResultImageFormat "nii.gz")

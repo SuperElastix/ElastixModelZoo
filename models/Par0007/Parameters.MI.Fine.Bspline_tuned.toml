@@ -1,0 +1,88 @@
+// ********** Image Types
+
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 3)
+
+
+// ********** Components
+
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "BSplineInterpolator")
+(Metric "AdvancedMattesMutualInformation")
+(Optimizer "StandardGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+
+// ********** Pyramid
+
+// Total number of resolutions
+(NumberOfResolutions 2)
+(ImagePyramidSchedule 1 1 1 1 1 1)
+
+
+// ********** Transform
+(FinalGridSpacingInPhysicalUnits 5.0 5.0 5.0)
+(GridSpacingSchedule 2.0 1.0)
+(HowToCombineTransforms "Compose")
+
+
+// ********** Optimizer
+
+// Maximum number of iterations in each resolution level:
+(MaximumNumberOfIterations 100)
+
+//SP: Param_a in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_a 2000.0 2000.0)
+//(SP_a 8000.0 2000.0 2000.0 2000.0 2000.0)
+
+//SP: Param_alpha in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_alpha 0.6)
+
+//SP: Param_A in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_A 50.0)
+
+
+// ********** Metric
+
+(NumberOfHistogramBins 64 64)
+(UseFastAndLowMemoryVersion "true")
+
+
+// ********** Several
+
+(WriteTransformParametersEachIteration "false")
+(WriteTransformParametersEachResolution "true")
+(WriteResultImageAfterEachResolution "false")
+(WriteResultImage "true")
+(ShowExactMetricValue "false")
+(ErodeMask "false")
+
+
+// ********** ImageSampler
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(ImageSampler "RandomCoordinate")
+(NumberOfSpatialSamples 5000)
+(NewSamplesEveryIteration "true")
+//(UseRandomSampleRegion "true")
+//(SampleRegionSize 50.0 50.0 50.0)
+//(MaximumNumberOfSamplingAttempts 50)
+
+
+// ********** Interpolator and Resampler
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue -1000)
+

@@ -1,0 +1,69 @@
+
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+(UseDirectionCosines "false")
+
+// **************** Main Components **************************
+
+(Registration "MultiResolutionRegistration")
+(Interpolator "RayCastInterpolator")
+(ResampleInterpolator "FinalRayCastInterpolator")
+(Resampler "DefaultResampler")
+
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+
+(Optimizer "Powell")
+(Transform "EulerTransform")
+(Metric "NormalizedGradientCorrelation")
+
+// ***************** Transformation **************************
+
+(Scales 57.3)
+(AutomaticTransformInitialization "false")
+(HowToCombineTransforms "Compose")
+(CenterOfRotationPoint 0.0 0.0 0.0)
+
+// ******************* Similarity measure *********************
+
+(UseNormalization "true")
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 1)
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 10)
+(MaximumStepLength 1.0)
+(StepTolerance 0.0001)
+(ValueTolerance 0.000001)
+
+// **************** Image sampling **********************
+
+(ImageSampler "Full")
+(NewSamplesEveryIteration "false")
+
+// ************* Interpolation and Resampling ****************
+
+(Origin -145.498 -146.889 381.766)
+
+(Interpolator0PreParameters -0.009475 -0.006807 -0.030067 0.0 0.0 0.0)
+(ResampleInterpolator0PreParameters -0.009475 -0.006807 -0.030067 0.0 0.0 0.0)
+
+(Interpolator0FocalPoint 0.54 -0.85 -813.234)
+(ResampleInterpolator0FocalPoint 0.54 -0.85 -813.234)
+
+(Threshold 1000)
+
+(DefaultPixelValue 0)
+
+(WriteResultImage "true")
+(WriteTransformParametersEachIteration "true")
+
+(ResultImagePixelType "float")
+(ResultImageFormat "mhd")
+
+

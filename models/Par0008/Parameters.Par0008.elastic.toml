@@ -1,0 +1,76 @@
+(WriteResultImage "false")
+(AutomaticTransformInitialization "true")
+
+(ErodeFixedMask "false")
+(ErodeMovingMask "false")
+
+(ImageSampler "RandomSparseMask")
+
+//ImageTypes
+(FixedInternalImagePixelType "short")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "short")
+(MovingImageDimension 3)
+
+//Components
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "BSplineInterpolator")
+(Metric "AdvancedMattesMutualInformation")
+(Optimizer "StandardGradientDescent")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 0)
+
+//Final spacing of B-Spline grid (unit = size of 1 voxel):
+(FinalGridSpacingInVoxels 8.0)
+
+(ImagePyramidSchedule 8.0 4.0 4.0 2.0 1.0)
+(GridSpacingSchedule 8.0 4.0 4.0 2.0 1.0)
+
+(MaximumNumberOfSamplingAttempts 10)
+
+(WriteResultImageAfterEachResolution "false")
+
+(NumberOfResolutions 5)
+
+//Maximum number of iterations in each resolution level:
+(MaximumNumberOfIterations 256 256 256 256 256)
+//(MaximumNumberOfIterations 512 512 512 512 512) 
+
+//Number of grey level bins in each resolution level:
+(NumberOfHistogramBins 32 32 32 32 32)
+
+(NewSamplesEveryIteration "true" "true" "true" "true" "true")
+(UseAllPixels "false")
+(WriteTransformParametersEachIteration "false")
+(ShowExactMetricValue "false" "false" "false" "false" "false")
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(NumberOfSpatialSamples 4096 4096 4096 4096 4096)
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1 1 1 1 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+
+//SP: Param_a in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_a 2000.0 7000.0 20000.0 20000.0 30000.0)
+
+//SP: Param_A in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_A 50.0 50.0 50.0 50.0 50.0)
+
+//SP: Param_alpha in each resolution level. a_k = a/(A+k+1)^alpha
+(SP_alpha 0.602 0.602 0.602 0.602 0.602)
+

@@ -1,0 +1,69 @@
+(FixedInternalImagePixelType "short")
+(MovingInternalImagePixelType "short")
+
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+(UseDirectionCosines "true")
+
+// **************** Main Components **************************
+
+(Registration "MultiResolutionRegistration")
+(Interpolator "BSplineInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Transform "BSplineTransform")
+(Metric "AdvancedMattesMutualInformation")
+
+// ***************** Transformation **************************
+
+(FinalGridSpacingInPhysicalUnits 40)
+//(FinalGridSpacingInVoxels 16)
+
+// By default the grid spacing is halved after every resolution,
+// such that the final grid spacing is obtained in the last 
+// resolution level. You can also specify your own schedule,
+// if you uncomment the following line:
+//(GridSpacingSchedule 4.0 4.0 2.0 1.0)
+// This setting can also be supplied per dimension.
+
+(HowToCombineTransforms "Compose")
+
+// ******************* Similarity measure *********************
+
+(NumberOfHistogramBins 32)
+(ErodeMask "false")
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 3)
+(ImagePyramidSchedule 4 4 4  2 2 2  1 1 1 )
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 500)
+
+// **************** Image sampling **********************
+
+// Number of spatial samples used to compute the mutual
+// information (and its derivative) in each iteration.
+// With an AdaptiveStochasticGradientDescent optimizer,
+// in combination with the two options below, around 2000
+// samples may already suffice.
+(NumberOfSpatialSamples 5000)
+(NewSamplesEveryIteration "true")
+(ImageSampler "Random")
+
+// ************* Interpolation and Resampling ****************
+
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 1)
+(DefaultPixelValue 0)
+(WriteResultImage "true")
+(ResultImagePixelType "unsigned short")
+(ResultImageFormat "dcm")
+(CompressResultImage "true")
+
+

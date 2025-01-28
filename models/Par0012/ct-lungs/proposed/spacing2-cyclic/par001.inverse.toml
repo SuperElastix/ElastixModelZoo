@@ -1,0 +1,85 @@
+// *********************
+// * ImageTypes
+// *********************
+(FixedInternalImagePixelType "short")
+(FixedImageDimension 4)
+(MovingInternalImagePixelType "short")
+(MovingImageDimension 4)
+
+// *********************
+// * Components
+// *********************
+(Registration "MultiResolutionRegistration" )
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+(Interpolator "ReducedDimensionBSplineInterpolator")
+(BSplineInterpolationOrder 1)
+(Metric "DisplacementMagnitudePenalty")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(ResampleInterpolator "FinalLinearInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+
+(BSplineTransformSplineOrder 2)
+(UseCyclicTransform "true")
+
+// *********************
+// * Metric settings
+// *********************
+(MovingImageDerivativeScales 1.0 1.0 1.0 0.0)
+(SampleLastDimensionRandomly "true")
+(NumSamplesLastDimension 5)
+
+// *********************
+// * Optimizer settings
+// *********************
+(NumberOfSamplesForExactGradient 20000)
+(NumberOfResolutions 4)
+(FinalGridSpacingInPhysicalUnits 10.0 10.0 10.0 2.0)
+(GridSpacingSchedule 8.0 8.0 8.0 1.0 4.0 4.0 4.0 1.0 2.0 2.0 2.0 1.0 1.0 1.0 1.0 1.0)
+(MaximumNumberOfIterations 2000 2000 2000 2000)
+(SP_A 20.0)
+(SigmoidInitialTime 1.0)
+(AutomaticParameterEstimation "true")
+
+// *********************
+// * Mask settings
+// *********************
+(ErodeMask "false")
+(ErodeFixedMask "false")
+
+// *********************
+// * Transform settings
+// *********************
+(HowToCombineTransforms "Compose" )
+
+// *********************
+// * Pyramid settings
+// *********************
+(FixedImagePyramidSchedule 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+(MovingImagePyramidSchedule 8 8 8 0 4 4 4 0 2 2 2 0 1 1 1 0)
+
+// *********************
+// * Sampler parameters
+// *********************
+// The variance metric is allowed to get random samples, the penalty term isn't,
+// because of the langrage multipliers, which should correspond to the same
+// sample locations in every iteration
+(ImageSampler "RandomSparseMask")
+(NumberOfSpatialSamples 2000)
+(CheckNumberOfSamples "false")
+(NewSamplesEveryIteration "true")
+(UseRandomSampleRegion "false")
+(MaximumNumberOfSamplingAttempts 50)
+
+// *********************
+// * Output settings
+// *********************
+(WriteTransformParametersEachIteration "false" )
+(WriteTransformParametersEachResolution "true" )
+(WriteResultImage "false" )
+(CompressResultImage "false" )
+(WriteResultImageAfterEachResolution "false")
+(ShowExactMetricValue "false" )
+(DefaultPixelValue 0)
+
