@@ -27,6 +27,7 @@
 (BSplineInterpolationOrder 1)
 
 //Order of B-Spline interpolation used for applying the final deformation:
+//Note, February 2025: the intended/preferred FinalBSplineInterpolationOrder value may have been 3
 (FinalBSplineInterpolationOrder 0)
 
 //Final spacing of B-Spline grid (unit = size of 1 voxel):
@@ -55,12 +56,6 @@
 
 //Number of spatial samples used to compute the mutual information in each resolution level:
 (NumberOfSpatialSamples 4096 4096 4096 4096 4096)
-
-//Order of B-Spline interpolation used in each resolution level:
-(BSplineInterpolationOrder 1 1 1 1 1)
-
-//Order of B-Spline interpolation used for applying the final deformation:
-(FinalBSplineInterpolationOrder 3)
 
 //Default pixel value for pixels that come from outside the picture:
 (DefaultPixelValue 0)
