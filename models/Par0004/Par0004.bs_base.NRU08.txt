@@ -25,7 +25,6 @@
 // Sampling
 (NewSamplesEveryIteration "true" "true" "true" "true")
 (NumberOfSpatialSamples 5000 5000 5000 5000)
-(NewSamplesEveryIteration "true" "true")
 (ErodeMask "true" "true")
 
 // Interpolation and resampling
