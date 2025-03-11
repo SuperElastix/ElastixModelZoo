@@ -1,0 +1,54 @@
+# **************** Image Types **************************
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+UseDirectionCosines = true
+
+# **************** Main Components **************************
+Registration = "MultiMetricMultiResolutionRegistration"
+FixedImagePyramid = "FixedSmoothingImagePyramid"
+MovingImagePyramid = "MovingSmoothingImagePyramid"
+Interpolator = "BSplineInterpolator"
+Metric = ["AdvancedNormalizedCorrelation", "MissingStructurePenalty" ]
+Optimizer = "AdaptiveStochasticGradientDescent"
+ResampleInterpolator = "FinalBSplineInterpolator"
+Resampler = "DefaultResampler"
+Transform = "BSplineTransform"
+
+# **************** Pyramid **************************
+NumberOfResolutions = 7
+ImagePyramidSchedule = [16, 16, 4, 11, 11, 3, 8, 8, 2, 6, 6, 1, 4, 4, 1, 3, 3, 1, 2, 2, 1]
+
+# ***************** Transformation **************************
+HowToCombineTransforms = "Compose"
+FinalGridSpacingInPhysicalUnits = [5.0, 5.0, 5.0]
+GridSpacingSchedule = [8.0, 8.0, 8.0, 5.6, 5.6, 5.6, 4.0, 4.0, 4.0, 2.8, 2.8, 2.8, 2.0, 2.0, 2.0, 1.4, 1.4, 1.4, 1.0, 1.0, 1.0]
+
+# ******************* Optimizer ****************************
+MaximumNumberOfIterations = 150
+
+# ******************* Metric ****************************
+SubtractMean = true
+Metric0Weight = 1 
+Metric1Weight = 0.00000001  
+ErodeMask = false
+
+# ******************* ImageSampler ****************************
+ImageSampler = "RandomCoordinate"
+NumberOfSpatialSamples = 5000 
+CheckNumberOfSamples = true
+MaximumNumberOfSamplingAttempts = 10
+NewSamplesEveryIteration = true 
+
+# ******************* Interpolator and Resampler *******************
+FixedImageBSplineInterpolationOrder = [1, 1, 1]
+MovingImageBSplineInterpolationOrder = [1, 1, 1]
+
+# ******************* Output ****************************
+
+WriteResultMeshAfterEachIteration = false 
+WriteResultMeshAfterEachResolution = true
+
+WriteResultImage = false
+DefaultPixelValue = 0
+ResultImagePixelType = "float"
+ResultImageFormat = "mhd"

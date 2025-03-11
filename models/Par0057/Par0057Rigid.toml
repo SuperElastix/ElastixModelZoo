@@ -1,0 +1,74 @@
+# Parameter file created by ElastixParameterFile module
+
+# Registration parameters
+Registration = "MultiResolutionRegistration"
+FixedImageDimension = 3
+MovingImageDimension = 3
+FixedInternalImagePixelType = "float"
+MovingInternalImagePixelType = "float"
+UseDirectionCosines = true
+NumberOfResolutions = 2
+ErodeFixedMask = [false, false, false]
+ErodeMovingMask = [false, false, false]
+
+# Transform parameters
+Transform = "EulerTransform"
+HowToCombineTransforms = "Compose"
+#(AutomaticScalesEstimation "true" "true" "true")
+Scales = [17000, 17000, 140000, 1, 1, 1]
+AutomaticTransformInitialization = true
+
+# Metric parameters
+Metric = "NormalizedMutualInformation"
+ShowExactMetricValues = [false, false, false]
+CheckNumberOfSamples = [false, false, false]
+RequiredRatioOfValidSamples = 0.25
+NumberOfHistogramBins = 32
+NumberOfFixedHistogramBins = 32
+
+NumberOfMovingHistogramBins = 32
+MovingKernelBSplineOrder = [3, 3, 3]
+
+
+# Optimizer parameters
+Optimizer = "StandardGradientDescent"
+NewSamplesEveryIteration = true
+MaximumNumberOfIterations = 2000
+MaximumNumberOfSamplingAttempts = [0, 0, 0]
+AutomaticParameterEstimation = true
+SigmoidInitialTime = [0, 0, 0]
+UseAdaptiveStepSizes = true
+NumberOfSamplesForExactGradient = 100000
+
+# Interpolator parameters
+Interpolator = "BSplineInterpolator"
+BSplineInterpolationOrder = [1, 1, 1]
+
+# ResampleInterpolator parameters
+ResampleInterpolator = "FinalBSplineInterpolator"
+FinalBSplineInterpolationOrder = 3
+
+# ImageSampler parameters
+ImageSampler = "Grid"
+#(NumberOfSpatialSamples 4096)
+UseRandomSampleRegion = false
+FixedImageBSplineInterpolationOrder = [1, 1, 1]
+
+# FixedImagePyramid parameters
+FixedImagePyramid = "FixedShrinkingImagePyramid"
+FixedImagePyramidSchedule = [2, 2, 2, 1, 1, 1]
+
+# MovingImagePyramid parameters
+MovingImagePyramid = "MovingShrinkingImagePyramid"
+MovingImagePyramidSchedule = [2, 2, 2, 1, 1, 1]
+
+WritePyramidImagesAfterEachResolution = false
+
+# Resampler parameters
+Resampler = "DefaultResampler"
+WriteResultImage = false
+CompressResultImage = false
+ResultImageFormat = "nii"
+ResultImagePixelType = "short"
+WriteResultImageAfterEachResolution = false
+
