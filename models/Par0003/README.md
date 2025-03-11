@@ -60,4 +60,4 @@ See the [elastix manual][3] for hints on how to subsequently apply the transform
 
 [2] K. Murphy, B. van Ginneken, J. P. W. Pluim, S. Klein, and M. Staring, "Semi-automatic reference standard construction for quantitative evaluation of lung CT registration," in MICCAI, ser. Lecture Notes in Computer Science, vol. 5242, 2008, pp. 1006 – 1013.
 
-[3]: https://elastix.lumc.nl/download/elastix-5.0.1-manual.pdf
+[3]: https://github.com/SuperElastix/elastix/releases/download/5.2.0/elastix-5.2.0-manual.pdf

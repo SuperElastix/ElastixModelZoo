@@ -26,4 +26,4 @@ The files are saved in DOS text format. In order to use them on a Linux-based sy
 
 ### Other comments
 
-See the [elastix manual](https://elastix.lumc.nl/download/elastix-5.0.1-manual.pdf) for an extensive introduction to <tt>elastix</tt> and explanation of many parameters. If you have any questions, please subscribe to the <tt>elastix</tt> mailing list and post your question there. We (the authors of <tt>elastix</tt>) are happy to answer any questions. Please do read the [FAQ](https://github.com/SuperElastix/elastix/wiki/FAQ) though ;)
+See the [elastix manual](https://github.com/SuperElastix/elastix/releases/download/5.2.0/elastix-5.2.0-manual.pdf) for an extensive introduction to <tt>elastix</tt> and explanation of many parameters. If you have any questions, please subscribe to the <tt>elastix</tt> mailing list and post your question there. We (the authors of <tt>elastix</tt>) are happy to answer any questions. Please do read the [FAQ](https://github.com/SuperElastix/elastix/wiki/FAQ) though ;)
