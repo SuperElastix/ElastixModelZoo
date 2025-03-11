@@ -1,6 +1,6 @@
 # Elastix Model Zoo
 Welcome to the Model Zoo for parameter settings in Elastix, ITKElastix and SimpleElastix.
-All models are displayed at https://elastix.lumc.nl/modelzoo, but static content including parameter files can be found here in the _models_ directory.
+All models are displayed at https://lkeb.ml/modelzoo but static content including parameter files can be found here in the _models_ directory.
 
 How to Upload Model Parameters
 ----------
