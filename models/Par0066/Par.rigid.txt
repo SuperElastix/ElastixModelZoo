@@ -1,0 +1,57 @@
+// **************** Image Types ******************************
+
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+(UseDirectionCosines "true")
+
+// **************** Main Components **************************
+
+(Interpolator "BSplineInterpolator" "BSplineInterpolator")
+(Metric "AdvancedNormalizedCorrelation" "CorrespondingPointsEuclideanDistanceMetric")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Registration "MultiMetricMultiResolutionRegistration")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "EulerTransform")
+(FixedImagePyramid "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid")
+
+// ***************** Transformation **************************
+
+(HowToCombineTransforms "Compose")
+(AutomaticScalesEstimation "true")
+(AutomaticTransformInitialization "true")
+(AutomaticTransformInitializationMethod "CenterOfGravity")
+(Metric0Weight 0.0)
+(Metric1Weight 1.0)
+
+// ******************* Similarity measure *********************
+
+(ErodeMask "false")
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 3)
+(ImagePyramidSchedule 4 4 2  2 2 1  1 1 1)
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 700)
+(AutomaticParameterEstimation "true")
+(UseAdaptiveStepSizes "true")
+(NoiseCompensation "true")
+
+// **************** Image sampling **********************
+
+(ImageSampler "RandomCoordinate" "RandomCoordinate")
+(NumberOfSpatialSamples 2048)
+(NewSamplesEveryIteration "true")
+
+// ************* Interpolation and Resampling ****************
+
+(WriteTransformParametersEachIteration "false")
+(WriteTransformParametersEachResolution "false")
+(DefaultPixelValue 0)
+
