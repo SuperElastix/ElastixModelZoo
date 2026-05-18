@@ -1,0 +1,57 @@
+// **************** Image Types ******************************
+
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingImageDimension 3)
+(UseDirectionCosines "true")
+
+// **************** Main Components **************************
+
+(Interpolator "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator")
+(Metric "AdvancedNormalizedCorrelation" "AdvancedMeanSquares" "CorrespondingPointsEuclideanDistanceMetric")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Registration "MultiMetricMultiResolutionRegistration")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Transform "BSplineTransform")
+(FixedImagePyramid "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid" "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid" "MovingRecursiveImagePyramid")
+
+// ***************** Transformation **************************
+
+(FinalGridSpacingInPhysicalUnits 16)
+(GridSpacingSchedule 16 8 4 2 1)
+(HowToCombineTransforms "Compose")
+(Metric0Weight 1.0 1.0 1.0 1.0 1.0)
+(Metric1Weight 0.0 0.0 0.1 0.5 0.7)
+(Metric2Weight 0.5 0.1 0.0 0.0 0.0)
+(UseNormalization "true")
+
+// ******************* Similarity measure *********************
+
+(NumberOfHistogramBins 60)
+(ErodeMask "false")
+
+// ******************** Multiresolution **********************
+
+(NumberOfResolutions 5)
+(ImagePyramidSchedule  16 8 16  8 4 8  4 2 4   2 1 2  1 1 1)
+
+// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 2000)
+
+// **************** Image sampling **********************
+
+(ImageSampler "RandomCoordinate" "RandomCoordinate" "RandomCoordinate")
+(NumberOfSpatialSamples 10000)
+(NewSamplesEveryIteration "true")
+
+// ************* Interpolation and Resampling ****************
+
+(BSplineInterpolationOrder 1)
+(FinalBSplineInterpolationOrder 3)
+(DefaultPixelValue -1000)
+(WriteResultImage "true")
+(ResultImagePixelType "short")
