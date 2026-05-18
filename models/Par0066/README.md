@@ -17,7 +17,7 @@ Realignment of CT images of the human face for the generation of patient-specifi
 # **Registration settings**
 This paragraph is required. The link to GitHub is automatically inserted after this caption.
 
-Elastix version: 4.8
+Elastix version: 5.1.0
 
 # **Description**
 The aim of this project is to generate customised 3D finite element models from a reference model built on the basis of a CT scan.
@@ -48,4 +48,4 @@ For soft tissue, two registrations are performed:
 
 
 # **Published in**
-M.-C. Picard, M. A. Nazari, P. Perrier, et al., “ A Clinically Compatible Method for Generating Preoperative Finite Element Models to Simulate Facial Appearance and Movements in Orthognathic Surgery,” International Journal for Numerical Methods in Biomedical Engineering 42, no. 2 (2026): e70144, https://doi-org.sid2nomade-1.grenet.fr/10.1002/cnm.70144
+M.-C. Picard, M. A. Nazari, P. Perrier, et al., “ A Clinically Compatible Method for Generating Preoperative Finite Element Models to Simulate Facial Appearance and Movements in Orthognathic Surgery,” International Journal for Numerical Methods in Biomedical Engineering 42, no. 2 (2026): e70144, https://doi.org/10.1002/cnm.70144
