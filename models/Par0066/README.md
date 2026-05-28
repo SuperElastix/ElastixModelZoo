@@ -46,5 +46,5 @@ For soft tissue, two registrations are performed:
 - **Precise soft tissues:** elastix.exe -f reference_image.mhd -m patient_image.mhd -out output_directory/ -p parameters/Par.rigid.txt -fMask mask_soft_tissues.mhd -fp reference_landmarks.txt -mp patient_landmarks.txt -p parameters/Par.nonRigid_soft_tissues_true.txt (mask fig. 1a)
 
 
-#+\s*[Pp]ublish
+###  Published in
 M.-C. Picard, M. A. Nazari, P. Perrier, et al., “ A Clinically Compatible Method for Generating Preoperative Finite Element Models to Simulate Facial Appearance and Movements in Orthognathic Surgery,” International Journal for Numerical Methods in Biomedical Engineering 42, no. 2 (2026): e70144, https://doi.org/10.1002/cnm.70144
