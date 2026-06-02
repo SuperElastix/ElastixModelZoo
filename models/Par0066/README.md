@@ -15,7 +15,6 @@ Realignment of CT images of the human face for the generation of patient-specifi
 
 
 ###  Registration settings
-This paragraph is required. The link to GitHub is automatically inserted after this caption.
 
 Elastix version: 5.1.0
 
